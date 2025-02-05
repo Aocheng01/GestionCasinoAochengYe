@@ -56,7 +56,7 @@
             // btnCrearUsuario
             // 
             this.btnCrearUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearUsuario.Location = new System.Drawing.Point(46, 514);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(49, 481);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(174, 50);
             this.btnCrearUsuario.TabIndex = 7;
