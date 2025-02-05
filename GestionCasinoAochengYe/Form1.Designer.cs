@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtBoxContraseña = new System.Windows.Forms.TextBox();
             this.txtBoxUsuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,17 @@
             this.panel1.Size = new System.Drawing.Size(1069, 589);
             this.panel1.TabIndex = 2;
             // 
+            // btnCrearUsuario
+            // 
+            this.btnCrearUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearUsuario.Location = new System.Drawing.Point(-148, 565);
+            this.btnCrearUsuario.Name = "btnCrearUsuario";
+            this.btnCrearUsuario.Size = new System.Drawing.Size(174, 50);
+            this.btnCrearUsuario.TabIndex = 7;
+            this.btnCrearUsuario.Text = "registrar";
+            this.btnCrearUsuario.UseVisualStyleBackColor = true;
+            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -68,6 +79,7 @@
             // 
             this.txtBoxContraseña.Location = new System.Drawing.Point(392, 345);
             this.txtBoxContraseña.Name = "txtBoxContraseña";
+            this.txtBoxContraseña.PasswordChar = '*';
             this.txtBoxContraseña.Size = new System.Drawing.Size(255, 20);
             this.txtBoxContraseña.TabIndex = 5;
             // 
@@ -107,17 +119,6 @@
             this.label1.Size = new System.Drawing.Size(406, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "Iniciar sesion";
-            // 
-            // btnCrearUsuario
-            // 
-            this.btnCrearUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearUsuario.Location = new System.Drawing.Point(69, 415);
-            this.btnCrearUsuario.Name = "btnCrearUsuario";
-            this.btnCrearUsuario.Size = new System.Drawing.Size(174, 50);
-            this.btnCrearUsuario.TabIndex = 7;
-            this.btnCrearUsuario.Text = "Iniciar sesión";
-            this.btnCrearUsuario.UseVisualStyleBackColor = true;
-            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
             // 
             // Form1
             // 

@@ -28,9 +28,10 @@ namespace GestionCasinoAochengYe
             }
 
             // Crear una instancia del usuario con la contraseña hasheada
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-            Usuario nuevoUsuario = new Usuario(username, hashedPassword, false, DateTime.Now);
+            //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            //Usuario nuevoUsuario = new Usuario(username, hashedPassword, false, DateTime.Now);
 
+            Usuario nuevoUsuario = new Usuario(username, password, true, DateTime.Now);
             DaoUsuario daoUsuario = new DaoUsuario();
             daoUsuario.CrearUsuario(nuevoUsuario);
 
