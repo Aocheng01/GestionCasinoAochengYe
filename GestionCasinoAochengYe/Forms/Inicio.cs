@@ -39,7 +39,10 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close();
+
         }
 
         private void btnClientes_Click(object sender, EventArgs e)

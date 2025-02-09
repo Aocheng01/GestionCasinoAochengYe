@@ -35,10 +35,10 @@
             this.btnAñadir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPartidas = new System.Windows.Forms.DataGridView();
             this.lblConfig = new System.Windows.Forms.Label();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPartidas)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
@@ -49,7 +49,7 @@
             this.panelContenedor.Controls.Add(this.btnAñadir);
             this.panelContenedor.Controls.Add(this.btnEliminar);
             this.panelContenedor.Controls.Add(this.btnEditar);
-            this.panelContenedor.Controls.Add(this.dataGridView1);
+            this.panelContenedor.Controls.Add(this.dataGridViewPartidas);
             this.panelContenedor.Controls.Add(this.lblConfig);
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Name = "panelContenedor";
@@ -113,14 +113,14 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewPartidas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(872, 401);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewPartidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPartidas.Location = new System.Drawing.Point(17, 46);
+            this.dataGridViewPartidas.Name = "dataGridViewPartidas";
+            this.dataGridViewPartidas.RowHeadersWidth = 62;
+            this.dataGridViewPartidas.Size = new System.Drawing.Size(872, 401);
+            this.dataGridViewPartidas.TabIndex = 1;
             // 
             // lblConfig
             // 
@@ -143,7 +143,7 @@
             this.Text = "Partidas";
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPartidas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,7 +157,7 @@
         private System.Windows.Forms.Button btnAñadir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewPartidas;
         private System.Windows.Forms.Label lblConfig;
     }
 }

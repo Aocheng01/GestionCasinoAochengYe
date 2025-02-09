@@ -12,10 +12,10 @@ namespace GestionCasinoAochengYe.dao
     {
         MySqlConnection conexion = new MySqlConnection();
 
-        static string servidor = "bbddaocheng.cz36at4s5jqb.us-east-1.rds.amazonaws.com";
+        static string servidor = "bbddaocheng.c8fzxpapf4ap.us-east-1.rds.amazonaws.com";
         static string db = "casinoDI";
         static string usuario = "admin";
-        static string password = "N3P75HHCvi4RBnsZyqrt";
+        static string password = "t71S9XMdc1kp29rwj8LB";
         static string puerto = "3306";
 
         string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario
