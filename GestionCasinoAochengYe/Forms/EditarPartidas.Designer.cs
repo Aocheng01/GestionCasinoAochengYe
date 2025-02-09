@@ -40,13 +40,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
-            this.panelBarra = new System.Windows.Forms.Panel();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.btnConfig = new System.Windows.Forms.Button();
-            this.btnPartidas = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
-            this.panelBarra.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelContenedor
@@ -62,52 +56,46 @@
             this.panelContenedor.Controls.Add(this.btnCancelar);
             this.panelContenedor.Controls.Add(this.btnGuardar);
             this.panelContenedor.Controls.Add(this.lblConfig);
-            this.panelContenedor.Location = new System.Drawing.Point(0, 112);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1606, 792);
+            this.panelContenedor.Size = new System.Drawing.Size(910, 552);
             this.panelContenedor.TabIndex = 9;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(26, 306);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(17, 199);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 26);
+            this.textBox2.Size = new System.Drawing.Size(227, 20);
             this.textBox2.TabIndex = 19;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(26, 558);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox5.Location = new System.Drawing.Point(17, 363);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(338, 26);
+            this.textBox5.Size = new System.Drawing.Size(227, 20);
             this.textBox5.TabIndex = 18;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(26, 428);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox4.Location = new System.Drawing.Point(17, 278);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(338, 26);
+            this.textBox4.Size = new System.Drawing.Size(227, 20);
             this.textBox4.TabIndex = 17;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 168);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(17, 109);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 26);
+            this.textBox1.Size = new System.Drawing.Size(227, 20);
             this.textBox1.TabIndex = 14;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 489);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(12, 318);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 37);
+            this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 13;
             this.label5.Text = "Ganancia";
             // 
@@ -115,10 +103,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 369);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(12, 240);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 37);
+            this.label4.Size = new System.Drawing.Size(91, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Apuesta";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -127,10 +114,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 254);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(12, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 37);
+            this.label3.Size = new System.Drawing.Size(71, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Juego";
             // 
@@ -138,20 +124,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 125);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 37);
+            this.label1.Size = new System.Drawing.Size(191, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Nombre del cliente";
             // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(1329, 717);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Location = new System.Drawing.Point(632, 466);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(237, 54);
+            this.btnCancelar.Size = new System.Drawing.Size(158, 35);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -159,10 +143,9 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(1088, 717);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGuardar.Location = new System.Drawing.Point(471, 466);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(232, 54);
+            this.btnGuardar.Size = new System.Drawing.Size(155, 35);
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -171,82 +154,23 @@
             // 
             this.lblConfig.AutoSize = true;
             this.lblConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfig.Location = new System.Drawing.Point(18, 9);
-            this.lblConfig.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblConfig.Location = new System.Drawing.Point(12, 6);
             this.lblConfig.Name = "lblConfig";
-            this.lblConfig.Size = new System.Drawing.Size(135, 37);
+            this.lblConfig.Size = new System.Drawing.Size(91, 25);
             this.lblConfig.TabIndex = 0;
             this.lblConfig.Text = "Partidas";
             // 
-            // panelBarra
-            // 
-            this.panelBarra.Controls.Add(this.btnCerrarSesion);
-            this.panelBarra.Controls.Add(this.btnConfig);
-            this.panelBarra.Controls.Add(this.btnPartidas);
-            this.panelBarra.Controls.Add(this.btnClientes);
-            this.panelBarra.Location = new System.Drawing.Point(0, -2);
-            this.panelBarra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panelBarra.Name = "panelBarra";
-            this.panelBarra.Size = new System.Drawing.Size(1606, 118);
-            this.panelBarra.TabIndex = 8;
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(1376, 40);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(219, 65);
-            this.btnCerrarSesion.TabIndex = 6;
-            this.btnCerrarSesion.Text = "Cerrar sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            // 
-            // btnConfig
-            // 
-            this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfig.Location = new System.Drawing.Point(1128, 40);
-            this.btnConfig.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnConfig.Name = "btnConfig";
-            this.btnConfig.Size = new System.Drawing.Size(222, 65);
-            this.btnConfig.TabIndex = 5;
-            this.btnConfig.Text = "Configuración";
-            this.btnConfig.UseVisualStyleBackColor = true;
-            // 
-            // btnPartidas
-            // 
-            this.btnPartidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartidas.Location = new System.Drawing.Point(296, 18);
-            this.btnPartidas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnPartidas.Name = "btnPartidas";
-            this.btnPartidas.Size = new System.Drawing.Size(238, 86);
-            this.btnPartidas.TabIndex = 3;
-            this.btnPartidas.Text = "Partidas";
-            this.btnPartidas.UseVisualStyleBackColor = true;
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(18, 18);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(238, 86);
-            this.btnClientes.TabIndex = 2;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            // 
             // EditarPartidas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1606, 903);
+            this.ClientSize = new System.Drawing.Size(910, 552);
             this.Controls.Add(this.panelContenedor);
-            this.Controls.Add(this.panelBarra);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditarPartidas";
             this.Text = "EditarPartidas";
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
-            this.panelBarra.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -265,10 +189,5 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblConfig;
-        private System.Windows.Forms.Panel panelBarra;
-        private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.Button btnConfig;
-        private System.Windows.Forms.Button btnPartidas;
-        private System.Windows.Forms.Button btnClientes;
     }
 }

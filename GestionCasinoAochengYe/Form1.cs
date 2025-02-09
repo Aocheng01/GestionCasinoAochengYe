@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using GestionCasinoAochengYe.dao;
 using GestionCasinoAochengYe.dto;
 using BCrypt.Net;
+using GestionCasinoAochengYe.Forms;
 
 namespace GestionCasinoAochengYe
 {
@@ -70,13 +71,20 @@ namespace GestionCasinoAochengYe
             {
                 MessageBox.Show("Bienvenido administrador");
                 iniciarSesion?.Invoke(this, EventArgs.Empty);
-                this.Close();
+                
+                Inicio inicio = new Inicio(true); // Muestra btnConfig
+                inicio.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Bienvenido usuario");
                 iniciarSesion?.Invoke(this, EventArgs.Empty);
-                this.Close();
+                Inicio inicio = new Inicio(false); // esconde btnConfig
+                inicio.Show();
+
+                this.Hide();
+
             }
         }
     }

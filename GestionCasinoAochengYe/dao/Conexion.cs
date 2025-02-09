@@ -27,7 +27,7 @@ namespace GestionCasinoAochengYe.dao
             {
                 conexion.ConnectionString = cadenaConexion;
                 conexion.Open();
-                MessageBox.Show("Se conectó a la base de datos");
+                //MessageBox.Show("Se conectó a la base de datos");
             }
             catch (Exception ex)
             {
