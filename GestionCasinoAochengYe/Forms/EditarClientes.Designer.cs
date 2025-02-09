@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBoxSaldo = new System.Windows.Forms.TextBox();
+            this.txtBoxTelefono = new System.Windows.Forms.TextBox();
+            this.txtBoxApellido = new System.Windows.Forms.TextBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.txtBoxNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,10 +47,10 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Controls.Add(this.textBox5);
-            this.panelContenedor.Controls.Add(this.textBox4);
-            this.panelContenedor.Controls.Add(this.textBox3);
-            this.panelContenedor.Controls.Add(this.textBox2);
+            this.panelContenedor.Controls.Add(this.txtBoxSaldo);
+            this.panelContenedor.Controls.Add(this.txtBoxTelefono);
+            this.panelContenedor.Controls.Add(this.txtBoxApellido);
+            this.panelContenedor.Controls.Add(this.txtBoxEmail);
             this.panelContenedor.Controls.Add(this.txtBoxNombre);
             this.panelContenedor.Controls.Add(this.label5);
             this.panelContenedor.Controls.Add(this.label4);
@@ -65,34 +65,33 @@
             this.panelContenedor.Size = new System.Drawing.Size(910, 552);
             this.panelContenedor.TabIndex = 5;
             // 
-            // textBox5
+            // txtBoxSaldo
             // 
-            this.textBox5.Location = new System.Drawing.Point(17, 322);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(227, 20);
-            this.textBox5.TabIndex = 18;
+            this.txtBoxSaldo.Location = new System.Drawing.Point(17, 322);
+            this.txtBoxSaldo.Name = "txtBoxSaldo";
+            this.txtBoxSaldo.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxSaldo.TabIndex = 18;
             // 
-            // textBox4
+            // txtBoxTelefono
             // 
-            this.textBox4.Location = new System.Drawing.Point(362, 227);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(227, 20);
-            this.textBox4.TabIndex = 17;
+            this.txtBoxTelefono.Location = new System.Drawing.Point(362, 227);
+            this.txtBoxTelefono.Name = "txtBoxTelefono";
+            this.txtBoxTelefono.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxTelefono.TabIndex = 17;
             // 
-            // textBox3
+            // txtBoxApellido
             // 
-            this.textBox3.Location = new System.Drawing.Point(362, 110);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(453, 20);
-            this.textBox3.TabIndex = 16;
+            this.txtBoxApellido.Location = new System.Drawing.Point(362, 110);
+            this.txtBoxApellido.Name = "txtBoxApellido";
+            this.txtBoxApellido.Size = new System.Drawing.Size(453, 20);
+            this.txtBoxApellido.TabIndex = 16;
             // 
-            // textBox2
+            // txtBoxEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(17, 227);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 20);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtBoxEmail.Location = new System.Drawing.Point(17, 227);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxEmail.TabIndex = 15;
             // 
             // txtBoxNombre
             // 
@@ -200,10 +199,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxSaldo;
+        private System.Windows.Forms.TextBox txtBoxTelefono;
+        private System.Windows.Forms.TextBox txtBoxApellido;
+        private System.Windows.Forms.TextBox txtBoxEmail;
         private System.Windows.Forms.TextBox txtBoxNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

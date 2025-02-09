@@ -72,7 +72,7 @@ namespace GestionCasinoAochengYe.dao
             return listaClientes;
         }
 
-        public void ActualizarCliente(Cliente cliente)
+        public void ActualizarCliente(int id, Cliente cliente)
         {
             if (string.IsNullOrEmpty(cliente.nombre) || string.IsNullOrEmpty(cliente.apellido))
             {
