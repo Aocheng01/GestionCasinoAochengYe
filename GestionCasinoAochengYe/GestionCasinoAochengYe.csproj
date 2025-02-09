@@ -102,7 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\Conexion.cs" />
+    <Compile Include="dao\DaoCliente.cs" />
+    <Compile Include="dao\DaoPartida.cs" />
     <Compile Include="dao\DaoUsuario.cs" />
+    <Compile Include="dto\Cliente.cs" />
+    <Compile Include="dto\Partida.cs" />
     <Compile Include="dto\Usuario.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

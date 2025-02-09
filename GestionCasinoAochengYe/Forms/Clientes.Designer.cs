@@ -31,7 +31,7 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxId = new System.Windows.Forms.TextBox();
             this.btnAñadir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             // 
             this.panelContenedor.Controls.Add(this.btnBuscar);
             this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.textBox1);
+            this.panelContenedor.Controls.Add(this.txtBoxId);
             this.panelContenedor.Controls.Add(this.btnAñadir);
             this.panelContenedor.Controls.Add(this.btnEliminar);
             this.panelContenedor.Controls.Add(this.btnEditar);
@@ -76,13 +76,13 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Id/Nombre";
             // 
-            // textBox1
+            // txtBoxId
             // 
-            this.textBox1.Location = new System.Drawing.Point(214, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtBoxId.Location = new System.Drawing.Point(214, 12);
+            this.txtBoxId.Name = "txtBoxId";
+            this.txtBoxId.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxId.TabIndex = 10;
+            this.txtBoxId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAñadir
             // 
@@ -114,6 +114,7 @@
             this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // dataGridViewClientes
             // 
@@ -123,6 +124,7 @@
             this.dataGridViewClientes.RowHeadersWidth = 62;
             this.dataGridViewClientes.Size = new System.Drawing.Size(858, 401);
             this.dataGridViewClientes.TabIndex = 1;
+            this.dataGridViewClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellClick);
             // 
             // lblConfig
             // 
@@ -153,7 +155,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxId;
         private System.Windows.Forms.Button btnAñadir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;

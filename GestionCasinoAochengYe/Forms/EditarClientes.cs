@@ -15,9 +15,15 @@ namespace GestionCasinoAochengYe.Forms
         public EditarClientes()
         {
             InitializeComponent();
+            txtBoxNombre.Text = Clientes.dataGridViewClientes.CurrentRow.Cells[0].Value.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
 
         }

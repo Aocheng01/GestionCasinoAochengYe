@@ -33,7 +33,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.panelContenedor.Controls.Add(this.textBox4);
             this.panelContenedor.Controls.Add(this.textBox3);
             this.panelContenedor.Controls.Add(this.textBox2);
-            this.panelContenedor.Controls.Add(this.textBox1);
+            this.panelContenedor.Controls.Add(this.txtBoxNombre);
             this.panelContenedor.Controls.Add(this.label5);
             this.panelContenedor.Controls.Add(this.label4);
             this.panelContenedor.Controls.Add(this.label3);
@@ -94,12 +94,12 @@
             this.textBox2.TabIndex = 15;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // txtBoxNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtBoxNombre.Location = new System.Drawing.Point(17, 109);
+            this.txtBoxNombre.Name = "txtBoxNombre";
+            this.txtBoxNombre.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxNombre.TabIndex = 14;
             // 
             // label5
             // 
@@ -170,6 +170,7 @@
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // lblConfig
             // 
@@ -203,7 +204,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

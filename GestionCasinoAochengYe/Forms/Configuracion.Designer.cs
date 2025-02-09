@@ -59,6 +59,7 @@
             this.btnAñadir.TabIndex = 9;
             this.btnAñadir.Text = "Añadir usuario";
             this.btnAñadir.UseVisualStyleBackColor = true;
+            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
             // 
             // btnEliminar
             // 
@@ -89,6 +90,7 @@
             this.dataGridViewUsuarios.RowHeadersWidth = 62;
             this.dataGridViewUsuarios.Size = new System.Drawing.Size(871, 401);
             this.dataGridViewUsuarios.TabIndex = 1;
+            this.dataGridViewUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsuarios_CellClick);
             // 
             // lblConfig
             // 

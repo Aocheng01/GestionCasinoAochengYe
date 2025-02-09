@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestionCasinoAochengYe.dao;
+using GestionCasinoAochengYe.dto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,27 @@ namespace GestionCasinoAochengYe.Forms
         public Configuracion()
         {
             InitializeComponent();
+            DaoUsuario daoUsuario = new DaoUsuario();
+            List<Usuario> listaUsuarios = daoUsuario.obtenerUsuarios();
+
+            dataGridViewUsuarios.DataSource = listaUsuarios;
+            dataGridViewUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAñadir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

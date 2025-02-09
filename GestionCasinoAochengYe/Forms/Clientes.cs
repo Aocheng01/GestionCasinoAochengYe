@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GestionCasinoAochengYe.dto;
+using GestionCasinoAochengYe.dao;
 
 namespace GestionCasinoAochengYe.Forms
 {
@@ -17,10 +19,10 @@ namespace GestionCasinoAochengYe.Forms
         {
             InitializeComponent();
 
-            DaoUsuario daoUsuario = new DaoUsuario();
-            List<usuarios> listaUsuarios = daoUsuario.obtenerUsuarios();
+            DaoCliente daoCliente = new DaoCliente();
+            List<Cliente> listaClientes = daoCliente.ObtenerClientes();
 
-            dataGridViewClientes.DataSource = listaUsuarios;
+            dataGridViewClientes.DataSource = listaClientes;
             dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -31,7 +33,26 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnAñadir_Click(object sender, EventArgs e)
         {
+            Form editarCliente = new EditarClientes();
+            editarCliente.ShowDialog();
+        }
 
+        private void dataGridViewClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegúrate de que el clic se hace en una fila válida
+            {
+                DataGridViewRow filaSeleccionada = dataGridViewClientes.Rows[e.RowIndex];
+
+                txtBoxId.Text = filaSeleccionada.Cells[0].Value?.ToString() ?? string.Empty;
+               
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            EditarClientes editarCliente = new EditarClientes();
+
+            editarCliente.ShowDialog();
         }
     }
 }

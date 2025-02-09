@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestionCasinoAochengYe.dao;
+using GestionCasinoAochengYe.dto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,12 @@ namespace GestionCasinoAochengYe.Forms
         public Partidas()
         {
             InitializeComponent();
+
+            DaoPartida daoPartida = new DaoPartida();
+            List<Partida> listaPartidas = daoPartida.ObtenerPartidas();
+            dataGridViewPartidas.DataSource = listaPartidas;
+            dataGridViewPartidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
     }
 }
