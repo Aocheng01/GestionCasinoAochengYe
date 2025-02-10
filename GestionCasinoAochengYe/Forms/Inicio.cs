@@ -24,6 +24,7 @@ namespace GestionCasinoAochengYe.Forms
         {
             InitializeComponent();
             btnConfig.Visible = mostrarConfig;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void AbrirFormEnPanel(object formhija)
         {
@@ -50,18 +51,8 @@ namespace GestionCasinoAochengYe.Forms
             AbrirFormEnPanel(new Clientes());
         }
 
-        private void btnMaxi_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaxi.Visible = false;
-            btnRes.Visible = true;
-        }
 
-        private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+
 
         private void btnPartidas_Click(object sender, EventArgs e)
         {
@@ -88,6 +79,19 @@ namespace GestionCasinoAochengYe.Forms
             this.WindowState = FormWindowState.Normal;
             btnRes.Visible = false;
             btnMaxi.Visible = true;
+        }
+
+        private void btnMaxi_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaxi.Visible = false;
+            btnRes.Visible = true;
+        }
+
+        private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

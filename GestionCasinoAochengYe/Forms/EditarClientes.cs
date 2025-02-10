@@ -10,11 +10,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestionCasinoAochengYe.dto;
 using GestionCasinoAochengYe.dao;
+using System.Runtime.InteropServices;
 
 namespace GestionCasinoAochengYe.Forms
 {
+
     public partial class EditarClientes : Form
     {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int
+        wParam, int lParam);
+
         // Propiedad para recibir el nombre del clientee
         public string id { get; set; }
         public string ClienteNombre { get; set; }
@@ -26,7 +35,10 @@ namespace GestionCasinoAochengYe.Forms
 
         public EditarClientes()
         {
+            
             InitializeComponent();
+            // Centramos el formulario segun el formulario padre
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         // Método para inicializar el formulario con los datos del cliente
@@ -54,7 +66,43 @@ namespace GestionCasinoAochengYe.Forms
             DaoCliente daoCliente = new DaoCliente();
             Cliente clienteNuevo = new Cliente(id,txtBoxNombre.Text, txtBoxApellido.Text, txtBoxEmail.Text, txtBoxTelefono.Text, Convert.ToDouble(txtBoxSaldo.Text));
             daoCliente.ActualizarCliente(id,clienteNuevo);
+            this.Close();
 
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnRes_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRes.Visible = false;
+            btnMaxi.Visible = true;
+        }
+
+        private void btnMaxi_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaxi.Visible = false;
+            btnRes.Visible = true;
+        }
+
+        private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 
