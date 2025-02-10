@@ -44,7 +44,7 @@ namespace GestionCasinoAochengYe.Forms
             txtBoxApellido.Text = apellido; // Rellenamos el campo de texto
             txtBoxEmail.Text = email; // Rellenamos el campo de texto
             txtBoxTelefono.Text = telefono; // Rellenamos el campo de texto
-            txtBoxSaldo.Text = saldo; // Rellenamos el campo de texto
+            txtBoxSaldo.Text = saldo; 
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
