@@ -15,7 +15,7 @@ namespace GestionCasinoAochengYe.Forms
 {
     public partial class EditarClientes : Form
     {
-        // Propiedad para recibir el nombre del cliente
+        // Propiedad para recibir el nombre del clientee
         public string id { get; set; }
         public string ClienteNombre { get; set; }
         public string apellido { get; set; }
