@@ -50,10 +50,10 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
-            // Obtiene el nombre del cliente de la fila seleccionada (suponiendo que el nombre está en la primera columna)
-            string id = dataGridViewClientes.CurrentRow.Cells[0].Value.ToString(); // Cambia el índice de la columna según sea necesario
-            string nombreCliente = dataGridViewClientes.CurrentRow.Cells[1].Value.ToString(); // Cambia el índice de la columna según sea necesario
+    
+                // Obtiene el nombre del cliente de la fila seleccionada (suponiendo que el nombre está en la primera columna)
+                string id = dataGridViewClientes.CurrentRow.Cells[0].Value.ToString(); // Cambia el índice de la columna según sea necesario
+                string nombreCliente = dataGridViewClientes.CurrentRow.Cells[1].Value.ToString(); // Cambia el índice de la columna según sea necesario
                 string apellidoCliente = dataGridViewClientes.CurrentRow.Cells[2].Value.ToString(); // Cambia el índice de la columna según sea necesario
                 string email = dataGridViewClientes.CurrentRow.Cells[3].Value.ToString(); // Cambia el índice de la columna según sea necesario
                 string telefono = dataGridViewClientes.CurrentRow.Cells[4].Value.ToString(); // Cambia el índice de la columna según sea necesario
