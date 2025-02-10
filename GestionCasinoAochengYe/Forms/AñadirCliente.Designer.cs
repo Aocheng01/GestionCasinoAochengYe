@@ -1,6 +1,6 @@
 ﻿namespace GestionCasinoAochengYe.Forms
 {
-    partial class EditarPartidas
+    partial class AñadirCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,50 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarPartidas));
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AñadirCliente));
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxSaldo = new System.Windows.Forms.TextBox();
+            this.txtBoxTelefono = new System.Windows.Forms.TextBox();
+            this.txtBoxApellido = new System.Windows.Forms.TextBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.txtBoxNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
-            this.panelContenedor.SuspendLayout();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Controls.Add(this.panelBarraTitulo);
-            this.panelContenedor.Controls.Add(this.textBox2);
-            this.panelContenedor.Controls.Add(this.textBox5);
-            this.panelContenedor.Controls.Add(this.textBox4);
-            this.panelContenedor.Controls.Add(this.textBox1);
-            this.panelContenedor.Controls.Add(this.label5);
-            this.panelContenedor.Controls.Add(this.label4);
-            this.panelContenedor.Controls.Add(this.label3);
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.btnCancelar);
-            this.panelContenedor.Controls.Add(this.btnGuardar);
-            this.panelContenedor.Controls.Add(this.lblConfig);
-            this.panelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(390, 552);
-            this.panelContenedor.TabIndex = 9;
             // 
             // panelBarraTitulo
             // 
@@ -85,7 +68,7 @@
             this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
             this.panelBarraTitulo.Size = new System.Drawing.Size(390, 36);
-            this.panelBarraTitulo.TabIndex = 20;
+            this.panelBarraTitulo.TabIndex = 19;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
             // btnMaxi
@@ -145,88 +128,106 @@
             this.btnMin.TabStop = false;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
-            // textBox2
+            // txtBoxSaldo
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 20);
-            this.textBox2.TabIndex = 19;
+            this.txtBoxSaldo.Location = new System.Drawing.Point(125, 345);
+            this.txtBoxSaldo.Name = "txtBoxSaldo";
+            this.txtBoxSaldo.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxSaldo.TabIndex = 18;
             // 
-            // textBox5
+            // txtBoxTelefono
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 382);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(227, 20);
-            this.textBox5.TabIndex = 18;
+            this.txtBoxTelefono.Location = new System.Drawing.Point(125, 285);
+            this.txtBoxTelefono.Name = "txtBoxTelefono";
+            this.txtBoxTelefono.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxTelefono.TabIndex = 17;
             // 
-            // textBox4
+            // txtBoxApellido
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 307);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(227, 20);
-            this.textBox4.TabIndex = 17;
+            this.txtBoxApellido.Location = new System.Drawing.Point(125, 174);
+            this.txtBoxApellido.Name = "txtBoxApellido";
+            this.txtBoxApellido.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxApellido.TabIndex = 16;
             // 
-            // textBox1
+            // txtBoxEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtBoxEmail.Location = new System.Drawing.Point(125, 234);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxEmail.TabIndex = 15;
+            // 
+            // txtBoxNombre
+            // 
+            this.txtBoxNombre.Location = new System.Drawing.Point(125, 113);
+            this.txtBoxNombre.Name = "txtBoxNombre";
+            this.txtBoxNombre.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxNombre.TabIndex = 14;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 341);
+            this.label5.Location = new System.Drawing.Point(15, 339);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.Size = new System.Drawing.Size(67, 25);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Ganancia";
+            this.label5.Text = "Saldo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 279);
+            this.label4.Location = new System.Drawing.Point(15, 279);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Apuesta";
+            this.label4.Text = "Teléfono";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 215);
+            this.label3.Location = new System.Drawing.Point(15, 168);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.Size = new System.Drawing.Size(100, 25);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Juego";
+            this.label3.Text = "Apellidos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 228);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "E-mail";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 151);
+            this.label1.Location = new System.Drawing.Point(15, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 25);
+            this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Nombre del cliente";
+            this.label1.Text = "Nombre";
             // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(202, 466);
+            this.btnCancelar.Location = new System.Drawing.Point(194, 435);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(158, 35);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(12, 466);
+            this.btnGuardar.Location = new System.Drawing.Point(20, 435);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(155, 35);
             this.btnGuardar.TabIndex = 7;
@@ -238,50 +239,73 @@
             // 
             this.lblConfig.AutoSize = true;
             this.lblConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfig.Location = new System.Drawing.Point(7, 68);
+            this.lblConfig.Location = new System.Drawing.Point(15, 56);
             this.lblConfig.Name = "lblConfig";
-            this.lblConfig.Size = new System.Drawing.Size(91, 25);
+            this.lblConfig.Size = new System.Drawing.Size(143, 25);
             this.lblConfig.TabIndex = 0;
-            this.lblConfig.Text = "Partidas";
+            this.lblConfig.Text = "Añadir cliente";
             // 
-            // EditarPartidas
+            // panelContenedor
+            // 
+            this.panelContenedor.Controls.Add(this.panelBarraTitulo);
+            this.panelContenedor.Controls.Add(this.txtBoxSaldo);
+            this.panelContenedor.Controls.Add(this.txtBoxTelefono);
+            this.panelContenedor.Controls.Add(this.txtBoxApellido);
+            this.panelContenedor.Controls.Add(this.txtBoxEmail);
+            this.panelContenedor.Controls.Add(this.txtBoxNombre);
+            this.panelContenedor.Controls.Add(this.label5);
+            this.panelContenedor.Controls.Add(this.label4);
+            this.panelContenedor.Controls.Add(this.label3);
+            this.panelContenedor.Controls.Add(this.label2);
+            this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Controls.Add(this.btnCancelar);
+            this.panelContenedor.Controls.Add(this.btnGuardar);
+            this.panelContenedor.Controls.Add(this.lblConfig);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(390, 552);
+            this.panelContenedor.TabIndex = 6;
+            // 
+            // AñadirCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 552);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EditarPartidas";
-            this.Text = "EditarPartidas";
-            this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
+            this.Name = "AñadirCliente";
+            this.Text = "AñadirCliente";
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
+            this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label lblConfig;
         private System.Windows.Forms.Panel panelBarraTitulo;
         private System.Windows.Forms.PictureBox btnMaxi;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.PictureBox btnMin;
+        private System.Windows.Forms.TextBox txtBoxSaldo;
+        private System.Windows.Forms.TextBox txtBoxTelefono;
+        private System.Windows.Forms.TextBox txtBoxApellido;
+        private System.Windows.Forms.TextBox txtBoxEmail;
+        private System.Windows.Forms.TextBox txtBoxNombre;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Label lblConfig;
+        private System.Windows.Forms.Panel panelContenedor;
     }
 }

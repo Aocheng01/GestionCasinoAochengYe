@@ -76,6 +76,7 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 5;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // panelBarraTitulo
             // 
@@ -90,6 +91,7 @@
             this.panelBarraTitulo.Name = "panelBarraTitulo";
             this.panelBarraTitulo.Size = new System.Drawing.Size(390, 36);
             this.panelBarraTitulo.TabIndex = 19;
+            this.panelBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBarraTitulo_Paint);
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
             // btnMaxi
@@ -155,6 +157,7 @@
             this.txtBoxSaldo.Name = "txtBoxSaldo";
             this.txtBoxSaldo.Size = new System.Drawing.Size(227, 20);
             this.txtBoxSaldo.TabIndex = 18;
+            this.txtBoxSaldo.TextChanged += new System.EventHandler(this.txtBoxSaldo_TextChanged);
             // 
             // txtBoxTelefono
             // 
@@ -162,6 +165,7 @@
             this.txtBoxTelefono.Name = "txtBoxTelefono";
             this.txtBoxTelefono.Size = new System.Drawing.Size(227, 20);
             this.txtBoxTelefono.TabIndex = 17;
+            this.txtBoxTelefono.TextChanged += new System.EventHandler(this.txtBoxTelefono_TextChanged);
             // 
             // txtBoxApellido
             // 
@@ -169,6 +173,7 @@
             this.txtBoxApellido.Name = "txtBoxApellido";
             this.txtBoxApellido.Size = new System.Drawing.Size(227, 20);
             this.txtBoxApellido.TabIndex = 16;
+            this.txtBoxApellido.TextChanged += new System.EventHandler(this.txtBoxApellido_TextChanged);
             // 
             // txtBoxEmail
             // 
@@ -176,6 +181,7 @@
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(227, 20);
             this.txtBoxEmail.TabIndex = 15;
+            this.txtBoxEmail.TextChanged += new System.EventHandler(this.txtBoxEmail_TextChanged);
             // 
             // txtBoxNombre
             // 
@@ -183,6 +189,7 @@
             this.txtBoxNombre.Name = "txtBoxNombre";
             this.txtBoxNombre.Size = new System.Drawing.Size(227, 20);
             this.txtBoxNombre.TabIndex = 14;
+            this.txtBoxNombre.TextChanged += new System.EventHandler(this.txtBoxNombre_TextChanged);
             // 
             // label5
             // 
@@ -193,6 +200,7 @@
             this.label5.Size = new System.Drawing.Size(67, 25);
             this.label5.TabIndex = 13;
             this.label5.Text = "Saldo";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -203,6 +211,7 @@
             this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Teléfono";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -213,6 +222,7 @@
             this.label3.Size = new System.Drawing.Size(100, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Apellidos";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -223,6 +233,7 @@
             this.label2.Size = new System.Drawing.Size(72, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "E-mail";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -233,6 +244,7 @@
             this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Nombre";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnCancelar
             // 
@@ -262,9 +274,10 @@
             this.lblConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfig.Location = new System.Drawing.Point(15, 56);
             this.lblConfig.Name = "lblConfig";
-            this.lblConfig.Size = new System.Drawing.Size(79, 25);
+            this.lblConfig.Size = new System.Drawing.Size(137, 25);
             this.lblConfig.TabIndex = 0;
-            this.lblConfig.Text = "Cliente";
+            this.lblConfig.Text = "Editar cliente";
+            this.lblConfig.Click += new System.EventHandler(this.lblConfig_Click);
             // 
             // EditarClientes
             // 

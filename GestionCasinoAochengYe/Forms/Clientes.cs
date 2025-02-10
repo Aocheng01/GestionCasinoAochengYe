@@ -33,8 +33,8 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnAñadir_Click(object sender, EventArgs e)
         {
-            Form editarCliente = new EditarClientes();
-            editarCliente.ShowDialog();
+            Form añadirCliente = new AñadirCliente();
+            añadirCliente.ShowDialog();
         }
 
         private void dataGridViewClientes_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -52,12 +52,12 @@ namespace GestionCasinoAochengYe.Forms
         {
     
                 // Obtiene el nombre del cliente de la fila seleccionada (suponiendo que el nombre está en la primera columna)
-                string id = dataGridViewClientes.CurrentRow.Cells[0].Value.ToString(); // Cambia el índice de la columna según sea necesario
-                string nombreCliente = dataGridViewClientes.CurrentRow.Cells[1].Value.ToString(); // Cambia el índice de la columna según sea necesario
-                string apellidoCliente = dataGridViewClientes.CurrentRow.Cells[2].Value.ToString(); // Cambia el índice de la columna según sea necesario
-                string email = dataGridViewClientes.CurrentRow.Cells[3].Value.ToString(); // Cambia el índice de la columna según sea necesario
-                string telefono = dataGridViewClientes.CurrentRow.Cells[4].Value.ToString(); // Cambia el índice de la columna según sea necesario
-                string saldo = dataGridViewClientes.CurrentRow.Cells[5].Value.ToString(); // Cambia el índice de la columna según sea necesario
+                string id = dataGridViewClientes.CurrentRow.Cells[0].Value.ToString(); 
+                string nombreCliente = dataGridViewClientes.CurrentRow.Cells[1].Value.ToString(); 
+                string apellidoCliente = dataGridViewClientes.CurrentRow.Cells[2].Value.ToString(); 
+                string email = dataGridViewClientes.CurrentRow.Cells[3].Value.ToString(); 
+                string telefono = dataGridViewClientes.CurrentRow.Cells[4].Value.ToString(); 
+                string saldo = dataGridViewClientes.CurrentRow.Cells[5].Value.ToString(); 
 
             // Crea una instancia del formulario de edición
             EditarClientes editarCliente = new EditarClientes();

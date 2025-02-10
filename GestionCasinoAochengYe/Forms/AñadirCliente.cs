@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace GestionCasinoAochengYe.Forms
 {
-    public partial class EditarPartidas : Form
+    public partial class AñadirCliente : Form
     {
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -20,9 +20,10 @@ namespace GestionCasinoAochengYe.Forms
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int
         wParam, int lParam);
 
-        public EditarPartidas()
+        public AñadirCliente()
         {
             InitializeComponent();
+            this.StartPosition= FormStartPosition.CenterParent;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace GestionCasinoAochengYe.Forms
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
