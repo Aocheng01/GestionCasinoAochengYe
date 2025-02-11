@@ -66,30 +66,42 @@ namespace GestionCasinoAochengYe.dao
             }
             return listaPartidas;
         }
-        public void ActualizarPartida(Partida partida)
+        public void ActualizarPartida(int id, Partida partida)
         {
             try
             {
+                Console.WriteLine($"Intentando actualizar partida con id_partida: {id}");
+
                 string query = "UPDATE partidas SET id_cliente = @id_cliente, fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia, juego = @juego WHERE id_partida = @id_partida";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
+
                 mySqlCommand.Parameters.AddWithValue("@id_cliente", partida.id_cliente);
                 mySqlCommand.Parameters.AddWithValue("@fecha", partida.fecha);
                 mySqlCommand.Parameters.AddWithValue("@apuesta", partida.apuesta);
                 mySqlCommand.Parameters.AddWithValue("@ganancia", partida.ganancia);
-                mySqlCommand.Parameters.AddWithValue("@id_partida", partida.id_partida);
                 mySqlCommand.Parameters.AddWithValue("@juego", partida.juego);
+                mySqlCommand.Parameters.AddWithValue("@id_partida", id);
 
+                int filasAfectadas = mySqlCommand.ExecuteNonQuery();
 
-                mySqlCommand.ExecuteNonQuery();
-                MessageBox.Show("Partida actualizada con éxito");
+                if (filasAfectadas > 0)
+                {
+                    MessageBox.Show("Partida actualizada con éxito.");
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró la partida para actualizar.");
+                }
+
                 objetoConexion.cerrarConexion();
             }
-            catch (MySqlException)
+            catch (MySqlException e)
             {
-                MessageBox.Show("Ocurrió un error al actualizar la partida.");
+                MessageBox.Show("Ocurrió un error al actualizar la partida: " + e.Message);
             }
         }
+
         public void EliminarPartida(int id_partida)
         {
             try

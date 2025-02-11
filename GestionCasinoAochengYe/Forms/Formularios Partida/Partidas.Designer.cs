@@ -31,7 +31,7 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxIdNombre = new System.Windows.Forms.TextBox();
             this.btnAñadir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             // 
             this.panelContenedor.Controls.Add(this.btnBuscar);
             this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.textBox1);
+            this.panelContenedor.Controls.Add(this.txtBoxIdNombre);
             this.panelContenedor.Controls.Add(this.btnAñadir);
             this.panelContenedor.Controls.Add(this.btnEliminar);
             this.panelContenedor.Controls.Add(this.btnEditar);
@@ -65,6 +65,7 @@
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label1
             // 
@@ -76,12 +77,12 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Id/Nombre";
             // 
-            // textBox1
+            // txtBoxIdNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(214, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtBoxIdNombre.Location = new System.Drawing.Point(214, 12);
+            this.txtBoxIdNombre.Name = "txtBoxIdNombre";
+            this.txtBoxIdNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxIdNombre.TabIndex = 10;
             // 
             // btnAñadir
             // 
@@ -92,6 +93,7 @@
             this.btnAñadir.TabIndex = 9;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = true;
+            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
             // 
             // btnEliminar
             // 
@@ -102,6 +104,7 @@
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -112,6 +115,7 @@
             this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // dataGridViewPartidas
             // 
@@ -121,6 +125,7 @@
             this.dataGridViewPartidas.RowHeadersWidth = 62;
             this.dataGridViewPartidas.Size = new System.Drawing.Size(872, 401);
             this.dataGridViewPartidas.TabIndex = 1;
+            this.dataGridViewPartidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPartidas_CellClick);
             // 
             // lblConfig
             // 
@@ -153,7 +158,7 @@
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxIdNombre;
         private System.Windows.Forms.Button btnAñadir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
