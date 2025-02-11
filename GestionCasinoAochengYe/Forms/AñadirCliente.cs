@@ -8,6 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GestionCasinoAochengYe.dto;
+using GestionCasinoAochengYe.dao;
 
 namespace GestionCasinoAochengYe.Forms
 {
@@ -63,6 +65,18 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            Cliente cliente = new Cliente();
+            cliente.nombre = txtBoxNombre.Text;
+            cliente.apellido = txtBoxApellido.Text;
+            cliente.email = txtBoxEmail.Text;
+            cliente.telefono = txtBoxTelefono.Text;
+            cliente.saldo = Convert.ToDouble(txtBoxSaldo.Text);
+
+            DaoCliente daoCliente = new DaoCliente();
+            daoCliente.CrearCliente(cliente);
+
+            this.Close();
+
 
         }
 

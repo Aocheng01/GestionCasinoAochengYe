@@ -19,9 +19,13 @@ namespace GestionCasinoAochengYe.Forms
         {
             InitializeComponent();
 
+            actualizarTabla();
+        }
+
+        private void actualizarTabla()
+        {
             DaoCliente daoCliente = new DaoCliente();
             List<Cliente> listaClientes = daoCliente.ObtenerClientes();
-
             dataGridViewClientes.DataSource = listaClientes;
             dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
@@ -35,6 +39,7 @@ namespace GestionCasinoAochengYe.Forms
         {
             Form añadirCliente = new AñadirCliente();
             añadirCliente.ShowDialog();
+            actualizarTabla();
         }
 
         private void dataGridViewClientes_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -43,7 +48,7 @@ namespace GestionCasinoAochengYe.Forms
             {
                 DataGridViewRow filaSeleccionada = dataGridViewClientes.Rows[e.RowIndex];
 
-                txtBoxId.Text = filaSeleccionada.Cells[0].Value?.ToString() ?? string.Empty;
+                txtBoxIdNombre.Text = filaSeleccionada.Cells[0].Value?.ToString() ?? string.Empty;
                
             }
         }
@@ -67,7 +72,55 @@ namespace GestionCasinoAochengYe.Forms
 
                 // Muestra el formulario de manera modal
                 editarCliente.ShowDialog();
+            actualizarTabla();
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar este cliente?", "Eliminar cliente", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                int idCliente = Convert.ToInt32(txtBoxIdNombre.Text);
+                DaoCliente daoCliente = new DaoCliente();
+                daoCliente.EliminarCliente(idCliente);
+                actualizarTabla();
+            }
+          
+            
+          
+
+
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string textoBuscado = txtBoxIdNombre.Text.Trim(); // Obtener el texto del TextBox y quitar espacios
+
+            if (string.IsNullOrEmpty(textoBuscado))
+            {
+                MessageBox.Show("Por favor, ingrese un ID o Nombre para buscar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            foreach (DataGridViewRow row in dataGridViewClientes.Rows)
+            {
+                if (row.Cells[0].Value != null && row.Cells[1].Value != null) // Evitar errores por valores nulos
+                {
+                    if (row.Cells[0].Value.ToString().Equals(textoBuscado, StringComparison.OrdinalIgnoreCase) ||
+                        row.Cells[1].Value.ToString().Equals(textoBuscado, StringComparison.OrdinalIgnoreCase))
+                    {
+                        dataGridViewClientes.ClearSelection();
+                        row.Selected = true;
+                        dataGridViewClientes.FirstDisplayedScrollingRowIndex = row.Index;
+                        return;
+                    }
+                }
+            }
+
+            MessageBox.Show("No se encontró ningún resultado.", "Búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
     }
 }

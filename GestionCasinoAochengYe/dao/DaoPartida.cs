@@ -15,15 +15,16 @@ namespace GestionCasinoAochengYe.dao
             {
                 try
                 {
-                    string query = "INSERT INTO partidas (id_cliente, fecha, apuesta, ganancia) VALUES (@id_cliente, @fecha, @apuesta, @ganancia)";
+                    string query = "INSERT INTO partidas (id_cliente, fecha, apuesta, ganancia, juego) VALUES (@id_cliente, @fecha, @apuesta, @ganancia, @juego)";
                     Conexion objetoConexion = new Conexion();
                     MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                     mySqlCommand.Parameters.AddWithValue("@id_cliente", partida.id_cliente);
                     mySqlCommand.Parameters.AddWithValue("@fecha", partida.fecha);
                     mySqlCommand.Parameters.AddWithValue("@apuesta", partida.apuesta);
                     mySqlCommand.Parameters.AddWithValue("@ganancia", partida.ganancia);
+                    mySqlCommand.Parameters.AddWithValue("@juego", partida.juego);
 
-                    mySqlCommand.ExecuteNonQuery();
+                mySqlCommand.ExecuteNonQuery();
                     MessageBox.Show("Partida creada con éxito");
                     objetoConexion.cerrarConexion();
                 }
@@ -49,7 +50,8 @@ namespace GestionCasinoAochengYe.dao
                         mySqlDataReader.GetInt32(1),
                         mySqlDataReader.GetDateTime(2),
                         mySqlDataReader.GetDouble(3),
-                        mySqlDataReader.GetDouble(4)
+                        mySqlDataReader.GetDouble(4),
+                        mySqlDataReader.GetString(5)
                     )
                     {
                         id_partida = mySqlDataReader.GetInt32(0)
@@ -68,7 +70,7 @@ namespace GestionCasinoAochengYe.dao
         {
             try
             {
-                string query = "UPDATE partidas SET id_cliente = @id_cliente, fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia WHERE id_partida = @id_partida";
+                string query = "UPDATE partidas SET id_cliente = @id_cliente, fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia, juego = @juego WHERE id_partida = @id_partida";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@id_cliente", partida.id_cliente);
@@ -76,6 +78,8 @@ namespace GestionCasinoAochengYe.dao
                 mySqlCommand.Parameters.AddWithValue("@apuesta", partida.apuesta);
                 mySqlCommand.Parameters.AddWithValue("@ganancia", partida.ganancia);
                 mySqlCommand.Parameters.AddWithValue("@id_partida", partida.id_partida);
+                mySqlCommand.Parameters.AddWithValue("@juego", partida.juego);
+
 
                 mySqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Partida actualizada con éxito");
