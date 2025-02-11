@@ -8,7 +8,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GestionCasinoAochengYe.dto;
 using System.Windows.Forms;
+
 
 namespace GestionCasinoAochengYe.Forms
 {
@@ -17,12 +19,17 @@ namespace GestionCasinoAochengYe.Forms
         public Partidas()
         {
             InitializeComponent();
-
-            DaoPartida daoPartida = new DaoPartida();
-            List<Partida> listaPartidas = daoPartida.ObtenerPartidas();
-            dataGridViewPartidas.DataSource = listaPartidas;
-            dataGridViewPartidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            actualizarTabla();
 
         }
+
+        private void actualizarTabla()
+        {
+            DaoPartida daoPartida = new DaoPartida();
+            List<dto.Partida> listaPartidas = daoPartida.ObtenerPartidas();
+            dataGridViewPartidas.DataSource = listaPartidas;
+            dataGridViewPartidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
     }
 }

@@ -114,16 +114,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AñadirCliente.cs">
+    <Compile Include="Forms\Formularios Cliente\AñadirCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AñadirCliente.Designer.cs">
+    <Compile Include="Forms\Formularios Cliente\AñadirCliente.Designer.cs">
       <DependentUpon>AñadirCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clientes.cs">
+    <Compile Include="Forms\Formularios Cliente\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clientes.Designer.cs">
+    <Compile Include="Forms\Formularios Cliente\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Configuracion.cs">
@@ -132,16 +132,22 @@
     <Compile Include="Forms\Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EditarClientes.cs">
+    <Compile Include="Forms\Formularios Cliente\EditarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditarClientes.Designer.cs">
+    <Compile Include="Forms\Formularios Cliente\EditarClientes.Designer.cs">
       <DependentUpon>EditarClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EditarPartidas.cs">
+    <Compile Include="Forms\Formularios Partida\AñadirPartida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditarPartidas.Designer.cs">
+    <Compile Include="Forms\Formularios Partida\AñadirPartida.Designer.cs">
+      <DependentUpon>AñadirPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formularios Partida\EditarPartidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formularios Partida\EditarPartidas.Designer.cs">
       <DependentUpon>EditarPartidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Inicio.cs">
@@ -150,10 +156,10 @@
     <Compile Include="Forms\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Partidas.cs">
+    <Compile Include="Forms\Formularios Partida\Partidas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Partidas.Designer.cs">
+    <Compile Include="Forms\Formularios Partida\Partidas.Designer.cs">
       <DependentUpon>Partidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -161,25 +167,28 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AñadirCliente.resx">
+    <EmbeddedResource Include="Forms\Formularios Cliente\AñadirCliente.resx">
       <DependentUpon>AñadirCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clientes.resx">
+    <EmbeddedResource Include="Forms\Formularios Cliente\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditarClientes.resx">
+    <EmbeddedResource Include="Forms\Formularios Cliente\EditarClientes.resx">
       <DependentUpon>EditarClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditarPartidas.resx">
+    <EmbeddedResource Include="Forms\Formularios Partida\AñadirPartida.resx">
+      <DependentUpon>AñadirPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formularios Partida\EditarPartidas.resx">
       <DependentUpon>EditarPartidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Partidas.resx">
+    <EmbeddedResource Include="Forms\Formularios Partida\Partidas.resx">
       <DependentUpon>Partidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

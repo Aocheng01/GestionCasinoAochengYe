@@ -73,6 +73,8 @@ namespace GestionCasinoAochengYe.Forms
                 // Muestra el formulario de manera modal
                 editarCliente.ShowDialog();
             actualizarTabla();
+            BuscarFilaEnDataGridView(txtBoxIdNombre.Text);
+
 
         }
 
@@ -104,6 +106,15 @@ namespace GestionCasinoAochengYe.Forms
                 return;
             }
 
+            // Llamamos al método de búsqueda
+            BuscarFilaEnDataGridView(textoBuscado);
+        }
+
+        private void BuscarFilaEnDataGridView(string textoBuscado)
+        {
+            // Limpiar selección previa
+            dataGridViewClientes.ClearSelection();
+
             foreach (DataGridViewRow row in dataGridViewClientes.Rows)
             {
                 if (row.Cells[0].Value != null && row.Cells[1].Value != null) // Evitar errores por valores nulos
@@ -111,9 +122,11 @@ namespace GestionCasinoAochengYe.Forms
                     if (row.Cells[0].Value.ToString().Equals(textoBuscado, StringComparison.OrdinalIgnoreCase) ||
                         row.Cells[1].Value.ToString().Equals(textoBuscado, StringComparison.OrdinalIgnoreCase))
                     {
-                        dataGridViewClientes.ClearSelection();
+                        // Seleccionar la fila y hacer que se vea como si se hizo clic en ella
                         row.Selected = true;
                         dataGridViewClientes.FirstDisplayedScrollingRowIndex = row.Index;
+                        dataGridViewClientes.CurrentCell = row.Cells[0]; // Establecer la celda actual para la fila seleccionada
+
                         return;
                     }
                 }
@@ -121,6 +134,10 @@ namespace GestionCasinoAochengYe.Forms
 
             MessageBox.Show("No se encontró ningún resultado.", "Búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+
+
 
     }
 }

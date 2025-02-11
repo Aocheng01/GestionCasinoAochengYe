@@ -34,6 +34,9 @@ namespace GestionCasinoAochengYe.dto
             this.juego = juego;
         }
 
+        public Partida()
+        {
+        }
 
     }
 }
