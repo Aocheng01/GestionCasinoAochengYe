@@ -41,7 +41,7 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            string id = dataGridViewPartidas.CurrentRow.Cells[1].Value.ToString();
+            string id = dataGridViewPartidas.CurrentRow.Cells[0].Value.ToString();
             string fecha = dataGridViewPartidas.CurrentRow.Cells[2].Value.ToString();
             string apuesta = dataGridViewPartidas.CurrentRow.Cells[3].Value.ToString();
             string ganancia = dataGridViewPartidas.CurrentRow.Cells[4].Value.ToString();
@@ -49,8 +49,10 @@ namespace GestionCasinoAochengYe.Forms
 
             EditarPartidas editarPartida = new EditarPartidas();
             editarPartida.InicializarFormulario(id, Convert.ToDateTime(fecha), Convert.ToDouble(apuesta), Convert.ToDouble(ganancia), juego);
+         
             editarPartida.ShowDialog();
             actualizarTabla();
+            BuscarFilaEnDataGridView(txtBoxIdNombre.Text);
 
         }
 

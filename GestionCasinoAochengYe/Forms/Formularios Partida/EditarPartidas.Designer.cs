@@ -38,11 +38,9 @@
             this.txtBoxJuego = new System.Windows.Forms.TextBox();
             this.txtBoxGanancia = new System.Windows.Forms.TextBox();
             this.txtBoxApuesta = new System.Windows.Forms.TextBox();
-            this.txtBoxId = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
@@ -64,11 +62,9 @@
             this.panelContenedor.Controls.Add(this.txtBoxJuego);
             this.panelContenedor.Controls.Add(this.txtBoxGanancia);
             this.panelContenedor.Controls.Add(this.txtBoxApuesta);
-            this.panelContenedor.Controls.Add(this.txtBoxId);
             this.panelContenedor.Controls.Add(this.label5);
             this.panelContenedor.Controls.Add(this.label4);
             this.panelContenedor.Controls.Add(this.label3);
-            this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.btnCancelar);
             this.panelContenedor.Controls.Add(this.btnGuardar);
             this.panelContenedor.Controls.Add(this.lblConfig);
@@ -170,13 +166,6 @@
             this.txtBoxApuesta.Size = new System.Drawing.Size(227, 20);
             this.txtBoxApuesta.TabIndex = 17;
             // 
-            // txtBoxId
-            // 
-            this.txtBoxId.Location = new System.Drawing.Point(12, 162);
-            this.txtBoxId.Name = "txtBoxId";
-            this.txtBoxId.Size = new System.Drawing.Size(227, 20);
-            this.txtBoxId.TabIndex = 14;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -206,16 +195,6 @@
             this.label3.Size = new System.Drawing.Size(71, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Juego";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Id cliente";
             // 
             // btnCancelar
             // 
@@ -292,11 +271,9 @@
         private System.Windows.Forms.TextBox txtBoxJuego;
         private System.Windows.Forms.TextBox txtBoxGanancia;
         private System.Windows.Forms.TextBox txtBoxApuesta;
-        private System.Windows.Forms.TextBox txtBoxId;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblConfig;

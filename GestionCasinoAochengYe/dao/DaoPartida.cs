@@ -72,11 +72,10 @@ namespace GestionCasinoAochengYe.dao
             {
                 Console.WriteLine($"Intentando actualizar partida con id_partida: {id}");
 
-                string query = "UPDATE partidas SET id_cliente = @id_cliente, fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia, juego = @juego WHERE id_partida = @id_partida";
+                string query = "UPDATE partidas SET  fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia, juego = @juego WHERE id_partida = @id_partida";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
 
-                mySqlCommand.Parameters.AddWithValue("@id_cliente", partida.id_cliente);
                 mySqlCommand.Parameters.AddWithValue("@fecha", partida.fecha);
                 mySqlCommand.Parameters.AddWithValue("@apuesta", partida.apuesta);
                 mySqlCommand.Parameters.AddWithValue("@ganancia", partida.ganancia);
