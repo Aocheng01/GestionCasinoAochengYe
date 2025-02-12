@@ -20,6 +20,7 @@ namespace GestionCasinoAochengYe
         wParam, int lParam);
         public Form1()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
         private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)

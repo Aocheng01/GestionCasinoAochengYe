@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.btnConfig = new System.Windows.Forms.Button();
-            this.btnPartidas = new System.Windows.Forms.Button();
             this.panelBarra = new System.Windows.Forms.Panel();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btnConfig = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPartidas = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClientes = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBarra.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).BeginInit();
@@ -59,70 +61,6 @@
             this.panelContenedor.Size = new System.Drawing.Size(910, 552);
             this.panelContenedor.TabIndex = 5;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Red;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(910, 552);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.Maroon;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Menu;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(12, 514);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(135, 61);
-            this.btnCerrarSesion.TabIndex = 6;
-            this.btnCerrarSesion.Text = "Cerrar sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClientes.Location = new System.Drawing.Point(12, 88);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(135, 70);
-            this.btnClientes.TabIndex = 2;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = false;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // btnConfig
-            // 
-            this.btnConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
-            this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfig.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConfig.Location = new System.Drawing.Point(12, 315);
-            this.btnConfig.Name = "btnConfig";
-            this.btnConfig.Size = new System.Drawing.Size(143, 68);
-            this.btnConfig.TabIndex = 5;
-            this.btnConfig.Text = "Configuración";
-            this.btnConfig.UseVisualStyleBackColor = false;
-            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
-            // 
-            // btnPartidas
-            // 
-            this.btnPartidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
-            this.btnPartidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartidas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPartidas.Location = new System.Drawing.Point(9, 194);
-            this.btnPartidas.Name = "btnPartidas";
-            this.btnPartidas.Size = new System.Drawing.Size(143, 68);
-            this.btnPartidas.TabIndex = 3;
-            this.btnPartidas.Text = "Partidas";
-            this.btnPartidas.UseVisualStyleBackColor = false;
-            this.btnPartidas.Click += new System.EventHandler(this.btnPartidas_Click);
-            // 
             // panelBarra
             // 
             this.panelBarra.Controls.Add(this.panelBarraTitulo);
@@ -133,7 +71,7 @@
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);
@@ -146,12 +84,127 @@
             this.panelBarraTitulo.TabIndex = 1;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Animated = true;
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.BorderRadius = 20;
+            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(8, 517);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(147, 58);
+            this.btnCerrarSesion.TabIndex = 10;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.UseTransparentBackground = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 50;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // btnConfig
+            // 
+            this.btnConfig.Animated = true;
+            this.btnConfig.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfig.BorderColor = System.Drawing.Color.Transparent;
+            this.btnConfig.BorderRadius = 20;
+            this.btnConfig.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfig.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfig.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfig.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConfig.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnConfig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnConfig.ForeColor = System.Drawing.Color.White;
+            this.btnConfig.Image = global::GestionCasinoAochengYe.Properties.Resources.build_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnConfig.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnConfig.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnConfig.Location = new System.Drawing.Point(8, 249);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(147, 58);
+            this.btnConfig.TabIndex = 9;
+            this.btnConfig.Text = "Usuarios";
+            this.btnConfig.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnConfig.UseTransparentBackground = true;
+            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
+            // 
+            // btnPartidas
+            // 
+            this.btnPartidas.Animated = true;
+            this.btnPartidas.BackColor = System.Drawing.Color.Transparent;
+            this.btnPartidas.BorderColor = System.Drawing.Color.Transparent;
+            this.btnPartidas.BorderRadius = 20;
+            this.btnPartidas.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPartidas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPartidas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPartidas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPartidas.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnPartidas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPartidas.ForeColor = System.Drawing.Color.White;
+            this.btnPartidas.Image = global::GestionCasinoAochengYe.Properties.Resources.poker_chip_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnPartidas.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPartidas.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPartidas.Location = new System.Drawing.Point(8, 153);
+            this.btnPartidas.Name = "btnPartidas";
+            this.btnPartidas.Size = new System.Drawing.Size(147, 58);
+            this.btnPartidas.TabIndex = 8;
+            this.btnPartidas.Text = "Partidas";
+            this.btnPartidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnPartidas.UseTransparentBackground = true;
+            this.btnPartidas.Click += new System.EventHandler(this.btnPartidas_Click);
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.Animated = true;
+            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
+            this.btnClientes.BorderColor = System.Drawing.Color.Transparent;
+            this.btnClientes.BorderRadius = 20;
+            this.btnClientes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClientes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClientes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClientes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnClientes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Image = global::GestionCasinoAochengYe.Properties.Resources.group_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnClientes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnClientes.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClientes.Location = new System.Drawing.Point(8, 64);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(147, 58);
+            this.btnClientes.TabIndex = 7;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnClientes.UseTransparentBackground = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Red;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(910, 552);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnMaxi
             // 
             this.btnMaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaxi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaxi.Image = ((System.Drawing.Image)(resources.GetObject("btnMaxi.Image")));
-            this.btnMaxi.Location = new System.Drawing.Point(1006, 10);
+            this.btnMaxi.Location = new System.Drawing.Point(1006, 8);
             this.btnMaxi.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaxi.Name = "btnMaxi";
             this.btnMaxi.Size = new System.Drawing.Size(27, 24);
@@ -208,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1071, 587);
+            this.ClientSize = new System.Drawing.Size(1073, 588);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnConfig);
             this.Controls.Add(this.btnPartidas);
@@ -219,9 +272,9 @@
             this.Name = "Inicio";
             this.Text = "Inicio";
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBarra.ResumeLayout(false);
             this.panelBarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).EndInit();
@@ -234,15 +287,16 @@
 
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Panel panelBarra;
-        private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.Button btnConfig;
-        private System.Windows.Forms.Button btnPartidas;
-        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.Panel panelBarraTitulo;
         private System.Windows.Forms.PictureBox btnMaxi;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMin;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnClientes;
+        private Guna.UI2.WinForms.Guna2Button btnPartidas;
+        private Guna.UI2.WinForms.Guna2Button btnConfig;
+        private Guna.UI2.WinForms.Guna2Button btnCerrarSesion;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

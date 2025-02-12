@@ -101,8 +101,6 @@ namespace GestionCasinoAochengYe.Forms
                     }
                 }
             }
-
-            MessageBox.Show("No se encontró ningún resultado.", "Búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void dataGridViewPartidas_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -114,6 +112,11 @@ namespace GestionCasinoAochengYe.Forms
                 txtBoxIdNombre.Text = filaSeleccionada.Cells[0].Value?.ToString() ?? string.Empty;
 
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

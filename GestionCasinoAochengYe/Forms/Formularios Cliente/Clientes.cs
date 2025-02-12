@@ -131,8 +131,6 @@ namespace GestionCasinoAochengYe.Forms
                     }
                 }
             }
-
-            MessageBox.Show("No se encontró ningún resultado.", "Búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 

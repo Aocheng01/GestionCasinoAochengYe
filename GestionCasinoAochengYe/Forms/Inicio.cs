@@ -23,7 +23,7 @@ namespace GestionCasinoAochengYe.Forms
         public Inicio(bool mostrarConfig)
         {
             InitializeComponent();
-            btnConfig.Visible = mostrarConfig;
+            btnConfig.Enabled = mostrarConfig;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void AbrirFormEnPanel(object formhija)

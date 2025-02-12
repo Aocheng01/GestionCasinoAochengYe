@@ -28,37 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AñadirCliente));
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
-            this.txtBoxSaldo = new System.Windows.Forms.TextBox();
-            this.txtBoxTelefono = new System.Windows.Forms.TextBox();
-            this.txtBoxApellido = new System.Windows.Forms.TextBox();
-            this.txtBoxEmail = new System.Windows.Forms.TextBox();
-            this.txtBoxNombre = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.lblConfig = new System.Windows.Forms.Label();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.txtBoxSaldo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBoxTelefono = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblEditarPartida = new System.Windows.Forms.Label();
+            this.txtBoxApellido = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtBoxNombre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelBarraTitulo.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
-            this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.DimGray;
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(13)))), ((int)(((byte)(37)))));
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);
@@ -70,6 +72,35 @@
             this.panelBarraTitulo.Size = new System.Drawing.Size(390, 36);
             this.panelBarraTitulo.TabIndex = 19;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
+            this.panelContenedor.Controls.Add(this.btnCancelar);
+            this.panelContenedor.Controls.Add(this.btnGuardar);
+            this.panelContenedor.Controls.Add(this.txtBoxSaldo);
+            this.panelContenedor.Controls.Add(this.txtBoxTelefono);
+            this.panelContenedor.Controls.Add(this.txtBoxEmail);
+            this.panelContenedor.Controls.Add(this.lblEditarPartida);
+            this.panelContenedor.Controls.Add(this.txtBoxApellido);
+            this.panelContenedor.Controls.Add(this.label10);
+            this.panelContenedor.Controls.Add(this.txtBoxNombre);
+            this.panelContenedor.Controls.Add(this.label9);
+            this.panelContenedor.Controls.Add(this.label8);
+            this.panelContenedor.Controls.Add(this.label7);
+            this.panelContenedor.Controls.Add(this.label6);
+            this.panelContenedor.Controls.Add(this.panelBarraTitulo);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(390, 552);
+            this.panelContenedor.TabIndex = 6;
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 20;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // btnMaxi
             // 
@@ -128,143 +159,255 @@
             this.btnMin.TabStop = false;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
-            // txtBoxSaldo
-            // 
-            this.txtBoxSaldo.Location = new System.Drawing.Point(125, 345);
-            this.txtBoxSaldo.Name = "txtBoxSaldo";
-            this.txtBoxSaldo.Size = new System.Drawing.Size(227, 20);
-            this.txtBoxSaldo.TabIndex = 18;
-            // 
-            // txtBoxTelefono
-            // 
-            this.txtBoxTelefono.Location = new System.Drawing.Point(125, 285);
-            this.txtBoxTelefono.Name = "txtBoxTelefono";
-            this.txtBoxTelefono.Size = new System.Drawing.Size(227, 20);
-            this.txtBoxTelefono.TabIndex = 17;
-            // 
-            // txtBoxApellido
-            // 
-            this.txtBoxApellido.Location = new System.Drawing.Point(125, 174);
-            this.txtBoxApellido.Name = "txtBoxApellido";
-            this.txtBoxApellido.Size = new System.Drawing.Size(227, 20);
-            this.txtBoxApellido.TabIndex = 16;
-            // 
-            // txtBoxEmail
-            // 
-            this.txtBoxEmail.Location = new System.Drawing.Point(125, 234);
-            this.txtBoxEmail.Name = "txtBoxEmail";
-            this.txtBoxEmail.Size = new System.Drawing.Size(227, 20);
-            this.txtBoxEmail.TabIndex = 15;
-            // 
-            // txtBoxNombre
-            // 
-            this.txtBoxNombre.Location = new System.Drawing.Point(125, 113);
-            this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.Size = new System.Drawing.Size(227, 20);
-            this.txtBoxNombre.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 339);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 25);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Saldo";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 279);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 25);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Teléfono";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 25);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Apellidos";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 228);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 25);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "E-mail";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Nombre";
-            // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(194, 435);
+            this.btnCancelar.Animated = true;
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BorderRadius = 20;
+            this.btnCancelar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancelar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Image = global::GestionCasinoAochengYe.Properties.Resources.do_not_disturb_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnCancelar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCancelar.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCancelar.Location = new System.Drawing.Point(216, 461);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(158, 35);
-            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.Size = new System.Drawing.Size(162, 37);
+            this.btnCancelar.TabIndex = 59;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            this.btnCancelar.UseTransparentBackground = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(20, 435);
+            this.btnGuardar.Animated = true;
+            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BorderRadius = 20;
+            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Image = global::GestionCasinoAochengYe.Properties.Resources.save_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnGuardar.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnGuardar.Location = new System.Drawing.Point(13, 461);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(155, 35);
-            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.Size = new System.Drawing.Size(162, 37);
+            this.btnGuardar.TabIndex = 58;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseTransparentBackground = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // lblConfig
+            // txtBoxSaldo
             // 
-            this.lblConfig.AutoSize = true;
-            this.lblConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfig.Location = new System.Drawing.Point(15, 56);
-            this.lblConfig.Name = "lblConfig";
-            this.lblConfig.Size = new System.Drawing.Size(143, 25);
-            this.lblConfig.TabIndex = 0;
-            this.lblConfig.Text = "Añadir cliente";
+            this.txtBoxSaldo.Animated = true;
+            this.txtBoxSaldo.BackColor = System.Drawing.Color.Transparent;
+            this.txtBoxSaldo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.txtBoxSaldo.BorderRadius = 8;
+            this.txtBoxSaldo.BorderThickness = 2;
+            this.txtBoxSaldo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxSaldo.DefaultText = "";
+            this.txtBoxSaldo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxSaldo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxSaldo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxSaldo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxSaldo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtBoxSaldo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxSaldo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBoxSaldo.ForeColor = System.Drawing.Color.White;
+            this.txtBoxSaldo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxSaldo.Location = new System.Drawing.Point(114, 359);
+            this.txtBoxSaldo.Name = "txtBoxSaldo";
+            this.txtBoxSaldo.PasswordChar = '\0';
+            this.txtBoxSaldo.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.txtBoxSaldo.PlaceholderText = "";
+            this.txtBoxSaldo.SelectedText = "";
+            this.txtBoxSaldo.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxSaldo.TabIndex = 57;
             // 
-            // panelContenedor
+            // txtBoxTelefono
             // 
-            this.panelContenedor.Controls.Add(this.panelBarraTitulo);
-            this.panelContenedor.Controls.Add(this.txtBoxSaldo);
-            this.panelContenedor.Controls.Add(this.txtBoxTelefono);
-            this.panelContenedor.Controls.Add(this.txtBoxApellido);
-            this.panelContenedor.Controls.Add(this.txtBoxEmail);
-            this.panelContenedor.Controls.Add(this.txtBoxNombre);
-            this.panelContenedor.Controls.Add(this.label5);
-            this.panelContenedor.Controls.Add(this.label4);
-            this.panelContenedor.Controls.Add(this.label3);
-            this.panelContenedor.Controls.Add(this.label2);
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.btnCancelar);
-            this.panelContenedor.Controls.Add(this.btnGuardar);
-            this.panelContenedor.Controls.Add(this.lblConfig);
-            this.panelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(390, 552);
-            this.panelContenedor.TabIndex = 6;
+            this.txtBoxTelefono.Animated = true;
+            this.txtBoxTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.txtBoxTelefono.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.txtBoxTelefono.BorderRadius = 8;
+            this.txtBoxTelefono.BorderThickness = 2;
+            this.txtBoxTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxTelefono.DefaultText = "";
+            this.txtBoxTelefono.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxTelefono.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxTelefono.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxTelefono.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxTelefono.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtBoxTelefono.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxTelefono.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBoxTelefono.ForeColor = System.Drawing.Color.White;
+            this.txtBoxTelefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxTelefono.Location = new System.Drawing.Point(115, 302);
+            this.txtBoxTelefono.Name = "txtBoxTelefono";
+            this.txtBoxTelefono.PasswordChar = '\0';
+            this.txtBoxTelefono.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.txtBoxTelefono.PlaceholderText = "";
+            this.txtBoxTelefono.SelectedText = "";
+            this.txtBoxTelefono.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxTelefono.TabIndex = 56;
+            // 
+            // txtBoxEmail
+            // 
+            this.txtBoxEmail.Animated = true;
+            this.txtBoxEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtBoxEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.txtBoxEmail.BorderRadius = 8;
+            this.txtBoxEmail.BorderThickness = 2;
+            this.txtBoxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxEmail.DefaultText = "";
+            this.txtBoxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtBoxEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBoxEmail.ForeColor = System.Drawing.Color.White;
+            this.txtBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxEmail.Location = new System.Drawing.Point(115, 242);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.PasswordChar = '\0';
+            this.txtBoxEmail.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.txtBoxEmail.PlaceholderText = "";
+            this.txtBoxEmail.SelectedText = "";
+            this.txtBoxEmail.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxEmail.TabIndex = 51;
+            // 
+            // lblEditarPartida
+            // 
+            this.lblEditarPartida.AutoSize = true;
+            this.lblEditarPartida.BackColor = System.Drawing.Color.Transparent;
+            this.lblEditarPartida.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditarPartida.ForeColor = System.Drawing.Color.White;
+            this.lblEditarPartida.Location = new System.Drawing.Point(96, 54);
+            this.lblEditarPartida.Name = "lblEditarPartida";
+            this.lblEditarPartida.Size = new System.Drawing.Size(200, 37);
+            this.lblEditarPartida.TabIndex = 55;
+            this.lblEditarPartida.Text = "Añadir Cliente";
+            // 
+            // txtBoxApellido
+            // 
+            this.txtBoxApellido.Animated = true;
+            this.txtBoxApellido.BackColor = System.Drawing.Color.Transparent;
+            this.txtBoxApellido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.txtBoxApellido.BorderRadius = 8;
+            this.txtBoxApellido.BorderThickness = 2;
+            this.txtBoxApellido.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxApellido.DefaultText = "";
+            this.txtBoxApellido.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxApellido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxApellido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxApellido.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxApellido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtBoxApellido.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxApellido.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBoxApellido.ForeColor = System.Drawing.Color.White;
+            this.txtBoxApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxApellido.Location = new System.Drawing.Point(116, 185);
+            this.txtBoxApellido.Name = "txtBoxApellido";
+            this.txtBoxApellido.PasswordChar = '\0';
+            this.txtBoxApellido.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.txtBoxApellido.PlaceholderText = "";
+            this.txtBoxApellido.SelectedText = "";
+            this.txtBoxApellido.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxApellido.TabIndex = 49;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(16, 359);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 34);
+            this.label10.TabIndex = 54;
+            this.label10.Text = "Saldo";
+            // 
+            // txtBoxNombre
+            // 
+            this.txtBoxNombre.Animated = true;
+            this.txtBoxNombre.BackColor = System.Drawing.Color.Transparent;
+            this.txtBoxNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.txtBoxNombre.BorderRadius = 8;
+            this.txtBoxNombre.BorderThickness = 2;
+            this.txtBoxNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxNombre.DefaultText = "";
+            this.txtBoxNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxNombre.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtBoxNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBoxNombre.ForeColor = System.Drawing.Color.White;
+            this.txtBoxNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxNombre.Location = new System.Drawing.Point(116, 120);
+            this.txtBoxNombre.Name = "txtBoxNombre";
+            this.txtBoxNombre.PasswordChar = '\0';
+            this.txtBoxNombre.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.txtBoxNombre.PlaceholderText = "";
+            this.txtBoxNombre.SelectedText = "";
+            this.txtBoxNombre.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxNombre.TabIndex = 47;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(16, 302);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 25);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "Teléfono";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(16, 245);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 25);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "E-mail";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(16, 180);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 25);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Apellidos";
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(16, 120);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 25);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "Nombre";
             // 
             // AñadirCliente
             // 
@@ -276,12 +419,12 @@
             this.Name = "AñadirCliente";
             this.Text = "AñadirCliente";
             this.panelBarraTitulo.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
-            this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -293,19 +436,20 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.PictureBox btnMin;
-        private System.Windows.Forms.TextBox txtBoxSaldo;
-        private System.Windows.Forms.TextBox txtBoxTelefono;
-        private System.Windows.Forms.TextBox txtBoxApellido;
-        private System.Windows.Forms.TextBox txtBoxEmail;
-        private System.Windows.Forms.TextBox txtBoxNombre;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label lblConfig;
         private System.Windows.Forms.Panel panelContenedor;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2Button btnCancelar;
+        private Guna.UI2.WinForms.Guna2Button btnGuardar;
+        private Guna.UI2.WinForms.Guna2TextBox txtBoxSaldo;
+        private Guna.UI2.WinForms.Guna2TextBox txtBoxTelefono;
+        private Guna.UI2.WinForms.Guna2TextBox txtBoxEmail;
+        private System.Windows.Forms.Label lblEditarPartida;
+        private Guna.UI2.WinForms.Guna2TextBox txtBoxApellido;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txtBoxNombre;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }

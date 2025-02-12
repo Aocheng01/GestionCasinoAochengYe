@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -42,6 +43,7 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -65,6 +67,7 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(149)))), ((int)(((byte)(101)))));
             this.guna2PictureBox1.BorderRadius = 60;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
@@ -76,7 +79,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.guna2Panel1.BorderRadius = 33;
             this.guna2Panel1.BorderThickness = 5;
             this.guna2Panel1.Controls.Add(this.lblIniciarSesion);
@@ -93,7 +96,7 @@
             this.lblIniciarSesion.AutoSize = true;
             this.lblIniciarSesion.BackColor = System.Drawing.Color.Transparent;
             this.lblIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIniciarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.lblIniciarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(2)))), ((int)(((byte)(22)))));
             this.lblIniciarSesion.Location = new System.Drawing.Point(86, 75);
             this.lblIniciarSesion.Name = "lblIniciarSesion";
             this.lblIniciarSesion.Size = new System.Drawing.Size(196, 40);
@@ -104,14 +107,14 @@
             // 
             this.btnIniciarSesion.Animated = true;
             this.btnIniciarSesion.BackColor = System.Drawing.Color.Transparent;
-            this.btnIniciarSesion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.btnIniciarSesion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(2)))), ((int)(((byte)(22)))));
             this.btnIniciarSesion.BorderRadius = 10;
             this.btnIniciarSesion.BorderThickness = 2;
             this.btnIniciarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnIniciarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnIniciarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnIniciarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnIniciarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.btnIniciarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.btnIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
             this.btnIniciarSesion.Location = new System.Drawing.Point(41, 319);
@@ -125,7 +128,7 @@
             // 
             this.txtBoxUsuario.Animated = true;
             this.txtBoxUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.txtBoxUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.txtBoxUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.txtBoxUsuario.BorderRadius = 8;
             this.txtBoxUsuario.BorderThickness = 2;
             this.txtBoxUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -152,7 +155,7 @@
             // 
             this.txtBoxContraseña.Animated = true;
             this.txtBoxContraseña.BackColor = System.Drawing.Color.Transparent;
-            this.txtBoxContraseña.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.txtBoxContraseña.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.txtBoxContraseña.BorderRadius = 8;
             this.txtBoxContraseña.BorderThickness = 2;
             this.txtBoxContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -164,7 +167,7 @@
             this.txtBoxContraseña.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.txtBoxContraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxContraseña.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.txtBoxContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.txtBoxContraseña.ForeColor = System.Drawing.Color.White;
             this.txtBoxContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxContraseña.IconRightOffset = new System.Drawing.Point(8, 0);
             this.txtBoxContraseña.Location = new System.Drawing.Point(41, 230);
@@ -189,7 +192,7 @@
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);
@@ -206,7 +209,7 @@
             this.btnMaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaxi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaxi.Image = ((System.Drawing.Image)(resources.GetObject("btnMaxi.Image")));
-            this.btnMaxi.Location = new System.Drawing.Point(1006, 10);
+            this.btnMaxi.Location = new System.Drawing.Point(1006, 8);
             this.btnMaxi.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaxi.Name = "btnMaxi";
             this.btnMaxi.Size = new System.Drawing.Size(27, 24);
@@ -254,6 +257,13 @@
             this.btnMin.TabIndex = 4;
             this.btnMin.TabStop = false;
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 50;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,6 +302,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtBoxContraseña;
         private System.Windows.Forms.Label lblIniciarSesion;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }
 
