@@ -73,20 +73,23 @@
             // 
             // btnCerrarSesion
             // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Maroon;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(9, 514);
+            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Menu;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(12, 514);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(89, 61);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(135, 61);
             this.btnCerrarSesion.TabIndex = 6;
             this.btnCerrarSesion.Text = "Cerrar sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnClientes
             // 
-            this.btnClientes.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(9, 85);
+            this.btnClientes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnClientes.Location = new System.Drawing.Point(12, 88);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(135, 70);
             this.btnClientes.TabIndex = 2;
@@ -96,24 +99,28 @@
             // 
             // btnConfig
             // 
+            this.btnConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
             this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfig.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnConfig.Location = new System.Drawing.Point(12, 315);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(143, 68);
             this.btnConfig.TabIndex = 5;
             this.btnConfig.Text = "Configuración";
-            this.btnConfig.UseVisualStyleBackColor = true;
+            this.btnConfig.UseVisualStyleBackColor = false;
             this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
             // btnPartidas
             // 
+            this.btnPartidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(35)))), ((int)(((byte)(83)))));
             this.btnPartidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPartidas.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPartidas.Location = new System.Drawing.Point(9, 194);
             this.btnPartidas.Name = "btnPartidas";
             this.btnPartidas.Size = new System.Drawing.Size(143, 68);
             this.btnPartidas.TabIndex = 3;
             this.btnPartidas.Text = "Partidas";
-            this.btnPartidas.UseVisualStyleBackColor = true;
+            this.btnPartidas.UseVisualStyleBackColor = false;
             this.btnPartidas.Click += new System.EventHandler(this.btnPartidas_Click);
             // 
             // panelBarra
