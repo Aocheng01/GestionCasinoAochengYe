@@ -31,6 +31,7 @@ namespace GestionCasinoAochengYe.Forms
 
         public EditarPartidas()
         {
+            this.StartPosition = FormStartPosition.CenterParent;
             InitializeComponent();
         }
 

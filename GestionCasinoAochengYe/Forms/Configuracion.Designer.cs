@@ -40,6 +40,7 @@
             // 
             // panelContenedor
             // 
+            this.panelContenedor.BackColor = System.Drawing.Color.Turquoise;
             this.panelContenedor.Controls.Add(this.btnAñadir);
             this.panelContenedor.Controls.Add(this.btnEliminar);
             this.panelContenedor.Controls.Add(this.btnEditar);

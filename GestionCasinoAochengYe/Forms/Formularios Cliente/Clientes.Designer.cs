@@ -43,6 +43,7 @@
             // 
             // panelContenedor
             // 
+            this.panelContenedor.BackColor = System.Drawing.Color.DarkRed;
             this.panelContenedor.Controls.Add(this.btnBuscar);
             this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.txtBoxIdNombre);
@@ -71,6 +72,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(146, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 16);
@@ -132,6 +134,7 @@
             // 
             this.lblConfig.AutoSize = true;
             this.lblConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfig.ForeColor = System.Drawing.SystemColors.Control;
             this.lblConfig.Location = new System.Drawing.Point(12, 6);
             this.lblConfig.Name = "lblConfig";
             this.lblConfig.Size = new System.Drawing.Size(90, 25);

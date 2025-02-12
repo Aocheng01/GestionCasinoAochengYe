@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarPartidas));
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
@@ -44,8 +46,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
             this.panelContenedor.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
@@ -73,9 +73,26 @@
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 9;
             // 
+            // dateTimePickerFecha
+            // 
+            this.dateTimePickerFecha.Location = new System.Drawing.Point(12, 222);
+            this.dateTimePickerFecha.Name = "dateTimePickerFecha";
+            this.dateTimePickerFecha.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerFecha.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 194);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Fecha";
+            // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.White;
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.DimGray;
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);
@@ -227,23 +244,6 @@
             this.lblConfig.Size = new System.Drawing.Size(140, 25);
             this.lblConfig.TabIndex = 0;
             this.lblConfig.Text = "Editar partida";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 194);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 25);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Fecha";
-            // 
-            // dateTimePickerFecha
-            // 
-            this.dateTimePickerFecha.Location = new System.Drawing.Point(12, 222);
-            this.dateTimePickerFecha.Name = "dateTimePickerFecha";
-            this.dateTimePickerFecha.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerFecha.TabIndex = 24;
             // 
             // EditarPartidas
             // 

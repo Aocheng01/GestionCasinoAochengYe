@@ -79,7 +79,7 @@
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.White;
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.DimGray;
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);

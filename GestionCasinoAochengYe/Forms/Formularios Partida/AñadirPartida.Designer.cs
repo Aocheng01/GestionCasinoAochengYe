@@ -34,18 +34,20 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.comboBoxIdCliente = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBoxJuego = new System.Windows.Forms.TextBox();
+            this.txtBoxGanancia = new System.Windows.Forms.TextBox();
+            this.txtBoxApuesta = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -56,7 +58,7 @@
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.White;
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.DimGray;
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);
@@ -67,6 +69,7 @@
             this.panelBarraTitulo.Name = "panelBarraTitulo";
             this.panelBarraTitulo.Size = new System.Drawing.Size(390, 36);
             this.panelBarraTitulo.TabIndex = 20;
+            this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
             // btnMaxi
             // 
@@ -125,73 +128,15 @@
             this.btnMin.TabStop = false;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(12, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 20);
-            this.textBox2.TabIndex = 19;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(12, 382);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(227, 20);
-            this.textBox5.TabIndex = 18;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(12, 307);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(227, 20);
-            this.textBox4.TabIndex = 17;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
-            this.textBox1.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 341);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 25);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Ganancia";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 279);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Apuesta";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 215);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Juego";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(7, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 25);
+            this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Nombre del cliente";
+            this.label1.Text = "Id del cliente";
             // 
             // btnCancelar
             // 
@@ -213,6 +158,7 @@
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // lblConfig
             // 
@@ -226,14 +172,16 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Controls.Add(this.panelBarraTitulo);
-            this.panelContenedor.Controls.Add(this.textBox2);
-            this.panelContenedor.Controls.Add(this.textBox5);
-            this.panelContenedor.Controls.Add(this.textBox4);
-            this.panelContenedor.Controls.Add(this.textBox1);
+            this.panelContenedor.Controls.Add(this.comboBoxIdCliente);
+            this.panelContenedor.Controls.Add(this.dateTimePickerFecha);
+            this.panelContenedor.Controls.Add(this.label2);
+            this.panelContenedor.Controls.Add(this.txtBoxJuego);
+            this.panelContenedor.Controls.Add(this.txtBoxGanancia);
+            this.panelContenedor.Controls.Add(this.txtBoxApuesta);
             this.panelContenedor.Controls.Add(this.label5);
             this.panelContenedor.Controls.Add(this.label4);
             this.panelContenedor.Controls.Add(this.label3);
+            this.panelContenedor.Controls.Add(this.panelBarraTitulo);
             this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.btnCancelar);
             this.panelContenedor.Controls.Add(this.btnGuardar);
@@ -242,6 +190,82 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 10;
+            // 
+            // comboBoxIdCliente
+            // 
+            this.comboBoxIdCliente.FormattingEnabled = true;
+            this.comboBoxIdCliente.Location = new System.Drawing.Point(12, 179);
+            this.comboBoxIdCliente.Name = "comboBoxIdCliente";
+            this.comboBoxIdCliente.Size = new System.Drawing.Size(158, 21);
+            this.comboBoxIdCliente.TabIndex = 33;
+            // 
+            // dateTimePickerFecha
+            // 
+            this.dateTimePickerFecha.Location = new System.Drawing.Point(12, 239);
+            this.dateTimePickerFecha.Name = "dateTimePickerFecha";
+            this.dateTimePickerFecha.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerFecha.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Fecha";
+            // 
+            // txtBoxJuego
+            // 
+            this.txtBoxJuego.Location = new System.Drawing.Point(12, 427);
+            this.txtBoxJuego.Name = "txtBoxJuego";
+            this.txtBoxJuego.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxJuego.TabIndex = 30;
+            // 
+            // txtBoxGanancia
+            // 
+            this.txtBoxGanancia.Location = new System.Drawing.Point(12, 367);
+            this.txtBoxGanancia.Name = "txtBoxGanancia";
+            this.txtBoxGanancia.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxGanancia.TabIndex = 29;
+            // 
+            // txtBoxApuesta
+            // 
+            this.txtBoxApuesta.Location = new System.Drawing.Point(12, 302);
+            this.txtBoxApuesta.Name = "txtBoxApuesta";
+            this.txtBoxApuesta.Size = new System.Drawing.Size(227, 20);
+            this.txtBoxApuesta.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(7, 339);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Ganancia";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(7, 274);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Apuesta";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(7, 399);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Juego";
             // 
             // AñadirPartida
             // 
@@ -270,17 +294,19 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.PictureBox btnMin;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblConfig;
         private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFecha;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBoxJuego;
+        private System.Windows.Forms.TextBox txtBoxGanancia;
+        private System.Windows.Forms.TextBox txtBoxApuesta;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBoxIdCliente;
     }
 }

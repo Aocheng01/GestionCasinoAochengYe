@@ -40,16 +40,20 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelContenedor.SuspendLayout();
             this.panelBarra.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
             // 
+            this.panelContenedor.Controls.Add(this.pictureBox1);
             this.panelContenedor.Location = new System.Drawing.Point(161, 36);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(910, 552);
@@ -68,13 +72,14 @@
             // 
             // btnClientes
             // 
+            this.btnClientes.BackColor = System.Drawing.Color.SpringGreen;
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(12, 68);
+            this.btnClientes.Location = new System.Drawing.Point(9, 85);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(143, 67);
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.UseVisualStyleBackColor = false;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnConfig
@@ -109,7 +114,7 @@
             // 
             // panelBarraTitulo
             // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.White;
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Controls.Add(this.btnRes);
@@ -179,10 +184,23 @@
             this.btnMin.TabStop = false;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Red;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(910, 552);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1071, 587);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnConfig);
@@ -193,12 +211,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
             this.Text = "Inicio";
+            this.panelContenedor.ResumeLayout(false);
             this.panelBarra.ResumeLayout(false);
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,5 +236,6 @@
         private System.Windows.Forms.PictureBox btnMaxi;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
