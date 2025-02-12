@@ -34,6 +34,13 @@ namespace GestionCasinoAochengYe.dto
             this.fechaCreacion = fechaCreacion;
         }
 
+        public Usuario(string nombre_usuario, string contraseña, bool esAdministrador)
+        {
+            this.nombre_usuario = nombre_usuario;
+            this.contraseña = contraseña;
+            this.esAdministrador = esAdministrador;
+        }
+
 
 
     }

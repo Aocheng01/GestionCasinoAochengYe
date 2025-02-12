@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using GestionCasinoAochengYe.dao;
 using GestionCasinoAochengYe.dto;
 using GestionCasinoAochengYe.Forms.Formularios_Usuarios;
+using System.Runtime.InteropServices;
 
 namespace GestionCasinoAochengYe.Forms
 {
@@ -38,6 +39,45 @@ namespace GestionCasinoAochengYe.Forms
             Form añadirUsuario = new AñadirUsuario();
             añadirUsuario.ShowDialog();
             actualizarTabla();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            string id = dataGridViewUsuarios.CurrentRow.Cells[0].Value.ToString();
+            string nombre = dataGridViewUsuarios.CurrentRow.Cells[1].Value.ToString();
+            string contraseña = dataGridViewUsuarios.CurrentRow.Cells[2].Value.ToString();
+            bool admin = dataGridViewUsuarios.CurrentRow.Cells[3].Value.ToString() == "True";
+
+            EditarUsuario editarUsuario = new EditarUsuario();
+            editarUsuario.InicializarFormulario(id, nombre, contraseña, admin);
+
+            editarUsuario.ShowDialog();
+            actualizarTabla();
+            
+
+
+        }
+
+        private void BuscarFilaEnDataGridView(string textoBuscado)
+        {
+            // Limpiar selección previa
+            dataGridViewUsuarios.ClearSelection();
+
+            foreach (DataGridViewRow row in dataGridViewUsuarios.Rows)
+            {
+                if (row.Cells[0].Value != null) // Evitar errores si la celda está vacía
+                {
+                    if (row.Cells[0].Value.ToString().Equals(textoBuscado, StringComparison.OrdinalIgnoreCase))
+                    {
+                        // Seleccionar la fila y hacer que se vea como si se hizo clic en ella
+                        row.Selected = true;
+                        dataGridViewUsuarios.FirstDisplayedScrollingRowIndex = row.Index;
+                        dataGridViewUsuarios.CurrentCell = row.Cells[0]; // Establecer la celda actual para la fila seleccionada
+
+                        return;
+                    }
+                }
+            }
         }
 
         private void dataGridViewUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
