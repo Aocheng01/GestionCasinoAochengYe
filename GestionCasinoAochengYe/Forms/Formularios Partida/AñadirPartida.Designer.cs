@@ -39,7 +39,6 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.comboBoxIdCliente = new System.Windows.Forms.ComboBox();
             this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxJuego = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxIdCliente = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -132,7 +132,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 151);
+            this.label1.Location = new System.Drawing.Point(7, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 9;
@@ -190,14 +190,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 10;
-            // 
-            // comboBoxIdCliente
-            // 
-            this.comboBoxIdCliente.FormattingEnabled = true;
-            this.comboBoxIdCliente.Location = new System.Drawing.Point(12, 179);
-            this.comboBoxIdCliente.Name = "comboBoxIdCliente";
-            this.comboBoxIdCliente.Size = new System.Drawing.Size(158, 21);
-            this.comboBoxIdCliente.TabIndex = 33;
             // 
             // dateTimePickerFecha
             // 
@@ -267,6 +259,24 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Juego";
             // 
+            // comboBoxIdCliente
+            // 
+            this.comboBoxIdCliente.AutoRoundedCorners = true;
+            this.comboBoxIdCliente.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxIdCliente.BorderColor = System.Drawing.Color.DimGray;
+            this.comboBoxIdCliente.BorderRadius = 17;
+            this.comboBoxIdCliente.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxIdCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxIdCliente.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxIdCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxIdCliente.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxIdCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxIdCliente.ItemHeight = 30;
+            this.comboBoxIdCliente.Location = new System.Drawing.Point(12, 166);
+            this.comboBoxIdCliente.Name = "comboBoxIdCliente";
+            this.comboBoxIdCliente.Size = new System.Drawing.Size(155, 36);
+            this.comboBoxIdCliente.TabIndex = 34;
+            // 
             // AñadirPartida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +317,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBoxIdCliente;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxIdCliente;
     }
 }

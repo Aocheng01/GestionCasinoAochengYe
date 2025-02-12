@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarPartidas));
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
@@ -46,6 +45,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblConfig = new System.Windows.Forms.Label();
+            this.dateTimePickerFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panelContenedor.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
@@ -73,18 +73,11 @@
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 9;
             // 
-            // dateTimePickerFecha
-            // 
-            this.dateTimePickerFecha.Location = new System.Drawing.Point(12, 222);
-            this.dateTimePickerFecha.Name = "dateTimePickerFecha";
-            this.dateTimePickerFecha.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerFecha.TabIndex = 24;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 194);
+            this.label2.Location = new System.Drawing.Point(7, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 25);
             this.label2.TabIndex = 21;
@@ -245,6 +238,20 @@
             this.lblConfig.TabIndex = 0;
             this.lblConfig.Text = "Editar partida";
             // 
+            // dateTimePickerFecha
+            // 
+            this.dateTimePickerFecha.Checked = true;
+            this.dateTimePickerFecha.FillColor = System.Drawing.Color.White;
+            this.dateTimePickerFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateTimePickerFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateTimePickerFecha.Location = new System.Drawing.Point(12, 212);
+            this.dateTimePickerFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateTimePickerFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateTimePickerFecha.Name = "dateTimePickerFecha";
+            this.dateTimePickerFecha.Size = new System.Drawing.Size(260, 33);
+            this.dateTimePickerFecha.TabIndex = 25;
+            this.dateTimePickerFecha.Value = new System.DateTime(2025, 2, 12, 1, 53, 56, 826);
+            // 
             // EditarPartidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +290,6 @@
         private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.PictureBox btnMin;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePickerFecha;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateTimePickerFecha;
     }
 }

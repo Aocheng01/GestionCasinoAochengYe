@@ -49,7 +49,7 @@ namespace GestionCasinoAochengYe
             MessageBox.Show("Usuario creado exitosamente.");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             DaoUsuario daoUsuario = new DaoUsuario();
             List<Usuario> listaUsuarios = daoUsuario.obtenerUsuarios();
@@ -81,7 +81,7 @@ namespace GestionCasinoAochengYe
             {
                 MessageBox.Show("Bienvenido administrador");
                 iniciarSesion?.Invoke(this, EventArgs.Empty);
-                
+
                 Inicio inicio = new Inicio(true); // Muestra btnConfig
                 inicio.Show();
                 this.Hide();
