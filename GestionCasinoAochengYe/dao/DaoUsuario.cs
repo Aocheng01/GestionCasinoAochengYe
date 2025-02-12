@@ -124,5 +124,24 @@ namespace GestionCasinoAochengYe.dao
                 MessageBox.Show("Ocurrió un error al eliminar el usuario.");
             }
         }
+
+        public bool ExisteUsuario(string nombreUsuario)
+        {
+            try
+            {
+                string query = "SELECT COUNT(*) FROM usuarios WHERE nombre_usuario = @nombre_usuario";
+                Conexion objetoConexion = new Conexion();
+                MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
+                mySqlCommand.Parameters.AddWithValue("@nombre_usuario", nombreUsuario);
+                int count = Convert.ToInt32(mySqlCommand.ExecuteScalar());
+                objetoConexion.cerrarConexion();
+                return count > 0;
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Ocurrió un error al verificar la existencia del usuario.");
+                return false;
+            }
+        }
     }
 }

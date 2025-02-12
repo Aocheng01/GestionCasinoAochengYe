@@ -47,24 +47,14 @@ namespace GestionCasinoAochengYe.Forms.Partida
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnMaxi_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaxi.Visible = false;
-            btnRes.Visible = true;
-        }
+
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnRes_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRes.Visible = false;
-            btnMaxi.Visible = true;
-        }
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

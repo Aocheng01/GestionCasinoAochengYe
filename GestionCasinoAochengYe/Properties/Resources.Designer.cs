@@ -73,6 +73,16 @@ namespace GestionCasinoAochengYe.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap admin_panel_settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 {
+            get {
+                object obj = ResourceManager.GetObject("admin_panel_settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap build_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 {
             get {
                 object obj = ResourceManager.GetObject("build_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24", resourceCulture);

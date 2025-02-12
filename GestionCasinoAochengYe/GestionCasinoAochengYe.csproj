@@ -226,6 +226,12 @@
     <Compile Include="Forms\Formularios Cliente\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Formularios Usuarios\AñadirUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formularios Usuarios\AñadirUsuario.Designer.cs">
+      <DependentUpon>AñadirUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Formularios Usuarios\Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +256,12 @@
     <Compile Include="Forms\Formularios Partida\EditarPartidas.Designer.cs">
       <DependentUpon>EditarPartidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Formularios Usuarios\EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formularios Usuarios\EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +285,9 @@
     <EmbeddedResource Include="Forms\Formularios Cliente\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formularios Usuarios\AñadirUsuario.resx">
+      <DependentUpon>AñadirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Formularios Usuarios\Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Formularios Partida\EditarPartidas.resx">
       <DependentUpon>EditarPartidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formularios Usuarios\EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
@@ -356,6 +374,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\save_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_panel_settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

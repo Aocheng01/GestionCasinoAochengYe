@@ -117,19 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnMaxi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAJ9JREFUaEPt1jEKAwEQAsD8/9NJb7PIFHcBByxX2/18Zmbe6lumlfdXallwpZX3
-        V2pZcKWV91dqWXCllfdXalyAeJ8LEO9zAeJ9LkC8zwWI97kA8T4XIN7nAvT0/szMzMxfe/qZ4n0uQLzP
-        BYj3uQDxPhcg3ucCxPtcgHifCxDvZ8GVVt5fqWXBlVbeX6llwZVW3l+pZcGVVt5fmZl5oR/56j7QOF3j
-        YwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="btnCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -144,17 +132,6 @@
         bQfenq6otaawbo5mHsP/MLCxsfHNF8upkxG3txFKAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnRes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAR9JREFUeF7tzjEKA0AMA8H8/9NJbyNYxAml8IA7wfrzOeecc84555Xvn1zNfKR1
-        NfOR1tXMR1pX03qk1V1aj7S6S+uRVndpPdLqLq1HWt2l9Ui8OwOtU+jONgOtU+jONgOtU+jONgOtU+jO
-        Fg8ItEt3tnhAoF26s8UDAu3SnS0eEGiX7mzxgEC7dGeLBwTapTtbPCDQLt3Z4gGBdunOFg8ItEt3tnhA
-        oF26s8UDAu3SnS0eEGiX7mzxgEC7dGeLBwTapTtbPCDQLt3Z4gGBdunOFg8Is0vvuXhAmF16z8UDwuzS
-        ey4eEGaX3nPxgNDqLq1HWt2l9Uiru7QeaXWX1iOt7tJ6pNVd5iOtq5mPtK5mPtK6mvlI684555xzznng
-        B8BkDR7UCs/jAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnMin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -163,4 +140,7 @@
         J8pC5E2VB2tLeszNH81LkiRJknRHH/5FcEZuc1CuAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

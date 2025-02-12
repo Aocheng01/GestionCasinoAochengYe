@@ -60,19 +60,8 @@ namespace GestionCasinoAochengYe.Forms
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnRes_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRes.Visible = false;
-            btnMaxi.Visible = true;
-        }
 
-        private void btnMaxi_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaxi.Visible = false;
-            btnRes.Visible = true;
-        }
+
 
         private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {

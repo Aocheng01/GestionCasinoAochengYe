@@ -31,12 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AñadirCliente));
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.txtBoxSaldo = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,20 +47,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panelBarraTitulo.SuspendLayout();
-            this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
             // 
             this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(13)))), ((int)(((byte)(37)))));
-            this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.panelBarraTitulo.Controls.Add(this.btnRes);
             this.panelBarraTitulo.Controls.Add(this.btnMin);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
@@ -72,6 +66,34 @@
             this.panelBarraTitulo.Size = new System.Drawing.Size(390, 36);
             this.panelBarraTitulo.TabIndex = 19;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(356, 8);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(23, 24);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMin
+            // 
+            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
+            this.btnMin.Location = new System.Drawing.Point(326, 8);
+            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(26, 24);
+            this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMin.TabIndex = 4;
+            this.btnMin.TabStop = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // panelContenedor
             // 
@@ -94,70 +116,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 6;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.BorderRadius = 20;
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // btnMaxi
-            // 
-            this.btnMaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaxi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaxi.Image = ((System.Drawing.Image)(resources.GetObject("btnMaxi.Image")));
-            this.btnMaxi.Location = new System.Drawing.Point(325, 8);
-            this.btnMaxi.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMaxi.Name = "btnMaxi";
-            this.btnMaxi.Size = new System.Drawing.Size(27, 24);
-            this.btnMaxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaxi.TabIndex = 5;
-            this.btnMaxi.TabStop = false;
-            this.btnMaxi.Click += new System.EventHandler(this.btnMaxi_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(356, 8);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 24);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 3;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnRes
-            // 
-            this.btnRes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRes.Image = ((System.Drawing.Image)(resources.GetObject("btnRes.Image")));
-            this.btnRes.Location = new System.Drawing.Point(325, 8);
-            this.btnRes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRes.Name = "btnRes";
-            this.btnRes.Size = new System.Drawing.Size(27, 24);
-            this.btnRes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRes.TabIndex = 4;
-            this.btnRes.TabStop = false;
-            this.btnRes.Visible = false;
-            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
-            // 
-            // btnMin
-            // 
-            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
-            this.btnMin.Location = new System.Drawing.Point(295, 8);
-            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(26, 24);
-            this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMin.TabIndex = 4;
-            this.btnMin.TabStop = false;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnCancelar
             // 
@@ -409,6 +367,13 @@
             this.label6.TabIndex = 48;
             this.label6.Text = "Nombre";
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 20;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // AñadirCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,12 +384,10 @@
             this.Name = "AñadirCliente";
             this.Text = "AñadirCliente";
             this.panelBarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -432,9 +395,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelBarraTitulo;
-        private System.Windows.Forms.PictureBox btnMaxi;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.PictureBox btnMin;
         private System.Windows.Forms.Panel panelContenedor;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
