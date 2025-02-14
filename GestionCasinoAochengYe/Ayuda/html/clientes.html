@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes - Casino</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3);
+        }
+
+        h1 {
+            color: #e60000;
+        }
+
+        p {
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            max-width: 100%;
+            background-color: #444;
+            border-radius: 10px;
+            display: inline-block; /* Permite que el contenedor se adapte a la imagen */
+            overflow: hidden;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .image-placeholder img {
+                width: 100%;
+                height: auto; /* Mantiene la proporción de la imagen */
+                border-radius: 10px;
+                display: block;
+            }
+
+        .button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px;
+            background: #e60000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+            .button:hover {
+                background: #b30000;
+                transform: scale(1.05);
+            }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestión de Clientes</h1>
+
+        <div class="image-placeholder">
+            <img src="../imagen/clientes.png" alt="Clientes">
+        </div>
+
+        <p>En esta sección puedes gestionar la información de los clientes del casino.</p>
+        <p>Puedes buscar un cliente por <strong>ID o Nombre</strong> usando la barra de búsqueda.</p>
+
+        <h2>📌 Funciones disponibles:</h2>
+        <ul style="text-align: left; color: #ccc; font-size: 16px;">
+            <li>🔍 <strong>Buscar Cliente:</strong> Introduce el ID o nombre y encuentra su información.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/buscarCliente.jpg" alt="Buscar Cliente">
+            </div>
+            <li>➕ <strong>Añadir Cliente:</strong> Haz clic en "Añadir" y aparecerá una ventana para registrar uno nuevo.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/añadirCliente.png" alt="Añadir Cliente">
+            </div>
+            <li>✏ <strong>Editar Cliente:</strong> Selecciona un cliente de la lista y haz clic en "Editar" para modificar su información.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/editarCliente.png" alt="Editar Cliente">
+            </div>
+            <li>🗑 <strong>Eliminar Cliente:</strong> Selecciona un cliente y haz clic en "Eliminar" para quitarlo del sistema.</li>
+        </ul>
+
+        <a href="index.html" class="button">⬅ Volver a Inicio</a>
+    </div>
+
+</body>
+</html>

@@ -40,7 +40,7 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            InicioSesion form1 = new InicioSesion();
             form1.Show();
             this.Close();
 
@@ -88,6 +88,11 @@ namespace GestionCasinoAochengYe.Forms
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnInformes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Formulario_Informe.FrmInformeDinamico());
         }
     }
 }

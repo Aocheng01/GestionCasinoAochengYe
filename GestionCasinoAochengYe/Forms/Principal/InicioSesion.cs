@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 
 namespace GestionCasinoAochengYe
 {
-    public partial class Form1 : Form
+    public partial class InicioSesion : Form
     {
         public event EventHandler iniciarSesion;
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -18,7 +18,7 @@ namespace GestionCasinoAochengYe
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int
         wParam, int lParam);
-        public Form1()
+        public InicioSesion()
         {
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();

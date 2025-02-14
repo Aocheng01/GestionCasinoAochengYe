@@ -35,6 +35,8 @@
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btnAyuda = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInformes = new Guna.UI2.WinForms.Guna2Button();
             this.btnConfig = new Guna.UI2.WinForms.Guna2Button();
             this.btnPartidas = new Guna.UI2.WinForms.Guna2Button();
             this.btnClientes = new Guna.UI2.WinForms.Guna2Button();
@@ -97,7 +99,7 @@
             this.btnCerrarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(8, 517);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(3, 518);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(147, 58);
             this.btnCerrarSesion.TabIndex = 10;
@@ -111,6 +113,55 @@
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // btnAyuda
+            // 
+            this.btnAyuda.Animated = true;
+            this.btnAyuda.BackColor = System.Drawing.Color.Transparent;
+            this.btnAyuda.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAyuda.BorderRadius = 20;
+            this.btnAyuda.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAyuda.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAyuda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAyuda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAyuda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnAyuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAyuda.ForeColor = System.Drawing.Color.White;
+            this.btnAyuda.Image = global::GestionCasinoAochengYe.Properties.Resources.info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnAyuda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAyuda.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAyuda.Location = new System.Drawing.Point(3, 293);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(147, 58);
+            this.btnAyuda.TabIndex = 12;
+            this.btnAyuda.Text = "Ayuda";
+            this.btnAyuda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnAyuda.UseTransparentBackground = true;
+            // 
+            // btnInformes
+            // 
+            this.btnInformes.Animated = true;
+            this.btnInformes.BackColor = System.Drawing.Color.Transparent;
+            this.btnInformes.BorderColor = System.Drawing.Color.Transparent;
+            this.btnInformes.BorderRadius = 20;
+            this.btnInformes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInformes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInformes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnInformes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnInformes.ForeColor = System.Drawing.Color.White;
+            this.btnInformes.Image = global::GestionCasinoAochengYe.Properties.Resources.lab_profile_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnInformes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInformes.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnInformes.Location = new System.Drawing.Point(3, 219);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Size = new System.Drawing.Size(147, 58);
+            this.btnInformes.TabIndex = 11;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnInformes.UseTransparentBackground = true;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // btnConfig
             // 
@@ -128,7 +179,7 @@
             this.btnConfig.Image = global::GestionCasinoAochengYe.Properties.Resources.build_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
             this.btnConfig.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnConfig.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnConfig.Location = new System.Drawing.Point(8, 249);
+            this.btnConfig.Location = new System.Drawing.Point(3, 454);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(147, 58);
             this.btnConfig.TabIndex = 9;
@@ -153,7 +204,7 @@
             this.btnPartidas.Image = global::GestionCasinoAochengYe.Properties.Resources.poker_chip_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
             this.btnPartidas.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPartidas.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPartidas.Location = new System.Drawing.Point(8, 153);
+            this.btnPartidas.Location = new System.Drawing.Point(3, 144);
             this.btnPartidas.Name = "btnPartidas";
             this.btnPartidas.Size = new System.Drawing.Size(147, 58);
             this.btnPartidas.TabIndex = 8;
@@ -178,7 +229,7 @@
             this.btnClientes.Image = global::GestionCasinoAochengYe.Properties.Resources.group_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
             this.btnClientes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClientes.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClientes.Location = new System.Drawing.Point(8, 64);
+            this.btnClientes.Location = new System.Drawing.Point(3, 71);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(147, 58);
             this.btnClientes.TabIndex = 7;
@@ -262,6 +313,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(1073, 588);
+            this.Controls.Add(this.btnAyuda);
+            this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnConfig);
             this.Controls.Add(this.btnPartidas);
@@ -298,5 +351,7 @@
         private Guna.UI2.WinForms.Guna2Button btnConfig;
         private Guna.UI2.WinForms.Guna2Button btnCerrarSesion;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2Button btnAyuda;
+        private Guna.UI2.WinForms.Guna2Button btnInformes;
     }
 }

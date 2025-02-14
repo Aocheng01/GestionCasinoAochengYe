@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Partidas - Casino</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3);
+        }
+
+        h1 {
+            color: #e60000;
+        }
+
+        p {
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            max-width: 100%;
+            background-color: #444;
+            border-radius: 10px;
+            display: inline-block; /* Permite que el contenedor se adapte a la imagen */
+            overflow: hidden;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .image-placeholder img {
+                width: 100%;
+                height: auto; /* Mantiene la proporción de la imagen */
+                border-radius: 10px;
+                display: block;
+            }
+
+        .button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px;
+            background: #e60000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+            .button:hover {
+                background: #b30000;
+                transform: scale(1.05);
+            }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestión de Partidas</h1>
+
+        <div class="image-placeholder">
+            <img src="../imagen/partidas.png" alt="Partidas">
+        </div>
+
+        <p>En esta sección puedes gestionar la información de las partidas en el casino.</p>
+        <p>Puedes buscar una partida solo por <strong>ID</strong> usando la barra de búsqueda.</p>
+
+        <h2>📌 Funciones disponibles:</h2>
+        <ul style="text-align: left; color: #ccc; font-size: 16px;">
+            <li>🔍 <strong>Buscar Partida:</strong> Introduce el ID y encuentra su información.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/buscarPartida.jpg" alt="Buscar Partida">
+            </div>
+            <li>➕ <strong>Añadir Partida:</strong> Haz clic en "Añadir" y aparecerá una ventana para registrar una nueva.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/anadirPartida.png" alt="Añadir Partida">
+            </div>
+            <li>✏ <strong>Editar Partida:</strong> Selecciona una partida de la lista y haz clic en "Editar" para modificar su información.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/editarPartida.png" alt="Editar Partida">
+            </div>
+            <li>🗑 <strong>Eliminar Partida:</strong> Selecciona una partida y haz clic en "Eliminar" para quitarla del sistema.</li>
+        </ul>
+
+        <a href="index.html" class="button">⬅ Volver a Inicio</a>
+    </div>
+
+</body>
+</html>

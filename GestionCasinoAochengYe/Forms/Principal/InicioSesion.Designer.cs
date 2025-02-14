@@ -1,6 +1,6 @@
 ﻿namespace GestionCasinoAochengYe
 {
-    partial class Form1
+    partial class InicioSesion
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
