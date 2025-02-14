@@ -50,10 +50,6 @@ namespace GestionCasinoAochengYe.Forms
         {
             AbrirFormEnPanel(new Clientes());
         }
-
-
-
-
         private void btnPartidas_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Partidas());

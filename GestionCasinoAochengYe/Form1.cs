@@ -28,27 +28,6 @@ namespace GestionCasinoAochengYe
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        private void btnCrearUsuario_Click(object sender, EventArgs e)
-        {
-            string username = txtBoxUsuario.Text;
-            string password = txtBoxContraseña.Text;
-
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Por favor, ingresa un usuario y una contraseña.");
-                return;
-            }
-
-            // Crear una instancia del usuario con la contraseña hasheada
-            //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-            //Usuario nuevoUsuario = new Usuario(username, hashedPassword, false, DateTime.Now);
-
-            Usuario nuevoUsuario = new Usuario(username, password, true, DateTime.Now);
-            DaoUsuario daoUsuario = new DaoUsuario();
-            daoUsuario.CrearUsuario(nuevoUsuario);
-
-            MessageBox.Show("Usuario creado exitosamente.");
-        }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -66,37 +45,30 @@ namespace GestionCasinoAochengYe
                 MessageBox.Show("El usuario no existe");
                 return;
             }
-
-            // Verificar la contraseña con BCrypt
-            bool validPass = BCrypt.Net.BCrypt.Verify(password, usuarioEncontrado.contraseña);
-
-            if (!validPass)
-            {
+            bool validPassword = BCrypt.Net.BCrypt.Verify(password, usuarioEncontrado.contraseña);
+            if (!validPassword) { 
                 MessageBox.Show("Contraseña incorrecta");
-                MessageBox.Show($"Contraseña ingresada: {password}\nContraseña almacenada: {usuarioEncontrado.contraseña}");
-
-                return;
             }
-
-            if (usuarioEncontrado.esAdministrador)
+            else if (validPassword && usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido administrador");
-                iniciarSesion?.Invoke(this, EventArgs.Empty);
 
                 Inicio inicio = new Inicio(true); // Muestra btnConfig
                 inicio.Show();
                 this.Hide();
             }
-            else
+            else if (validPassword && !usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido usuario");
-                iniciarSesion?.Invoke(this, EventArgs.Empty);
+
                 Inicio inicio = new Inicio(false); // esconde btnConfig
                 inicio.Show();
 
                 this.Hide();
 
             }
+
+
         }
     }
 }

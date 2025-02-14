@@ -37,7 +37,6 @@
             this.btnIniciarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.txtBoxUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxContraseña = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
@@ -59,10 +58,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.guna2Panel1);
-            this.panel1.Controls.Add(this.btnCrearUsuario);
-            this.panel1.Location = new System.Drawing.Point(-5, 28);
+            this.panel1.Location = new System.Drawing.Point(-8, 43);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1076, 561);
+            this.panel1.Size = new System.Drawing.Size(1614, 863);
             this.panel1.TabIndex = 2;
             // 
             // guna2PictureBox1
@@ -71,9 +70,10 @@
             this.guna2PictureBox1.BorderRadius = 60;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-94, 57);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-141, 88);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(665, 418);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(998, 643);
             this.guna2PictureBox1.TabIndex = 11;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -86,9 +86,10 @@
             this.guna2Panel1.Controls.Add(this.btnIniciarSesion);
             this.guna2Panel1.Controls.Add(this.txtBoxUsuario);
             this.guna2Panel1.Controls.Add(this.txtBoxContraseña);
-            this.guna2Panel1.Location = new System.Drawing.Point(614, 23);
+            this.guna2Panel1.Location = new System.Drawing.Point(921, 35);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(366, 524);
+            this.guna2Panel1.Size = new System.Drawing.Size(549, 806);
             this.guna2Panel1.TabIndex = 10;
             // 
             // lblIniciarSesion
@@ -97,9 +98,10 @@
             this.lblIniciarSesion.BackColor = System.Drawing.Color.Transparent;
             this.lblIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIniciarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(2)))), ((int)(((byte)(22)))));
-            this.lblIniciarSesion.Location = new System.Drawing.Point(86, 75);
+            this.lblIniciarSesion.Location = new System.Drawing.Point(129, 115);
+            this.lblIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIniciarSesion.Name = "lblIniciarSesion";
-            this.lblIniciarSesion.Size = new System.Drawing.Size(196, 40);
+            this.lblIniciarSesion.Size = new System.Drawing.Size(296, 60);
             this.lblIniciarSesion.TabIndex = 11;
             this.lblIniciarSesion.Text = "Iniciar sesión";
             // 
@@ -117,9 +119,10 @@
             this.btnIniciarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
             this.btnIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(41, 319);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(62, 491);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(290, 41);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(435, 63);
             this.btnIniciarSesion.TabIndex = 11;
             this.btnIniciarSesion.Text = "Iniciar sesión";
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
@@ -142,13 +145,14 @@
             this.txtBoxUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.txtBoxUsuario.ForeColor = System.Drawing.Color.White;
             this.txtBoxUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxUsuario.Location = new System.Drawing.Point(41, 147);
+            this.txtBoxUsuario.Location = new System.Drawing.Point(62, 226);
+            this.txtBoxUsuario.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBoxUsuario.Name = "txtBoxUsuario";
             this.txtBoxUsuario.PasswordChar = '\0';
             this.txtBoxUsuario.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtBoxUsuario.PlaceholderText = "Usuario";
             this.txtBoxUsuario.SelectedText = "";
-            this.txtBoxUsuario.Size = new System.Drawing.Size(290, 53);
+            this.txtBoxUsuario.Size = new System.Drawing.Size(435, 82);
             this.txtBoxUsuario.TabIndex = 11;
             // 
             // txtBoxContraseña
@@ -170,25 +174,15 @@
             this.txtBoxContraseña.ForeColor = System.Drawing.Color.White;
             this.txtBoxContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxContraseña.IconRightOffset = new System.Drawing.Point(8, 0);
-            this.txtBoxContraseña.Location = new System.Drawing.Point(41, 230);
+            this.txtBoxContraseña.Location = new System.Drawing.Point(62, 354);
+            this.txtBoxContraseña.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBoxContraseña.Name = "txtBoxContraseña";
             this.txtBoxContraseña.PasswordChar = '*';
             this.txtBoxContraseña.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtBoxContraseña.PlaceholderText = "Contraseña";
             this.txtBoxContraseña.SelectedText = "";
-            this.txtBoxContraseña.Size = new System.Drawing.Size(290, 51);
+            this.txtBoxContraseña.Size = new System.Drawing.Size(435, 78);
             this.txtBoxContraseña.TabIndex = 9;
-            // 
-            // btnCrearUsuario
-            // 
-            this.btnCrearUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearUsuario.Location = new System.Drawing.Point(17, 522);
-            this.btnCrearUsuario.Name = "btnCrearUsuario";
-            this.btnCrearUsuario.Size = new System.Drawing.Size(155, 25);
-            this.btnCrearUsuario.TabIndex = 7;
-            this.btnCrearUsuario.Text = "registrar";
-            this.btnCrearUsuario.UseVisualStyleBackColor = true;
-            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
             // 
             // panelBarraTitulo
             // 
@@ -199,9 +193,8 @@
             this.panelBarraTitulo.Controls.Add(this.btnMin);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1071, 36);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1606, 55);
             this.panelBarraTitulo.TabIndex = 3;
             // 
             // btnMaxi
@@ -209,10 +202,9 @@
             this.btnMaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaxi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaxi.Image = ((System.Drawing.Image)(resources.GetObject("btnMaxi.Image")));
-            this.btnMaxi.Location = new System.Drawing.Point(1006, 8);
-            this.btnMaxi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMaxi.Location = new System.Drawing.Point(1509, 12);
             this.btnMaxi.Name = "btnMaxi";
-            this.btnMaxi.Size = new System.Drawing.Size(27, 24);
+            this.btnMaxi.Size = new System.Drawing.Size(40, 37);
             this.btnMaxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaxi.TabIndex = 5;
             this.btnMaxi.TabStop = false;
@@ -222,10 +214,9 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1037, 8);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(1556, 12);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 24);
+            this.btnCerrar.Size = new System.Drawing.Size(34, 37);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.TabStop = false;
@@ -235,10 +226,9 @@
             this.btnRes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRes.Image = ((System.Drawing.Image)(resources.GetObject("btnRes.Image")));
-            this.btnRes.Location = new System.Drawing.Point(1006, 8);
-            this.btnRes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRes.Location = new System.Drawing.Point(1509, 12);
             this.btnRes.Name = "btnRes";
-            this.btnRes.Size = new System.Drawing.Size(27, 24);
+            this.btnRes.Size = new System.Drawing.Size(40, 37);
             this.btnRes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRes.TabIndex = 4;
             this.btnRes.TabStop = false;
@@ -249,10 +239,9 @@
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
-            this.btnMin.Location = new System.Drawing.Point(976, 8);
-            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMin.Location = new System.Drawing.Point(1464, 12);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(26, 24);
+            this.btnMin.Size = new System.Drawing.Size(39, 37);
             this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMin.TabIndex = 4;
             this.btnMin.TabStop = false;
@@ -266,12 +255,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 587);
+            this.ClientSize = new System.Drawing.Size(1606, 903);
             this.Controls.Add(this.panelBarraTitulo);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -290,7 +280,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCrearUsuario;
         private System.Windows.Forms.Panel panelBarraTitulo;
         private System.Windows.Forms.PictureBox btnMaxi;
         private System.Windows.Forms.PictureBox btnCerrar;
