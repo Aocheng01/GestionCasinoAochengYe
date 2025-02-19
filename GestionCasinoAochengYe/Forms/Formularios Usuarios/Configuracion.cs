@@ -103,5 +103,16 @@ namespace GestionCasinoAochengYe.Forms
             }
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string textoBuscado = txtBoxId.Text.Trim(); // Obtener el texto del TextBox y quitar espacios
+
+            if (string.IsNullOrEmpty(textoBuscado))
+            {
+                MessageBox.Show("Por favor, ingrese un ID o Nombre para buscar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            BuscarFilaEnDataGridView(textoBuscado);
+        }
     }
 }

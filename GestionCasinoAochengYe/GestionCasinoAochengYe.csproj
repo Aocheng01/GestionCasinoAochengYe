@@ -441,11 +441,19 @@
     <Content Include="Ayuda\html\index.html" />
     <Content Include="Ayuda\html\partidas.html" />
     <Content Include="Ayuda\html\usuarios.html" />
+    <Content Include="Ayuda\imagen\anadirpartida.png" />
+    <Content Include="Ayuda\imagen\anadirusuario.png" />
     <Content Include="Ayuda\imagen\añadirCliente.png" />
     <Content Include="Ayuda\imagen\buscarCliente.jpg" />
+    <Content Include="Ayuda\imagen\buscarpartidas.png" />
+    <Content Include="Ayuda\imagen\buscarusuario.png" />
     <Content Include="Ayuda\imagen\casino.jpg" />
     <Content Include="Ayuda\imagen\clientes.png" />
     <Content Include="Ayuda\imagen\editarCliente.png" />
+    <Content Include="Ayuda\imagen\editarpartida.png" />
+    <Content Include="Ayuda\imagen\editarusuario.png" />
+    <Content Include="Ayuda\imagen\partidas.png" />
+    <Content Include="Ayuda\imagen\usuario.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

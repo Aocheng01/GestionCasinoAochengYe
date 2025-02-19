@@ -6,18 +6,21 @@
     <title>Usuarios - Gestión de Casino</title>
     <style>
         body {
-            background-color: #111;
+            font-family: 'Arial', sans-serif;
+            background-color: #999999;
             color: white;
             text-align: center;
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
-            max-width: 600px;
+            max-width: 700px;
             margin: 50px auto;
-            padding: 20px;
             background: #222;
+            padding: 20px;
             border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3);
         }
 
         h1 {
@@ -26,29 +29,83 @@
 
         p {
             color: #ccc;
+            font-size: 18px;
         }
 
-        .back-button {
+        .image-placeholder {
+            width: 100%;
+            max-width: 100%;
+            background-color: #444;
+            border-radius: 10px;
+            display: inline-block; /* Permite que el contenedor se adapte a la imagen */
+            overflow: hidden;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .image-placeholder img {
+                width: 100%;
+                height: auto; /* Mantiene la proporción de la imagen */
+                border-radius: 10px;
+                display: block;
+            }
+
+        .button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px;
             background: #e60000;
             color: white;
-            padding: 10px;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
 
-            .back-button:hover {
+            .button:hover {
                 background: #b30000;
+                transform: scale(1.05);
             }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Gestión de Usuarios</h1>
-        <p>Administra los empleados del casino, permisos y accesos al sistema.</p>
-        <a href="index.html" class="back-button">⬅ Volver a Inicio</a>
+
+        <div class="image-placeholder">
+            <img src="../imagen/usuario.png" alt="Usuarios">
+        </div>
+
+        <p>En esta sección puedes gestionar la información de los usuarios.</p>
+        <p>Puedes buscar un usuario solo por <strong>ID</strong> usando la barra de búsqueda.</p>
+
+        <h2>📌 Funciones disponibles:</h2>
+        <ul style="text-align: left; color: #ccc; font-size: 16px;">
+            <li>🔍 <strong>Buscar Usuario:</strong> Introduce el ID y encuentra su información.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/buscarusuario.png" alt="Buscar Usuarios">
+            </div>
+            <li>➕ <strong>Añadir Usuario:</strong> Haz clic en "Añadir" y aparecerá una ventana para registrar uno nuevo. No se puede repetir el nombre de usuario, las contaseñas deben coincidir y se puede marcar la casilla de es admin o no para que tenga los persmisos admin.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/anadirusuario.png" alt="Añadir Usuario">
+            </div>
+            <li>✏ <strong>Editar Usuario:</strong> Selecciona un usuario de la lista y haz clic en "Editar" para modificar su información.</li>
+            <div class="image-placeholder">
+                <img src="../imagen/editarusuario.png" alt="Editar Usuario">
+            </div>
+            <li>🗑 <strong>Eliminar Usuario:</strong> Selecciona un usuario y haz clic en "Eliminar" para quitarla del sistema.</li>
+        </ul>
+
+        <a href="index.html" class="button">⬅ Volver a Inicio</a>
     </div>
 
 </body>

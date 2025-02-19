@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -93,6 +95,25 @@ namespace GestionCasinoAochengYe.Forms
         private void btnInformes_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Formulario_Informe.FrmInformeDinamico());
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            // Ruta relativa del archivo HTML
+            string relativePath = @"../../Ayuda/html/index.html";
+
+            // Convierte la ruta relativa en una ruta absoluta
+            string absolutePath = Path.GetFullPath(relativePath);
+
+
+            if (System.IO.File.Exists(absolutePath))
+            {
+                Process.Start(absolutePath);
+            }
+            else
+            {
+                MessageBox.Show("El archivo no se encontró.");
+            }
         }
     }
 }

@@ -61,9 +61,8 @@
             this.panelBarraTitulo.Controls.Add(this.btnMin);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(390, 36);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(585, 55);
             this.panelBarraTitulo.TabIndex = 20;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
@@ -72,10 +71,9 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(356, 8);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(534, 12);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 24);
+            this.btnCerrar.Size = new System.Drawing.Size(34, 37);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.TabStop = false;
@@ -86,10 +84,9 @@
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
-            this.btnMin.Location = new System.Drawing.Point(326, 8);
-            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMin.Location = new System.Drawing.Point(489, 12);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(26, 24);
+            this.btnMin.Size = new System.Drawing.Size(39, 37);
             this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMin.TabIndex = 4;
             this.btnMin.TabStop = false;
@@ -113,8 +110,9 @@
             this.panelContenedor.Controls.Add(this.comboBoxIdCliente);
             this.panelContenedor.Controls.Add(this.panelBarraTitulo);
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(390, 552);
+            this.panelContenedor.Size = new System.Drawing.Size(585, 849);
             this.panelContenedor.TabIndex = 10;
             // 
             // label3
@@ -123,9 +121,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 146);
+            this.label3.Location = new System.Drawing.Point(18, 225);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
+            this.label3.Size = new System.Drawing.Size(150, 40);
             this.label3.TabIndex = 37;
             this.label3.Text = "ID Cliente";
             // 
@@ -135,11 +134,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(89, 49);
+            this.label1.Location = new System.Drawing.Point(134, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 37);
+            this.label1.Size = new System.Drawing.Size(303, 55);
             this.label1.TabIndex = 37;
-            this.label1.Text = "Editar partida";
+            this.label1.Text = "Añadir partida";
             // 
             // btnCancelar
             // 
@@ -157,9 +157,10 @@
             this.btnCancelar.Image = global::GestionCasinoAochengYe.Properties.Resources.do_not_disturb_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
             this.btnCancelar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCancelar.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancelar.Location = new System.Drawing.Point(221, 490);
+            this.btnCancelar.Location = new System.Drawing.Point(332, 754);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(162, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(243, 57);
             this.btnCancelar.TabIndex = 46;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseTransparentBackground = true;
@@ -181,9 +182,10 @@
             this.btnGuardar.Image = global::GestionCasinoAochengYe.Properties.Resources.save_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
             this.btnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnGuardar.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnGuardar.Location = new System.Drawing.Point(18, 490);
+            this.btnGuardar.Location = new System.Drawing.Point(27, 754);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(162, 37);
+            this.btnGuardar.Size = new System.Drawing.Size(243, 57);
             this.btnGuardar.TabIndex = 45;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseTransparentBackground = true;
@@ -195,9 +197,10 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(12, 359);
+            this.label8.Location = new System.Drawing.Point(18, 552);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 25);
+            this.label8.Size = new System.Drawing.Size(100, 40);
             this.label8.TabIndex = 44;
             this.label8.Text = "Juego";
             // 
@@ -207,9 +210,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 302);
+            this.label7.Location = new System.Drawing.Point(18, 465);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 25);
+            this.label7.Size = new System.Drawing.Size(144, 40);
             this.label7.TabIndex = 43;
             this.label7.Text = "Ganancia";
             // 
@@ -219,9 +223,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 237);
+            this.label6.Location = new System.Drawing.Point(18, 365);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 25);
+            this.label6.Size = new System.Drawing.Size(129, 40);
             this.label6.TabIndex = 42;
             this.label6.Text = "Apuesta";
             // 
@@ -231,9 +236,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 185);
+            this.label2.Location = new System.Drawing.Point(20, 285);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.Size = new System.Drawing.Size(95, 40);
             this.label2.TabIndex = 41;
             this.label2.Text = "Fecha";
             // 
@@ -255,13 +261,14 @@
             this.txtBoxJuego.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.txtBoxJuego.ForeColor = System.Drawing.Color.White;
             this.txtBoxJuego.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxJuego.Location = new System.Drawing.Point(116, 359);
+            this.txtBoxJuego.Location = new System.Drawing.Point(174, 552);
+            this.txtBoxJuego.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBoxJuego.Name = "txtBoxJuego";
             this.txtBoxJuego.PasswordChar = '\0';
             this.txtBoxJuego.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtBoxJuego.PlaceholderText = "";
             this.txtBoxJuego.SelectedText = "";
-            this.txtBoxJuego.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxJuego.Size = new System.Drawing.Size(387, 52);
             this.txtBoxJuego.TabIndex = 40;
             // 
             // txtBoxGanancia
@@ -282,13 +289,14 @@
             this.txtBoxGanancia.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.txtBoxGanancia.ForeColor = System.Drawing.Color.White;
             this.txtBoxGanancia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxGanancia.Location = new System.Drawing.Point(117, 302);
+            this.txtBoxGanancia.Location = new System.Drawing.Point(176, 465);
+            this.txtBoxGanancia.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBoxGanancia.Name = "txtBoxGanancia";
             this.txtBoxGanancia.PasswordChar = '\0';
             this.txtBoxGanancia.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtBoxGanancia.PlaceholderText = "";
             this.txtBoxGanancia.SelectedText = "";
-            this.txtBoxGanancia.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxGanancia.Size = new System.Drawing.Size(387, 52);
             this.txtBoxGanancia.TabIndex = 39;
             // 
             // txtBoxApuesta
@@ -309,13 +317,14 @@
             this.txtBoxApuesta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.txtBoxApuesta.ForeColor = System.Drawing.Color.White;
             this.txtBoxApuesta.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxApuesta.Location = new System.Drawing.Point(117, 237);
+            this.txtBoxApuesta.Location = new System.Drawing.Point(176, 365);
+            this.txtBoxApuesta.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBoxApuesta.Name = "txtBoxApuesta";
             this.txtBoxApuesta.PasswordChar = '\0';
             this.txtBoxApuesta.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtBoxApuesta.PlaceholderText = "";
             this.txtBoxApuesta.SelectedText = "";
-            this.txtBoxApuesta.Size = new System.Drawing.Size(258, 34);
+            this.txtBoxApuesta.Size = new System.Drawing.Size(387, 52);
             this.txtBoxApuesta.TabIndex = 38;
             // 
             // dateTimePickerFecha
@@ -329,11 +338,12 @@
             this.dateTimePickerFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePickerFecha.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateTimePickerFecha.Location = new System.Drawing.Point(118, 185);
+            this.dateTimePickerFecha.Location = new System.Drawing.Point(177, 285);
+            this.dateTimePickerFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerFecha.Name = "dateTimePickerFecha";
-            this.dateTimePickerFecha.Size = new System.Drawing.Size(257, 33);
+            this.dateTimePickerFecha.Size = new System.Drawing.Size(386, 51);
             this.dateTimePickerFecha.TabIndex = 37;
             this.dateTimePickerFecha.UseTransparentBackground = true;
             this.dateTimePickerFecha.Value = new System.DateTime(2025, 2, 12, 1, 53, 56, 826);
@@ -351,9 +361,10 @@
             this.comboBoxIdCliente.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBoxIdCliente.ForeColor = System.Drawing.Color.Black;
             this.comboBoxIdCliente.ItemHeight = 30;
-            this.comboBoxIdCliente.Location = new System.Drawing.Point(116, 135);
+            this.comboBoxIdCliente.Location = new System.Drawing.Point(174, 208);
+            this.comboBoxIdCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxIdCliente.Name = "comboBoxIdCliente";
-            this.comboBoxIdCliente.Size = new System.Drawing.Size(258, 36);
+            this.comboBoxIdCliente.Size = new System.Drawing.Size(385, 36);
             this.comboBoxIdCliente.TabIndex = 34;
             // 
             // guna2BorderlessForm1
@@ -365,11 +376,12 @@
             // 
             // AñadirPartida
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 552);
+            this.ClientSize = new System.Drawing.Size(586, 849);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AñadirPartida";
             this.Text = "AñadirPartida";
             this.panelBarraTitulo.ResumeLayout(false);
