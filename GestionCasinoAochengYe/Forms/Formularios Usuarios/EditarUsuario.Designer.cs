@@ -31,12 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarUsuario));
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.checkBoxAdmin = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtBoxRepetirContraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxContraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,19 +46,18 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.checkBoxAdmin = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
+            this.panelContenedor.Controls.Add(this.btnGuardar);
             this.panelContenedor.Controls.Add(this.guna2PictureBox1);
             this.panelContenedor.Controls.Add(this.checkBoxAdmin);
             this.panelContenedor.Controls.Add(this.label2);
@@ -65,7 +66,6 @@
             this.panelContenedor.Controls.Add(this.txtBoxUsuario);
             this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.btnCancelar);
-            this.panelContenedor.Controls.Add(this.btnGuardar);
             this.panelContenedor.Controls.Add(this.label8);
             this.panelContenedor.Controls.Add(this.label7);
             this.panelContenedor.Controls.Add(this.label6);
@@ -74,6 +74,45 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(390, 552);
             this.panelContenedor.TabIndex = 12;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::GestionCasinoAochengYe.Properties.Resources.admin_panel_settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(79, 412);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 25);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 52;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // checkBoxAdmin
+            // 
+            this.checkBoxAdmin.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkBoxAdmin.CheckedState.BorderRadius = 2;
+            this.checkBoxAdmin.CheckedState.BorderThickness = 0;
+            this.checkBoxAdmin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkBoxAdmin.Location = new System.Drawing.Point(220, 412);
+            this.checkBoxAdmin.Name = "checkBoxAdmin";
+            this.checkBoxAdmin.Size = new System.Drawing.Size(33, 25);
+            this.checkBoxAdmin.TabIndex = 51;
+            this.checkBoxAdmin.Text = "guna2CustomCheckBox1";
+            this.checkBoxAdmin.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBoxAdmin.UncheckedState.BorderRadius = 2;
+            this.checkBoxAdmin.UncheckedState.BorderThickness = 0;
+            this.checkBoxAdmin.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(115, 412);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 25);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Es admin?";
             // 
             // txtBoxRepetirContraseña
             // 
@@ -192,31 +231,6 @@
             this.btnCancelar.UseTransparentBackground = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Animated = true;
-            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.btnGuardar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnGuardar.BorderRadius = 20;
-            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
-            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Image = global::GestionCasinoAochengYe.Properties.Resources.save_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
-            this.btnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnGuardar.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnGuardar.Location = new System.Drawing.Point(18, 490);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(162, 37);
-            this.btnGuardar.TabIndex = 45;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseTransparentBackground = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            this.btnGuardar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -301,44 +315,29 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2PictureBox1
+            // btnGuardar
             // 
-            this.guna2PictureBox1.Image = global::GestionCasinoAochengYe.Properties.Resources.admin_panel_settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(79, 412);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 25);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 52;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // checkBoxAdmin
-            // 
-            this.checkBoxAdmin.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxAdmin.CheckedState.BorderRadius = 2;
-            this.checkBoxAdmin.CheckedState.BorderThickness = 0;
-            this.checkBoxAdmin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxAdmin.Location = new System.Drawing.Point(220, 412);
-            this.checkBoxAdmin.Name = "checkBoxAdmin";
-            this.checkBoxAdmin.Size = new System.Drawing.Size(33, 25);
-            this.checkBoxAdmin.TabIndex = 51;
-            this.checkBoxAdmin.Text = "guna2CustomCheckBox1";
-            this.checkBoxAdmin.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkBoxAdmin.UncheckedState.BorderRadius = 2;
-            this.checkBoxAdmin.UncheckedState.BorderThickness = 0;
-            this.checkBoxAdmin.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(115, 412);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 25);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Es admin?";
+            this.btnGuardar.Animated = true;
+            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BorderRadius = 20;
+            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Image = global::GestionCasinoAochengYe.Properties.Resources.save_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24;
+            this.btnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnGuardar.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnGuardar.Location = new System.Drawing.Point(27, 490);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(162, 37);
+            this.btnGuardar.TabIndex = 53;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseTransparentBackground = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // EditarUsuario
             // 
@@ -351,10 +350,10 @@
             this.Text = "EditarUsuario";
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +363,6 @@
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
-        private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -378,5 +376,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxAdmin;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button btnGuardar;
     }
 }

@@ -55,14 +55,15 @@ namespace GestionCasinoAochengYe.Forms.Formularios_Usuarios
                 return;
             }
 
+
             // Crear una instancia del usuario con la contraseña hasheada
             //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
             //Usuario nuevoUsuario = new Usuario(username, hashedPassword, false, DateTime.Now);
 
-            Usuario nuevoUsuario = new Usuario(username, password, admin, DateTime.Now);
+            Usuario nuevoUsuario = new Usuario(username, password, admin, DateTime.Now, InicioSesion.usuarioActual);
             daoUsuario.CrearUsuario(nuevoUsuario);
+            this.Close();
 
-            MessageBox.Show("Usuario creado exitosamente.");
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

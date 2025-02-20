@@ -22,7 +22,7 @@ namespace GestionCasinoAochengYe.dao
                 // Hash de la contraseña con BCrypt
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(usuario.contraseña);
 
-                string query = "INSERT INTO usuarios (nombre_usuario, contraseña, esAdministrador, fecha_creacion, usuarioModificacion) VALUES (@nombre_usuario, @contraseña, @esAdministrador, @fecha_creacion, @usuarioModificacion)";
+                string query = "INSERT INTO usuarios (nombre_usuario, contraseña, esAdministrador, fecha_creacion, usuario_modificacion) VALUES (@nombre_usuario, @contraseña, @esAdministrador, @fecha_creacion, @usuarioModificacion)";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@nombre_usuario", usuario.nombre_usuario);
@@ -65,7 +65,8 @@ namespace GestionCasinoAochengYe.dao
                         mySqlDataReader.GetString(1),
                         mySqlDataReader.GetString(2),
                         mySqlDataReader.GetBoolean(3),
-                        mySqlDataReader.GetDateTime(4)
+                        mySqlDataReader.GetDateTime(4),
+                        mySqlDataReader.GetString(5)
                     );
                     listaUsuarios.Add(usuario);
                 }
@@ -90,7 +91,7 @@ namespace GestionCasinoAochengYe.dao
                 // Hash de la nueva contraseña con BCrypt
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(usuario.contraseña);
 
-                string query = "UPDATE usuarios SET nombre_usuario = @nombre_usuario, contraseña = @contraseña, esAdministrador = @esAdministrador, fecha_creacion = @fecha_creacion, usuarioModificacion = @usuarioModificacion WHERE id = @id";
+                string query = "UPDATE usuarios SET nombre_usuario = @nombre_usuario, contraseña = @contraseña, esAdministrador = @esAdministrador, fecha_creacion = @fecha_creacion, usuario_modificacion = @usuarioModificacion WHERE id = @id";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@nombre_usuario", usuario.nombre_usuario);
@@ -145,5 +146,21 @@ namespace GestionCasinoAochengYe.dao
                 return false;
             }
         }
+
+        public DateTime ObtenerFechaCreacion(int idUsuario)
+        {
+            string query = "SELECT fecha_creacion FROM usuarios WHERE id = @id";
+            Conexion objetoConexion = new Conexion();
+            MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
+            mySqlCommand.Parameters.AddWithValue("@id", idUsuario);
+
+            object result = mySqlCommand.ExecuteScalar();
+            objetoConexion.cerrarConexion();
+
+
+            return Convert.ToDateTime(result);
+        }
+
+
     }
 }

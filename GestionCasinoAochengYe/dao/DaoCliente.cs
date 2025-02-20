@@ -37,9 +37,9 @@ namespace GestionCasinoAochengYe.dao
                     MessageBox.Show("Cliente creado con éxito");
                     objetoConexion.cerrarConexion();
                 }
-                catch (MySqlException)
+                catch (MySqlException e)
                 {
-                    MessageBox.Show("Ocurrió un error al registrar el cliente.");
+                    MessageBox.Show("Ocurrió un error al registrar el cliente." + e);
                 }
             }
 

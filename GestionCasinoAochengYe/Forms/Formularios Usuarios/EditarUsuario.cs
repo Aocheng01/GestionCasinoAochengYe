@@ -66,9 +66,11 @@ namespace GestionCasinoAochengYe.Forms.Formularios_Usuarios
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
             int id = Convert.ToInt32(this.id);
+
             DaoUsuario daoUsuario = new DaoUsuario();
-            Usuario usuarioNuevo = new Usuario(txtBoxUsuario.Text, txtBoxContraseña.Text, checkBoxAdmin.Checked);
+            Usuario usuarioNuevo = new Usuario(id, txtBoxUsuario.Text, txtBoxContraseña.Text, checkBoxAdmin.Checked, daoUsuario.ObtenerFechaCreacion(id), InicioSesion.usuarioActual);
             daoUsuario.ActualizarUsuario(usuarioNuevo);
             this.Close();
         }
