@@ -126,9 +126,20 @@ namespace GestionCasinoAochengYe.dao
                 MessageBox.Show("Ocurrió un error al eliminar el cliente.");
             }
         }
+        public int ObtenerId(string nombreCliente)
+        {
+            string query = "SELECT id From clientes where nombre = @nombreCliente";
+            Conexion objetoConexion = new Conexion();
+            MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
+            mySqlCommand.Parameters.AddWithValue("@nombreCliente", nombreCliente);
+            object result = mySqlCommand.ExecuteScalar();
+            objetoConexion.cerrarConexion();
 
-        
+            return Convert.ToInt32(result);
         }
+
+
+    }
     }
 
 

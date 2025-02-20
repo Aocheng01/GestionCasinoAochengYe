@@ -37,8 +37,8 @@ namespace GestionCasinoAochengYe
             DaoUsuario daoUsuario = new DaoUsuario();
             List<Usuario> listaUsuarios = daoUsuario.obtenerUsuarios();
 
-            string username = txtBoxContraseña.Text;
-            string password = txtBoxUsuario.Text;
+            string username = txtBoxUsuario.Text;
+            string password = txtBoxContraseña.Text; 
 
             // Buscar el usuario en la lista
             Usuario usuarioEncontrado = listaUsuarios.Find(usuario => usuario.nombre_usuario == username);

@@ -80,21 +80,37 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            DaoCliente daoCliente = new DaoCliente();
+            int idCliente;
+
+            // Verificar si el contenido del TextBox es un número o un texto
+            if (int.TryParse(txtBoxIdNombre.Text, out idCliente))
+            {
+                // Si es un número, usarlo directamente
+            }
+            else
+            {
+                // Si es texto, buscar el ID en la base de datos
+                idCliente = daoCliente.ObtenerId(txtBoxIdNombre.Text);
+
+                // Si no se encuentra el ID, mostrar un mensaje de error y salir
+                if (idCliente == 0)
+                {
+                    MessageBox.Show("No se encontró un cliente con ese nombre.");
+                    return;
+                }
+            }
+
+            // Confirmación antes de eliminar
             DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar este cliente?", "Eliminar cliente", MessageBoxButtons.YesNo);
+
             if (result == DialogResult.Yes)
             {
-                int idCliente = Convert.ToInt32(txtBoxIdNombre.Text);
-                DaoCliente daoCliente = new DaoCliente();
                 daoCliente.EliminarCliente(idCliente);
                 actualizarTabla();
             }
-          
-            
-          
-
-
-
         }
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {

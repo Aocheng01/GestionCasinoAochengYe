@@ -158,6 +158,7 @@ namespace GestionCasinoAochengYe.dao
                 MessageBox.Show("Ocurrió un error al eliminar la partida.");
             }
         }
+
     }
 }
 

@@ -52,7 +52,7 @@ namespace GestionCasinoAochengYe.Forms
          
             editarPartida.ShowDialog();
             actualizarTabla();
-            BuscarFilaEnDataGridView(txtBoxIdNombre.Text);
+            BuscarFilaEnDataGridView(txtBoxId.Text);
 
         }
 
@@ -61,7 +61,7 @@ namespace GestionCasinoAochengYe.Forms
             DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar esta partida?", "Eliminar partida", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt32(txtBoxIdNombre.Text);
+                int id = Convert.ToInt32(txtBoxId.Text);
                 DaoPartida daoPartida = new DaoPartida();
                 daoPartida.EliminarPartida(id);
                 actualizarTabla();
@@ -70,7 +70,7 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string textoBuscado = txtBoxIdNombre.Text.Trim(); // Obtener el texto del TextBox y quitar espacios
+            string textoBuscado = txtBoxId.Text.Trim(); // Obtener el texto del TextBox y quitar espacios
 
             if (string.IsNullOrEmpty(textoBuscado))
             {
@@ -108,8 +108,7 @@ namespace GestionCasinoAochengYe.Forms
             if (e.RowIndex >= 0) // Asegúrate de que el clic se hace en una fila válida
             {
                 DataGridViewRow filaSeleccionada = dataGridViewPartidas.Rows[e.RowIndex];
-
-                txtBoxIdNombre.Text = filaSeleccionada.Cells[0].Value?.ToString() ?? string.Empty;
+                txtBoxId.Text = filaSeleccionada.Cells[0].Value.ToString();
 
             }
         }
