@@ -93,11 +93,17 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            DaoUsuario daoUsuario = new DaoUsuario();
+            int idUsuarioActual = daoUsuario.ObtenerId(InicioSesion.usuarioActual);
+            int id = Convert.ToInt32(txtBoxId.Text);
+            if (idUsuarioActual == id) { 
+                MessageBox.Show("No puedes eliminar tu propio usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             DialogResult result = MessageBox.Show(Text = "¿Estás seguro de que quieres eliminar este usuario?", "Eliminar usuario", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt32(txtBoxId.Text);
-                DaoUsuario daoUsuario = new DaoUsuario();
                 daoUsuario.EliminarUsuario(id);
                 actualizarTabla();
             }

@@ -161,6 +161,18 @@ namespace GestionCasinoAochengYe.dao
             return Convert.ToDateTime(result);
         }
 
+        public int ObtenerId(string nombreUsuario)
+        {
+            string query = "SELECT id From usuarios where nombre_usuario = @nombreUsuario";
+            Conexion objetoConexion = new Conexion();
+            MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
+            mySqlCommand.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
+            object result = mySqlCommand.ExecuteScalar();
+            objetoConexion.cerrarConexion();
+
+            return Convert.ToInt32(result);
+        }
+
 
     }
 }
