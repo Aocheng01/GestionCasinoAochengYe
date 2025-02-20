@@ -18,6 +18,9 @@ namespace GestionCasinoAochengYe
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int
         wParam, int lParam);
+
+        public static string usuarioActual {get; set; }
+
         public InicioSesion()
         {
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -52,7 +55,7 @@ namespace GestionCasinoAochengYe
             else if (validPassword && usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido administrador");
-
+                usuarioActual = txtBoxUsuario.Text;
                 Inicio inicio = new Inicio(true); // Muestra btnConfig
                 inicio.Show();
                 this.Hide();
@@ -60,7 +63,7 @@ namespace GestionCasinoAochengYe
             else if (validPassword && !usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido usuario");
-
+                usuarioActual = txtBoxUsuario.Text;
                 Inicio inicio = new Inicio(false); // esconde btnConfig
                 inicio.Show();
 

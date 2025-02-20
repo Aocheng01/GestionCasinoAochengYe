@@ -26,6 +26,7 @@ namespace GestionCasinoAochengYe.Forms
         {
             InitializeComponent();
             btnConfig.Enabled = mostrarConfig;
+            lblUsuarioActual.Text = InicioSesion.usuarioActual;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void AbrirFormEnPanel(object formhija)
