@@ -25,6 +25,16 @@ namespace GestionCasinoAochengYe.dto
             this.juego = juego;
         }
 
+        public Partida(int id_cliente, DateTime fecha, double apuesta, double ganancia, string juego, string usuarioModificacion)
+        {
+            this.id_cliente = id_cliente;
+            this.fecha = fecha;
+            this.apuesta = apuesta;
+            this.ganancia = ganancia;
+            this.juego = juego;
+            this.usuarioModificacion = usuarioModificacion;
+        }
+
         public Partida(int id_partida, int id_cliente, DateTime fecha, double apuesta, double ganancia, string juego)
         {
             this.id_partida = id_partida;

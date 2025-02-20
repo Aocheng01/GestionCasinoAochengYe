@@ -69,7 +69,8 @@ namespace GestionCasinoAochengYe.Forms.Partida
                 dateTimePickerFecha.Value,
                 Convert.ToDouble(txtBoxApuesta.Text),
                 Convert.ToDouble(txtBoxGanancia.Text),
-                txtBoxJuego.Text
+                txtBoxJuego.Text,
+                InicioSesion.usuarioActual
             );
 
             dao.DaoPartida daoPartida = new dao.DaoPartida();

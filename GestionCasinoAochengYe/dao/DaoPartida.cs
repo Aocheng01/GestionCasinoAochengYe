@@ -15,7 +15,7 @@ namespace GestionCasinoAochengYe.dao
             {
                 try
                 {
-                    string query = "INSERT INTO partidas (id_cliente, fecha, apuesta, ganancia, juego, usuarioModificacion) VALUES (@id_cliente, @fecha, @apuesta, @ganancia, @juego, @usuarioModificacion)";
+                    string query = "INSERT INTO partidas (id_cliente, fecha, apuesta, ganancia, juego, usuario_modificacion) VALUES (@id_cliente, @fecha, @apuesta, @ganancia, @juego, @usuarioModificacion)";
                     Conexion objetoConexion = new Conexion();
                     MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                     mySqlCommand.Parameters.AddWithValue("@id_cliente", partida.id_cliente);
@@ -23,7 +23,7 @@ namespace GestionCasinoAochengYe.dao
                     mySqlCommand.Parameters.AddWithValue("@apuesta", partida.apuesta);
                     mySqlCommand.Parameters.AddWithValue("@ganancia", partida.ganancia);
                     mySqlCommand.Parameters.AddWithValue("@juego", partida.juego);
-                    mySqlCommand.Parameters.AddWithValue(@"usuarioModificacion", partida.usuarioModificacion);
+                    mySqlCommand.Parameters.AddWithValue("@usuarioModificacion", partida.usuarioModificacion);
 
                 mySqlCommand.ExecuteNonQuery();
                     MessageBox.Show("Partida creada con éxito");
@@ -52,7 +52,8 @@ namespace GestionCasinoAochengYe.dao
                         mySqlDataReader.GetDateTime(2),
                         mySqlDataReader.GetDouble(3),
                         mySqlDataReader.GetDouble(4),
-                        mySqlDataReader.GetString(5)
+                        mySqlDataReader.GetString(5),
+                        mySqlDataReader.GetString(6)
                     )
                     {
                         id_partida = mySqlDataReader.GetInt32(0)
@@ -73,7 +74,7 @@ namespace GestionCasinoAochengYe.dao
             {
                 Console.WriteLine($"Intentando actualizar partida con id_partida: {id}");
 
-                string query = "UPDATE partidas SET  fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia, juego = @juego, usuarioModificacion = @usuarioModificacion WHERE id_partida = @id_partida";
+                string query = "UPDATE partidas SET  fecha = @fecha, apuesta = @apuesta, ganancia = @ganancia, juego = @juego, usuario_modificacion = @usuarioModificacion WHERE id_partida = @id_partida";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
 

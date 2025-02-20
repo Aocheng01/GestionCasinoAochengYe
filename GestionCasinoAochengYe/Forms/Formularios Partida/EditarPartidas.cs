@@ -73,7 +73,7 @@ namespace GestionCasinoAochengYe.Forms
         {
             int id = Convert.ToInt32(this.id);
             DaoPartida daoPartida = new DaoPartida();
-            dto.Partida partidaNueva = new dto.Partida(id, dateTimePickerFecha.Value, Convert.ToDouble(txtBoxApuesta.Text), Convert.ToDouble(txtBoxGanancia.Text), txtBoxJuego.Text);
+            dto.Partida partidaNueva = new dto.Partida(id, dateTimePickerFecha.Value, Convert.ToDouble(txtBoxApuesta.Text), Convert.ToDouble(txtBoxGanancia.Text), txtBoxJuego.Text, InicioSesion.usuarioActual);
             daoPartida.ActualizarPartida(id,partidaNueva);
             this.Close();
         }
