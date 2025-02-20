@@ -37,34 +37,35 @@ namespace GestionCasinoAochengYe.Forms.Formularios_Usuarios
             string password = txtBoxContraseña.Text;
             string confirmPassword = txtBoxRepetirContraseña.Text;
             bool admin = checkBoxAdmin.Checked;
-            //comprobar que el usuario no exista
+
+            // Validar campos vacíos
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                MessageBox.Show("Por favor, ingresa un usuario y una contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar que las contraseñas coincidan
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Verificar si el usuario ya existe
             DaoUsuario daoUsuario = new DaoUsuario();
             if (daoUsuario.ExisteUsuario(username))
             {
-                MessageBox.Show("El usuario ya existe.");
+                MessageBox.Show("El usuario ya existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
-            {
-                MessageBox.Show("Por favor, ingresa un usuario y una contraseña.");
-                return;
-            }else if (password != confirmPassword)
-            {
-                MessageBox.Show("Las contraseñas no coinciden.");
-                return;
-            }
-
-
-            // Crear una instancia del usuario con la contraseña hasheada
-            //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-            //Usuario nuevoUsuario = new Usuario(username, hashedPassword, false, DateTime.Now);
 
             Usuario nuevoUsuario = new Usuario(username, password, admin, DateTime.Now, InicioSesion.usuarioActual);
             daoUsuario.CrearUsuario(nuevoUsuario);
-            this.Close();
 
+            this.Close();
         }
+
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {

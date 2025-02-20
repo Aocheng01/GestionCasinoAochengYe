@@ -61,14 +61,34 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(this.id);
-            // Aquí puedes guardar los cambios realizados en los datos del cliente
-            DaoCliente daoCliente = new DaoCliente();
-            Cliente clienteNuevo = new Cliente(id,txtBoxNombre.Text, txtBoxApellido.Text, txtBoxEmail.Text, txtBoxTelefono.Text, Convert.ToDouble(txtBoxSaldo.Text), InicioSesion.usuarioActual);
-            daoCliente.ActualizarCliente(id,clienteNuevo);
-            this.Close();
+            // Verificar que ningún campo esté vacío
+            if (string.IsNullOrWhiteSpace(txtBoxNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxEmail.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxTelefono.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxSaldo.Text))
+            {
+                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            // Validar que el saldo sea un número válido
+            double saldo;
+            if (!double.TryParse(txtBoxSaldo.Text, out saldo))
+            {
+                MessageBox.Show("El saldo debe ser un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int id = Convert.ToInt32(this.id); // Obtener el ID del cliente
+            Cliente clienteNuevo = new Cliente(id, txtBoxNombre.Text, txtBoxApellido.Text, txtBoxEmail.Text, txtBoxTelefono.Text, saldo, InicioSesion.usuarioActual);
+
+            DaoCliente daoCliente = new DaoCliente();
+            daoCliente.ActualizarCliente(id, clienteNuevo);
+
+            this.Close();
         }
+
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {

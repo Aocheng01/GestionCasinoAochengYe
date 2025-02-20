@@ -65,27 +65,14 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("¿Estás seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
-        private void btnMin_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        private void btnRes_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRes.Visible = false;
-            btnMaxi.Visible = true;
-        }
-
-        private void btnMaxi_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaxi.Visible = false;
-            btnRes.Visible = true;
-        }
 
         private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {

@@ -63,20 +63,34 @@ namespace GestionCasinoAochengYe.Forms.Partida
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            dto.Partida partida = new dto.Partida
-            (
-                Convert.ToInt32(comboBoxIdCliente.SelectedItem),
-                dateTimePickerFecha.Value,
-                Convert.ToDouble(txtBoxApuesta.Text),
-                Convert.ToDouble(txtBoxGanancia.Text),
-                txtBoxJuego.Text,
-                InicioSesion.usuarioActual
-            );
+            // Verificar que ningún campo esté vacío
+            if (comboBoxIdCliente.SelectedItem == null ||
+                string.IsNullOrWhiteSpace(txtBoxApuesta.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxGanancia.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxJuego.Text))
+            {
+                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            // Validar valores numéricos
+            int idCliente;
+            double apuesta, ganancia;
+            if (!int.TryParse(comboBoxIdCliente.SelectedItem.ToString(), out idCliente) ||
+                !double.TryParse(txtBoxApuesta.Text, out apuesta) ||
+                !double.TryParse(txtBoxGanancia.Text, out ganancia))
+            {
+                MessageBox.Show("ID Cliente, Apuesta y Ganancia deben ser valores numéricos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            dto.Partida partida = new dto.Partida(idCliente, dateTimePickerFecha.Value, apuesta, ganancia, txtBoxJuego.Text, InicioSesion.usuarioActual);
             dao.DaoPartida daoPartida = new dao.DaoPartida();
             daoPartida.CrearPartida(partida);
+
             this.Close();
         }
+
 
         private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {

@@ -34,9 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBarra = new System.Windows.Forms.Panel();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
-            this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnRes = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
@@ -51,9 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBarra.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,31 +84,15 @@
             // panelBarraTitulo
             // 
             this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(2)))), ((int)(((byte)(19)))));
-            this.panelBarraTitulo.Controls.Add(this.btnMaxi);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.panelBarraTitulo.Controls.Add(this.btnRes);
             this.panelBarraTitulo.Controls.Add(this.btnMin);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
             this.panelBarraTitulo.Size = new System.Drawing.Size(1071, 36);
             this.panelBarraTitulo.TabIndex = 1;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
-            // 
-            // btnMaxi
-            // 
-            this.btnMaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaxi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaxi.Image = ((System.Drawing.Image)(resources.GetObject("btnMaxi.Image")));
-            this.btnMaxi.Location = new System.Drawing.Point(1006, 8);
-            this.btnMaxi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMaxi.Name = "btnMaxi";
-            this.btnMaxi.Size = new System.Drawing.Size(27, 24);
-            this.btnMaxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaxi.TabIndex = 5;
-            this.btnMaxi.TabStop = false;
-            this.btnMaxi.Click += new System.EventHandler(this.btnMaxi_Click);
             // 
             // btnCerrar
             // 
@@ -120,7 +100,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(1037, 8);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(23, 24);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,34 +108,18 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnRes
-            // 
-            this.btnRes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRes.Image = ((System.Drawing.Image)(resources.GetObject("btnRes.Image")));
-            this.btnRes.Location = new System.Drawing.Point(1006, 8);
-            this.btnRes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnRes.Name = "btnRes";
-            this.btnRes.Size = new System.Drawing.Size(27, 24);
-            this.btnRes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRes.TabIndex = 4;
-            this.btnRes.TabStop = false;
-            this.btnRes.Visible = false;
-            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
-            // 
             // btnMin
             // 
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
-            this.btnMin.Location = new System.Drawing.Point(976, 8);
-            this.btnMin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMin.Location = new System.Drawing.Point(1007, 8);
+            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(26, 24);
             this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMin.TabIndex = 4;
             this.btnMin.TabStop = false;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnCerrarSesion
             // 
@@ -356,9 +320,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBarra.ResumeLayout(false);
             this.panelBarraTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -369,9 +331,7 @@
 
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Panel panelBarra;
-        private System.Windows.Forms.PictureBox btnRes;
         private System.Windows.Forms.Panel panelBarraTitulo;
-        private System.Windows.Forms.PictureBox btnMaxi;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMin;
         private System.Windows.Forms.PictureBox pictureBox1;

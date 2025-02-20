@@ -66,13 +66,33 @@ namespace GestionCasinoAochengYe.Forms.Formularios_Usuarios
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            // Validar que el nombre de usuario y la contraseña no estén vacíos
+            if (string.IsNullOrWhiteSpace(txtBoxUsuario.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxContraseña.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxRepetirContraseña.Text))
+            {
+                MessageBox.Show("El usuario y la contraseña son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar que las contraseñas coincidan
+            if (txtBoxContraseña.Text != txtBoxRepetirContraseña.Text)
+            {
+                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             int id = Convert.ToInt32(this.id);
-
             DaoUsuario daoUsuario = new DaoUsuario();
-            Usuario usuarioNuevo = new Usuario(id, txtBoxUsuario.Text, txtBoxContraseña.Text, checkBoxAdmin.Checked, daoUsuario.ObtenerFechaCreacion(id), InicioSesion.usuarioActual);
+
+            // Obtener la fecha de creación original del usuario
+            DateTime fechaCreacion = daoUsuario.ObtenerFechaCreacion(id);
+
+            Usuario usuarioNuevo = new Usuario(id, txtBoxUsuario.Text, txtBoxContraseña.Text, checkBoxAdmin.Checked, fechaCreacion, InicioSesion.usuarioActual);
             daoUsuario.ActualizarUsuario(usuarioNuevo);
             this.Close();
         }
+
+
     }
 }

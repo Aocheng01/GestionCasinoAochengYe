@@ -71,12 +71,31 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            // Verificar que ningún campo esté vacío
+            if (string.IsNullOrWhiteSpace(txtBoxApuesta.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxGanancia.Text) ||
+                string.IsNullOrWhiteSpace(txtBoxJuego.Text))
+            {
+                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar valores numéricos
             int id = Convert.ToInt32(this.id);
+            double apuesta, ganancia;
+            if (!double.TryParse(txtBoxApuesta.Text, out apuesta) ||
+                !double.TryParse(txtBoxGanancia.Text, out ganancia))
+            {
+                MessageBox.Show("Apuesta y Ganancia deben ser valores numéricos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             DaoPartida daoPartida = new DaoPartida();
-            dto.Partida partidaNueva = new dto.Partida(id, dateTimePickerFecha.Value, Convert.ToDouble(txtBoxApuesta.Text), Convert.ToDouble(txtBoxGanancia.Text), txtBoxJuego.Text, InicioSesion.usuarioActual);
-            daoPartida.ActualizarPartida(id,partidaNueva);
+            dto.Partida partidaNueva = new dto.Partida(id, dateTimePickerFecha.Value, apuesta, ganancia, txtBoxJuego.Text, InicioSesion.usuarioActual);
+            daoPartida.ActualizarPartida(id, partidaNueva);
             this.Close();
         }
+
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {

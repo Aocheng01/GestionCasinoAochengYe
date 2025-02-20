@@ -37,8 +37,8 @@ namespace GestionCasinoAochengYe
             DaoUsuario daoUsuario = new DaoUsuario();
             List<Usuario> listaUsuarios = daoUsuario.obtenerUsuarios();
 
-            string username = txtBoxUsuario.Text;
-            string password = txtBoxContraseña.Text;
+            string username = txtBoxContraseña.Text;
+            string password = txtBoxUsuario.Text;
 
             // Buscar el usuario en la lista
             Usuario usuarioEncontrado = listaUsuarios.Find(usuario => usuario.nombre_usuario == username);
@@ -55,7 +55,7 @@ namespace GestionCasinoAochengYe
             else if (validPassword && usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido administrador");
-                usuarioActual = txtBoxUsuario.Text;
+                usuarioActual = txtBoxContraseña.Text;
                 Inicio inicio = new Inicio(true); // Muestra btnConfig
                 inicio.Show();
                 this.Hide();
@@ -63,7 +63,7 @@ namespace GestionCasinoAochengYe
             else if (validPassword && !usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido usuario");
-                usuarioActual = txtBoxUsuario.Text;
+                usuarioActual = txtBoxContraseña.Text;
                 Inicio inicio = new Inicio(false); // esconde btnConfig
                 inicio.Show();
 
@@ -72,6 +72,30 @@ namespace GestionCasinoAochengYe
             }
 
 
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState.Equals(FormWindowState.Minimized);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("¿Estás seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
+        }
+
+        private void txtBoxContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) // Verifica si se presionó Enter
+            {
+                // Llama al evento del botón como si se hubiera hecho clic en él
+                btnIniciarSesion.PerformClick(); 
+            }
         }
     }
 }
