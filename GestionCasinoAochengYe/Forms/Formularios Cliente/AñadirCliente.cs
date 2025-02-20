@@ -58,6 +58,7 @@ namespace GestionCasinoAochengYe.Forms
             cliente.email = txtBoxEmail.Text;
             cliente.telefono = txtBoxTelefono.Text;
             cliente.saldo = Convert.ToDouble(txtBoxSaldo.Text);
+            cliente.usuarioModificacion = InicioSesion.usuarioActual;
 
             DaoCliente daoCliente = new DaoCliente();
             daoCliente.CrearCliente(cliente);

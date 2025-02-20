@@ -23,7 +23,7 @@ namespace GestionCasinoAochengYe.dao
 
                 try
                 {
-                    string query = "INSERT INTO clientes (nombre, apellido, email, telefono, saldo) VALUES (@nombre, @apellido, @email, @telefono, @saldo, @usuarioModificacion)";
+                    string query = "INSERT INTO clientes (nombre, apellido, email, telefono, saldo, usuario_modificacion) VALUES (@nombre, @apellido, @email, @telefono, @saldo, @usuarioModificacion)";
                     Conexion objetoConexion = new Conexion();
                     MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                     mySqlCommand.Parameters.AddWithValue("@nombre", cliente.nombre);
@@ -61,7 +61,8 @@ namespace GestionCasinoAochengYe.dao
                         mySqlDataReader.GetString(2),
                         mySqlDataReader.GetString(3),
                         mySqlDataReader.GetString(4),
-                        mySqlDataReader.GetDouble(5)
+                        mySqlDataReader.GetDouble(5),
+                        mySqlDataReader.GetString(6)
                     );
                     listaClientes.Add(cliente);
                 }
@@ -84,7 +85,7 @@ namespace GestionCasinoAochengYe.dao
 
             try
             {
-                string query = "UPDATE clientes SET nombre = @nombre, apellido = @apellido, email = @email, telefono = @telefono, saldo = @saldo, usuarioModificacion=@usuarioModificacion WHERE id = @id";
+                string query = "UPDATE clientes SET nombre = @nombre, apellido = @apellido, email = @email, telefono = @telefono, saldo = @saldo, usuario_modificacion=@usuarioModificacion WHERE id = @id";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@nombre", cliente.nombre);

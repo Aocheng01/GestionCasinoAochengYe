@@ -64,7 +64,7 @@ namespace GestionCasinoAochengYe.Forms
             int id = Convert.ToInt32(this.id);
             // Aquí puedes guardar los cambios realizados en los datos del cliente
             DaoCliente daoCliente = new DaoCliente();
-            Cliente clienteNuevo = new Cliente(id,txtBoxNombre.Text, txtBoxApellido.Text, txtBoxEmail.Text, txtBoxTelefono.Text, Convert.ToDouble(txtBoxSaldo.Text));
+            Cliente clienteNuevo = new Cliente(id,txtBoxNombre.Text, txtBoxApellido.Text, txtBoxEmail.Text, txtBoxTelefono.Text, Convert.ToDouble(txtBoxSaldo.Text), InicioSesion.usuarioActual);
             daoCliente.ActualizarCliente(id,clienteNuevo);
             this.Close();
 
