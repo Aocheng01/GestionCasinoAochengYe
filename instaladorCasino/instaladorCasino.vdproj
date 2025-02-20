@@ -69,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_0CF290458CF140088C893AB4CE11C2F4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_11B765B17CDFC1553744456B30AE322F"
         "OwnerKey" = "8:_40D9F86011806CFF4185D49D80785838"
         "MsmSig" = "8:_UNDEFINED"
@@ -1438,12 +1444,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3BFE3CB0BEEBAE83D17EA67346FF12B9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1801,6 +1801,12 @@
         "OwnerKey" = "8:_D86CC8C200B92394843A998159644C37"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3BFE3CB0BEEBAE83D17EA67346FF12B9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1819,6 +1825,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -1835,6 +1857,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1986,6 +2016,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0CF290458CF140088C893AB4CE11C2F4"
+            {
+            "SourcePath" = "8:..\\GestionCasinoAochengYe\\Ayuda\\html\\clientes.html"
+            "TargetName" = "8:clientes.html"
+            "Tag" = "8:"
+            "Folder" = "8:_5836F86E2FCF4898880B93C7636A08D5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_11B765B17CDFC1553744456B30AE322F"
@@ -3893,6 +3943,28 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_08EDED927D0C43F3B583ED85F232FDFD"
+                    {
+                    "Name" = "8:Ayuda"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_8453A2AC20EA473B838531D43D2D4576"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_EB49D5DA32D44553984ED0AFB7F08940"
+                            {
+                            "Name" = "8:html"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_8A55B45CCBBB4F13901B3ACE69699E3C"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_6DAE79242F524FA4B2D8A102178F7806"
@@ -3934,7 +4006,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:instaladorCasino"
         "ProductCode" = "8:{2C1CBA3B-4677-4A9F-A75B-E5D4E83AC6A5}"
-        "PackageCode" = "8:{4AED5FBA-8C11-437F-9248-257C9A7983D7}"
+        "PackageCode" = "8:{D662338A-F8D8-4DF8-9A5B-DCF2A0B60818}"
         "UpgradeCode" = "8:{5885BF4B-4A0C-4C60-8D1F-75BA7762EAB4}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
