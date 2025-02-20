@@ -234,6 +234,7 @@
             this.Controls.Add(this.panelBarraTitulo);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InicioSesion";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
