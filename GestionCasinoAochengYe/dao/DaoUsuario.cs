@@ -22,13 +22,14 @@ namespace GestionCasinoAochengYe.dao
                 // Hash de la contraseña con BCrypt
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(usuario.contraseña);
 
-                string query = "INSERT INTO usuarios (nombre_usuario, contraseña, esAdministrador, fecha_creacion) VALUES (@nombre_usuario, @contraseña, @esAdministrador, @fecha_creacion)";
+                string query = "INSERT INTO usuarios (nombre_usuario, contraseña, esAdministrador, fecha_creacion, usuarioModificacion) VALUES (@nombre_usuario, @contraseña, @esAdministrador, @fecha_creacion, @usuarioModificacion)";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@nombre_usuario", usuario.nombre_usuario);
                 mySqlCommand.Parameters.AddWithValue("@contraseña", hashedPassword);
                 mySqlCommand.Parameters.AddWithValue("@esAdministrador", usuario.esAdministrador);
                 mySqlCommand.Parameters.AddWithValue("@fecha_creacion", usuario.fechaCreacion);
+                mySqlCommand.Parameters.AddWithValue("@usuarioModificacion", usuario.usuarioModificacion);
 
                 mySqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Usuario creado con éxito");
@@ -89,13 +90,14 @@ namespace GestionCasinoAochengYe.dao
                 // Hash de la nueva contraseña con BCrypt
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(usuario.contraseña);
 
-                string query = "UPDATE usuarios SET nombre_usuario = @nombre_usuario, contraseña = @contraseña, esAdministrador = @esAdministrador, fecha_creacion = @fecha_creacion WHERE id = @id";
+                string query = "UPDATE usuarios SET nombre_usuario = @nombre_usuario, contraseña = @contraseña, esAdministrador = @esAdministrador, fecha_creacion = @fecha_creacion, usuarioModificacion = @usuarioModificacion WHERE id = @id";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@nombre_usuario", usuario.nombre_usuario);
                 mySqlCommand.Parameters.AddWithValue("@contraseña", hashedPassword);
                 mySqlCommand.Parameters.AddWithValue("@esAdministrador", usuario.esAdministrador);
                 mySqlCommand.Parameters.AddWithValue("@fecha_creacion", usuario.fechaCreacion);
+                mySqlCommand.Parameters.AddWithValue("@usuarioModificacion", usuario.usuarioModificacion);
                 mySqlCommand.Parameters.AddWithValue("@id", usuario.id);
                 mySqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Usuario actualizado con éxito");

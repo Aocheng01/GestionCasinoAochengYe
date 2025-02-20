@@ -23,7 +23,7 @@ namespace GestionCasinoAochengYe.dao
 
                 try
                 {
-                    string query = "INSERT INTO clientes (nombre, apellido, email, telefono, saldo) VALUES (@nombre, @apellido, @email, @telefono, @saldo)";
+                    string query = "INSERT INTO clientes (nombre, apellido, email, telefono, saldo) VALUES (@nombre, @apellido, @email, @telefono, @saldo, @usuarioModificacion)";
                     Conexion objetoConexion = new Conexion();
                     MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                     mySqlCommand.Parameters.AddWithValue("@nombre", cliente.nombre);
@@ -31,8 +31,9 @@ namespace GestionCasinoAochengYe.dao
                     mySqlCommand.Parameters.AddWithValue("@email", cliente.email);
                     mySqlCommand.Parameters.AddWithValue("@telefono", cliente.telefono);
                     mySqlCommand.Parameters.AddWithValue("@saldo", cliente.saldo);
+                    mySqlCommand.Parameters.AddWithValue("@usuarioModificacion", cliente.usuarioModificacion);
 
-                    mySqlCommand.ExecuteNonQuery();
+                mySqlCommand.ExecuteNonQuery();
                     MessageBox.Show("Cliente creado con éxito");
                     objetoConexion.cerrarConexion();
                 }
@@ -83,7 +84,7 @@ namespace GestionCasinoAochengYe.dao
 
             try
             {
-                string query = "UPDATE clientes SET nombre = @nombre, apellido = @apellido, email = @email, telefono = @telefono, saldo = @saldo WHERE id = @id";
+                string query = "UPDATE clientes SET nombre = @nombre, apellido = @apellido, email = @email, telefono = @telefono, saldo = @saldo, usuarioModificacion=@usuarioModificacion WHERE id = @id";
                 Conexion objetoConexion = new Conexion();
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 mySqlCommand.Parameters.AddWithValue("@nombre", cliente.nombre);
@@ -91,7 +92,10 @@ namespace GestionCasinoAochengYe.dao
                 mySqlCommand.Parameters.AddWithValue("@email", cliente.email);
                 mySqlCommand.Parameters.AddWithValue("@telefono", cliente.telefono);
                 mySqlCommand.Parameters.AddWithValue("@saldo", cliente.saldo);
+                mySqlCommand.Parameters.AddWithValue("@usuarioModificacion", cliente.usuarioModificacion);
+
                 mySqlCommand.Parameters.AddWithValue("@id", cliente.id);
+
 
                 mySqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Cliente actualizado con éxito");

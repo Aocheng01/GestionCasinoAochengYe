@@ -18,6 +18,8 @@ namespace GestionCasinoAochengYe.dto
 
         public DateTime fechaCreacion { get; set; }
 
+        public string usuarioModificacion { get; set; }
+
         public Usuario(string nombre_usuario, string contraseña, bool esAdministrador, DateTime fechaCreacion)
         {
             this.nombre_usuario = nombre_usuario;
@@ -32,6 +34,16 @@ namespace GestionCasinoAochengYe.dto
             this.contraseña = contraseña;
             this.esAdministrador = esAdministrador;
             this.fechaCreacion = fechaCreacion;
+        }
+
+        public Usuario(int id, string nombre_usuario, string contraseña, bool esAdministrador, DateTime fechaCreacion, string usuarioModificacion)
+        {
+            this.id = id;
+            this.nombre_usuario = nombre_usuario;
+            this.contraseña = contraseña;
+            this.esAdministrador = esAdministrador;
+            this.fechaCreacion = fechaCreacion;
+            this.usuarioModificacion = usuarioModificacion;
         }
 
         public Usuario(string nombre_usuario, string contraseña, bool esAdministrador)

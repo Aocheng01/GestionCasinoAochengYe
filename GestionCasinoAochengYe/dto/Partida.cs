@@ -14,6 +14,7 @@ namespace GestionCasinoAochengYe.dto
         public double apuesta { get; set; }
         public double ganancia { get; set; }
         public string juego { get; set; }
+        public string usuarioModificacion { get; set; }
 
         public Partida(int id_cliente, DateTime fecha, double apuesta, double ganancia, string juego)
         {
@@ -32,6 +33,17 @@ namespace GestionCasinoAochengYe.dto
             this.apuesta = apuesta;
             this.ganancia = ganancia;
             this.juego = juego;
+        }
+
+        public Partida(int id_partida, int id_cliente, DateTime fecha, double apuesta, double ganancia, string juego, string usuarioModificacion)
+        {
+            this.id_partida = id_partida;
+            this.id_cliente = id_cliente;
+            this.fecha = fecha;
+            this.apuesta = apuesta;
+            this.ganancia = ganancia;
+            this.juego = juego;
+            this.usuarioModificacion = usuarioModificacion;
         }
 
         public Partida()

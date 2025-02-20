@@ -14,6 +14,7 @@ namespace GestionCasinoAochengYe.dto
         public string email { get; set; }
         public string telefono { get; set; }
         public double saldo { get; set; }
+        public string usuarioModificacion { get; set; }
 
         public Cliente(string nombre, string apellido, string email, string telefono, double saldo)
         {
@@ -33,6 +34,18 @@ namespace GestionCasinoAochengYe.dto
             this.telefono = telefono;
             this.saldo = saldo;
         }
+
+        public Cliente(int id, string nombre, string apellido, string email, string telefono, double saldo, string usuarioModificacion)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.email = email;
+            this.telefono = telefono;
+            this.saldo = saldo;
+            this.usuarioModificacion = usuarioModificacion;
+        }
+
         public Cliente()
         {
         }
