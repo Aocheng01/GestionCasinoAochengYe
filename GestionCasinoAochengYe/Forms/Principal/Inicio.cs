@@ -25,7 +25,7 @@ namespace GestionCasinoAochengYe.Forms
         public Inicio(bool mostrarConfig)
         {
             InitializeComponent();
-            btnConfig.Enabled = mostrarConfig;
+            btnConfig.Visible = mostrarConfig;
             lblUsuarioActual.Text = InicioSesion.usuarioActual;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
