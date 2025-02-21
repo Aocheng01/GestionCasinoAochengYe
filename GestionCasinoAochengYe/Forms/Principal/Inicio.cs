@@ -87,14 +87,14 @@ namespace GestionCasinoAochengYe.Forms
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            // Ruta relativa del archivo HTML
-            string relativePath = @"../../Ayuda/html/index.html";
+            string absolutePath = Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory,
+                "Ayuda",
+                "html",
+                "index.html"
+            );
 
-            // Convierte la ruta relativa en una ruta absoluta
-            string absolutePath = Path.GetFullPath(relativePath);
-
-
-            if (System.IO.File.Exists(absolutePath))
+            if (File.Exists(absolutePath))
             {
                 Process.Start(absolutePath);
             }
@@ -102,6 +102,26 @@ namespace GestionCasinoAochengYe.Forms
             {
                 MessageBox.Show("El archivo no se encontró.");
             }
+
         }
+
+        //private void btnAyuda_Click(object sender, EventArgs e)
+        //{
+        //    // Ruta relativa del archivo HTML
+        //    string relativePath = @"../../Ayuda/html/index.html";
+
+        //    // Convierte la ruta relativa en una ruta absoluta
+        //    string absolutePath = Path.GetFullPath(relativePath);
+
+
+        //    if (System.IO.File.Exists(absolutePath))
+        //    {
+        //        Process.Start(absolutePath);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("El archivo no se encontró.");
+        //    }
+        //}
     }
 }

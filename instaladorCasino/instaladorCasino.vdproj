@@ -27,6 +27,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_0302A4B85DCC405AA0AA77A28128BCA1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_057B689508A3CC0FE83DF25D5DED8A22"
         "OwnerKey" = "8:_7A6C5308263B387841B4250EA8C238B3"
         "MsmSig" = "8:_UNDEFINED"
@@ -47,6 +53,12 @@
         {
         "MsmKey" = "8:_05B6CFA462402A2BDAC349A564A289D5"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_07CDEF8088AE42EBAF3FCEEC171F4277"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -195,6 +207,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2572DEDA277546DC9C52C659B0EF2992"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_25E322A593717B0BFDCD011942270DF7"
         "OwnerKey" = "8:_B566282D1477C9DC3590994C74063206"
         "MsmSig" = "8:_UNDEFINED"
@@ -251,6 +269,18 @@
         {
         "MsmKey" = "8:_285AC645D4BD690AF7B8FE055C63F3B1"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_29EC016523EA42F4B6C482E3023AF9E5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2FC01AD54D92495AB5A063B32E330813"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -321,6 +351,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3471D8EBB7F24371A8E278F33580C219"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_35A0F4E145BD467F893CE439555D7E3F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3BFE3CB0BEEBAE83D17EA67346FF12B9"
         "OwnerKey" = "8:_D86CC8C200B92394843A998159644C37"
         "MsmSig" = "8:_UNDEFINED"
@@ -375,8 +417,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_44EC929C3C2D4DFB87357977D06FD882"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_46A3C94FF95C54D8CBB6B6DF9A67974B"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4C450B16BDAB4FBDAEF15FA6D5308D82"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -389,6 +443,12 @@
         {
         "MsmKey" = "8:_4CF65C49AC3218E08C61833CB938BCBA"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4D633707E89B41E38FF0C15BE406F4A3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -633,6 +693,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_7B59CC39122B4BF79E487FB4794D5E5E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7D98FAAD891B1BD347DBD8EA228ABDD5"
         "OwnerKey" = "8:_92AAB2AD3AE56B01EC9E9BB291F3F03B"
         "MsmSig" = "8:_UNDEFINED"
@@ -653,6 +719,12 @@
         {
         "MsmKey" = "8:_7EE38A1371E1E73504125DA644EF385A"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_81DC4B5172EB4EF88757D0B796E71FEA"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -831,6 +903,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_88F4C10FCDED4D40A9D3238FD1D48ABC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8E26E44182184E59A516DD06CED2E660"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_913A8FF9476B4DB99DE91B087189987B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_92AAB2AD3AE56B01EC9E9BB291F3F03B"
         "OwnerKey" = "8:_01243F318965F4FBA7A4C80B59029FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -855,8 +945,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_94945FA1F23044F8B4714E67ED011FD1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_94E478FDBD7BDDEEE1308B394D4E1D7C"
         "OwnerKey" = "8:_5E8F07030FE6BED495F462F07C4D7238"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C26834E23D4CFC9F86A9356EDA2C7D"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -879,8 +981,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9D8F9CB02DC140D69168C7C2B3BAAEC4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_ACED67CB9334CCC515581098E9A5351F"
         "OwnerKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_ADE14BFA0EC14A4C99909CC006942988"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -945,6 +1059,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B0290F28056D4E75BACD500C01B40F5A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B2D3BF5E760B4133AA2110E7F9C1D93B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B45623F5C68625F4149CD32608F5C32A"
         "OwnerKey" = "8:_40D9F86011806CFF4185D49D80785838"
         "MsmSig" = "8:_UNDEFINED"
@@ -983,6 +1109,12 @@
         {
         "MsmKey" = "8:_B566282D1477C9DC3590994C74063206"
         "OwnerKey" = "8:_93A6BCE93D878A7E82500C6A70BF09BA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BA680DB764154E879F033A789AAF5E13"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1137,6 +1269,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_DCEA9434B58F4344B5AD0C663BDDC57D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_DDE44271634D101FB5E728B5C14EFEEE"
         "OwnerKey" = "8:_01243F318965F4FBA7A4C80B59029FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -1157,6 +1295,12 @@
         {
         "MsmKey" = "8:_DDE44271634D101FB5E728B5C14EFEEE"
         "OwnerKey" = "8:_92AAB2AD3AE56B01EC9E9BB291F3F03B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DFDE0ED2271B4A389B8CF8F2B95FAAB3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1186,6 +1330,12 @@
         "Entry"
         {
         "MsmKey" = "8:_E980A3C434994B7EA73DE21568177C0A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EA39794674FB42999E95A2A88D5792B7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1409,6 +1559,12 @@
         {
         "MsmKey" = "8:_F9EBC152EA073EA7EB33A313167B5F65"
         "OwnerKey" = "8:_85FD2AB3B9C5723BCF0E4A190435B5B5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FC15C82BF16D4FB8BEC11BF3DA9ED3A1"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1864,6 +2020,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -1923,6 +2087,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0302A4B85DCC405AA0AA77A28128BCA1"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\clientes.png"
+            "TargetName" = "8:clientes.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_057B689508A3CC0FE83DF25D5DED8A22"
@@ -1985,6 +2169,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_07CDEF8088AE42EBAF3FCEEC171F4277"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\partidas.png"
+            "TargetName" = "8:partidas.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0C4B78E0F5398573ABBA076502D00BAD"
@@ -2120,6 +2324,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2572DEDA277546DC9C52C659B0EF2992"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\eliminarUsario.png"
+            "TargetName" = "8:eliminarUsario.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_25E322A593717B0BFDCD011942270DF7"
             {
             "AssemblyRegister" = "3:1"
@@ -2213,6 +2437,46 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_29EC016523EA42F4B6C482E3023AF9E5"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\informes.png"
+            "TargetName" = "8:informes.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2FC01AD54D92495AB5A063B32E330813"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\anadirpartida.png"
+            "TargetName" = "8:anadirpartida.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_311DE9AAA1CEAFDDDCD6D4D4B8005E3A"
             {
             "AssemblyRegister" = "3:1"
@@ -2304,6 +2568,46 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3471D8EBB7F24371A8E278F33580C219"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\html\\usuarios.html"
+            "TargetName" = "8:usuarios.html"
+            "Tag" = "8:"
+            "Folder" = "8:_EB49D5DA32D44553984ED0AFB7F08940"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_35A0F4E145BD467F893CE439555D7E3F"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\eliminarCliente.png"
+            "TargetName" = "8:eliminarCliente.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3BFE3CB0BEEBAE83D17EA67346FF12B9"
@@ -2430,6 +2734,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44EC929C3C2D4DFB87357977D06FD882"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\btnPartida.png"
+            "TargetName" = "8:btnPartida.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_46A3C94FF95C54D8CBB6B6DF9A67974B"
             {
             "AssemblyRegister" = "3:1"
@@ -2459,6 +2783,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C450B16BDAB4FBDAEF15FA6D5308D82"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\eliminarPartida.png"
+            "TargetName" = "8:eliminarPartida.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C9E90198D4C9B9958309A1CA2A37CC5"
@@ -2510,6 +2854,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4D633707E89B41E38FF0C15BE406F4A3"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\errorEliminarUsuario.png"
+            "TargetName" = "8:errorEliminarUsuario.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_524DBF4D734E40D59F64DF16ECFB19E2"
@@ -2873,6 +3237,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7B59CC39122B4BF79E487FB4794D5E5E"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\editarpartida.png"
+            "TargetName" = "8:editarpartida.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7D98FAAD891B1BD347DBD8EA228ABDD5"
             {
             "AssemblyRegister" = "3:1"
@@ -2933,6 +3317,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_81DC4B5172EB4EF88757D0B796E71FEA"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\anadirusuario.png"
+            "TargetName" = "8:anadirusuario.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8200870D638813D63711969FF1F4E108"
@@ -3028,6 +3432,66 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_88F4C10FCDED4D40A9D3238FD1D48ABC"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\usuario.png"
+            "TargetName" = "8:usuario.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8E26E44182184E59A516DD06CED2E660"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\html\\partidas.html"
+            "TargetName" = "8:partidas.html"
+            "Tag" = "8:"
+            "Folder" = "8:_EB49D5DA32D44553984ED0AFB7F08940"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_913A8FF9476B4DB99DE91B087189987B"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\html\\informes.html"
+            "TargetName" = "8:informes.html"
+            "Tag" = "8:"
+            "Folder" = "8:_EB49D5DA32D44553984ED0AFB7F08940"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_92AAB2AD3AE56B01EC9E9BB291F3F03B"
             {
             "AssemblyRegister" = "3:1"
@@ -3090,6 +3554,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_94945FA1F23044F8B4714E67ED011FD1"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\editarCliente.png"
+            "TargetName" = "8:editarCliente.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_94E478FDBD7BDDEEE1308B394D4E1D7C"
             {
             "AssemblyRegister" = "3:1"
@@ -3119,6 +3603,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_96C26834E23D4CFC9F86A9356EDA2C7D"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\añadirCliente.png"
+            "TargetName" = "8:añadirCliente.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_99F66BFCBEFC8AC7FDE19382EE7B0F3C"
@@ -3183,6 +3687,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9D8F9CB02DC140D69168C7C2B3BAAEC4"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\buscarpartidas.png"
+            "TargetName" = "8:buscarpartidas.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_ACED67CB9334CCC515581098E9A5351F"
             {
             "AssemblyRegister" = "3:1"
@@ -3212,6 +3736,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ADE14BFA0EC14A4C99909CC006942988"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\btnClientes.png"
+            "TargetName" = "8:btnClientes.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_ADF36EFD05AEE343832A5D132FCE4956"
@@ -3307,6 +3851,46 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B0290F28056D4E75BACD500C01B40F5A"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\html\\index.html"
+            "TargetName" = "8:index.html"
+            "Tag" = "8:"
+            "Folder" = "8:_EB49D5DA32D44553984ED0AFB7F08940"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B2D3BF5E760B4133AA2110E7F9C1D93B"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\buscarusuario.png"
+            "TargetName" = "8:buscarusuario.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B45623F5C68625F4149CD32608F5C32A"
             {
             "AssemblyRegister" = "3:1"
@@ -3367,6 +3951,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BA680DB764154E879F033A789AAF5E13"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\buscarCliente.jpg"
+            "TargetName" = "8:buscarCliente.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C3A1CDB08CCF018AB7808E2DE9557122"
@@ -3586,6 +4190,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DCEA9434B58F4344B5AD0C663BDDC57D"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\casino.jpg"
+            "TargetName" = "8:casino.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DDE44271634D101FB5E728B5C14EFEEE"
             {
             "AssemblyRegister" = "3:1"
@@ -3615,6 +4239,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DFDE0ED2271B4A389B8CF8F2B95FAAB3"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\btnUsuarios.png"
+            "TargetName" = "8:btnUsuarios.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E65F7F58AC1D6F8B63C9249109373DEA"
@@ -3677,6 +4321,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA39794674FB42999E95A2A88D5792B7"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\editarusuario.png"
+            "TargetName" = "8:editarusuario.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_ED0A38C63BDE5334036ED8F06703E5B4"
@@ -3865,6 +4529,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC15C82BF16D4FB8BEC11BF3DA9ED3A1"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\html\\clientes.html"
+            "TargetName" = "8:clientes.html"
+            "Tag" = "8:"
+            "Folder" = "8:_EB49D5DA32D44553984ED0AFB7F08940"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FD50F9E48D6175D1D1BB5062F49B21AB"
             {
             "AssemblyRegister" = "3:1"
@@ -3952,6 +4636,17 @@
                     "Property" = "8:_8453A2AC20EA473B838531D43D2D4576"
                         "Folders"
                         {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_C62EAAC41F8943A99E42E58D0838CA1D"
+                            {
+                            "Name" = "8:imagen"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_2F15B1DE3D084176A67491B787C9A7A5"
+                                "Folders"
+                                {
+                                }
+                            }
                             "{9EF0B969-E518-4E46-987F-47570745A589}:_EB49D5DA32D44553984ED0AFB7F08940"
                             {
                             "Name" = "8:html"
