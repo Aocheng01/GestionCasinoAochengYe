@@ -279,6 +279,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2A67E3523CC9457EA7CBACBC38FAE781"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2FC01AD54D92495AB5A063B32E330813"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -2441,6 +2447,26 @@
             {
             "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\\\informes.png"
             "TargetName" = "8:informes.png"
+            "Tag" = "8:"
+            "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2A67E3523CC9457EA7CBACBC38FAE781"
+            {
+            "SourcePath" = "8:..\\gestioncasinoaochengye\\ayuda\\imagen\\usuario.png"
+            "TargetName" = "8:usuario.png"
             "Tag" = "8:"
             "Folder" = "8:_C62EAAC41F8943A99E42E58D0838CA1D"
             "Condition" = "8:"
@@ -4701,7 +4727,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:instaladorCasino"
         "ProductCode" = "8:{2C1CBA3B-4677-4A9F-A75B-E5D4E83AC6A5}"
-        "PackageCode" = "8:{D662338A-F8D8-4DF8-9A5B-DCF2A0B60818}"
+        "PackageCode" = "8:{37D59B34-42E8-421C-9AE0-01DE16FABC4A}"
         "UpgradeCode" = "8:{5885BF4B-4A0C-4C60-8D1F-75BA7762EAB4}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
