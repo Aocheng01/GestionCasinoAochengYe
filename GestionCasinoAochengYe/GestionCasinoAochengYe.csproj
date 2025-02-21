@@ -437,32 +437,84 @@
   <ItemGroup>
     <None Include="Resources\lab_profile_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
     <None Include="Resources\info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
-    <Content Include="Ayuda\html\clientes.html" />
-    <Content Include="Ayuda\html\index.html" />
-    <Content Include="Ayuda\html\informes.html" />
-    <Content Include="Ayuda\html\partidas.html" />
-    <Content Include="Ayuda\html\usuarios.html" />
-    <Content Include="Ayuda\imagen\anadirpartida.png" />
-    <Content Include="Ayuda\imagen\anadirusuario.png" />
-    <Content Include="Ayuda\imagen\añadirCliente.png" />
-    <Content Include="Ayuda\imagen\btnClientes.png" />
-    <Content Include="Ayuda\imagen\btnPartida.png" />
-    <Content Include="Ayuda\imagen\btnUsuarios.png" />
-    <Content Include="Ayuda\imagen\buscarCliente.jpg" />
-    <Content Include="Ayuda\imagen\buscarpartidas.png" />
-    <Content Include="Ayuda\imagen\buscarusuario.png" />
-    <Content Include="Ayuda\imagen\casino.jpg" />
-    <Content Include="Ayuda\imagen\clientes.png" />
-    <Content Include="Ayuda\imagen\editarCliente.png" />
-    <Content Include="Ayuda\imagen\editarpartida.png" />
-    <Content Include="Ayuda\imagen\editarusuario.png" />
-    <Content Include="Ayuda\imagen\eliminarCliente.png" />
-    <Content Include="Ayuda\imagen\eliminarPartida.png" />
-    <Content Include="Ayuda\imagen\eliminarUsario.png" />
-    <Content Include="Ayuda\imagen\errorEliminarUsuario.png" />
-    <Content Include="Ayuda\imagen\informes.png" />
-    <Content Include="Ayuda\imagen\partidas.png" />
-    <Content Include="Ayuda\imagen\usuario.png" />
+    <Content Include="Ayuda\html\clientes.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\html\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\html\informes.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\html\partidas.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\html\usuarios.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\anadirpartida.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\anadirusuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\añadirCliente.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\btnClientes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\btnPartida.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\btnUsuarios.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\buscarCliente.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\buscarpartidas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\buscarusuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\casino.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\clientes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\editarCliente.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\editarpartida.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\editarusuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\eliminarCliente.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\eliminarPartida.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\eliminarUsario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\errorEliminarUsuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\informes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\partidas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ayuda\imagen\usuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

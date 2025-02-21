@@ -55,7 +55,7 @@ namespace GestionCasinoAochengYe
             else if (validPassword && usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido administrador");
-                usuarioActual = txtBoxContraseña.Text;
+                usuarioActual = txtBoxUsuario.Text;
                 Inicio inicio = new Inicio(true); // Muestra btnConfig
                 inicio.Show();
                 this.Hide();
@@ -63,7 +63,7 @@ namespace GestionCasinoAochengYe
             else if (validPassword && !usuarioEncontrado.esAdministrador)
             {
                 MessageBox.Show("Bienvenido usuario");
-                usuarioActual = txtBoxContraseña.Text;
+                usuarioActual = txtBoxUsuario.Text;
                 Inicio inicio = new Inicio(false); // esconde btnConfig
                 inicio.Show();
 

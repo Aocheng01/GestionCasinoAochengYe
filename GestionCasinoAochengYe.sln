@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionCasinoAochengYe", "GestionCasinoAochengYe\GestionCasinoAochengYe.csproj", "{D61EC87D-89CF-4AD1-B8A6-498F744B015C}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "instaladorCasino", "instaladorCasino\instaladorCasino.vdproj", "{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GestionCasino", "GestionCasino\GestionCasino.vdproj", "{19D3AD39-CED9-4AFB-94FF-188F3289CE78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,16 +35,19 @@ Global
 		{D61EC87D-89CF-4AD1-B8A6-498F744B015C}.Release|x64.Build.0 = Release|Any CPU
 		{D61EC87D-89CF-4AD1-B8A6-498F744B015C}.Release|x86.ActiveCfg = Release|Any CPU
 		{D61EC87D-89CF-4AD1-B8A6-498F744B015C}.Release|x86.Build.0 = Release|Any CPU
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Debug|Any CPU.ActiveCfg = Debug
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Debug|ARM64.ActiveCfg = Debug
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Debug|x64.ActiveCfg = Debug
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Debug|x86.ActiveCfg = Debug
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Release|Any CPU.ActiveCfg = Release
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Release|ARM64.ActiveCfg = Release
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Release|x64.ActiveCfg = Release
-		{08A0026B-9E7C-47B1-B9E5-41FBA9D0C57E}.Release|x86.ActiveCfg = Release
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Debug|Any CPU.ActiveCfg = Debug
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Debug|ARM64.ActiveCfg = Debug
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Debug|x64.ActiveCfg = Debug
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Debug|x86.ActiveCfg = Debug
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Release|Any CPU.ActiveCfg = Release
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Release|ARM64.ActiveCfg = Release
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Release|x64.ActiveCfg = Release
+		{19D3AD39-CED9-4AFB-94FF-188F3289CE78}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17BE19FE-9CDF-427B-AF30-C0A7C5580042}
 	EndGlobalSection
 EndGlobal
