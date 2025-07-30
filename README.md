@@ -23,7 +23,7 @@
         <strong><span style="color: #28a745;">&#10003;</span> Registro de Partidas:</strong> Guarda datos de partidas jugadas: <strong>cliente, juego, apuesta y ganancia</strong>. 🎮
     </li>
     <li style="margin-bottom: 1em;">
-        <strong><span style="color: #28a745;">&#10003;</span> Generación de Informes:</strong> Informes personalizados con <strong>Microsoft Report Viewer</strong> según necesidades administrativas. 📊
+        <strong><span style="color: #28a745;">&#10003;</span> Generación de Informes:</strong> Informes personalizados con <strong>iReports</strong> según necesidades administrativas. 📊
     </li>
     <li style="margin-bottom: 1em;">
         <strong><span style="color: #28a745;">&#10003;</span> Interfaz Moderna:</strong> Diseñada con <strong>Guna UI 2</strong> para una experiencia fluida y estética en Windows. 🎨
@@ -48,33 +48,44 @@
 
 <h2 style="color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 5px;">📸 Capturas de Pantalla</h2>
 
+<h2 style="color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 5px;">📸 Capturas de Pantalla</h2>
+
 <table style="width: 100%; border-collapse: collapse; text-align: center;">
     <tr>
-        <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Inicio de Sesión</h3>
-            <img src="images/iniciosesion.png" alt="Pantalla de inicio de sesión" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-        </td>
-        <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Pantalla Principal</h3>
-            <img src="images/pantallaprincipal.png" alt="Gestión de usuarios" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-        </td>
-        <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Clientes</h3>
-            <img src="img/clientes.png" alt="Pantalla de clientes" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+        <td style="padding: 20px; vertical-align: top;">
+            <h3 style="color: #343a40; margin-bottom: 1em; font-size: 1.2em;">➡️ Inicio de Sesión</h3>
+            <img src="img/iniciosesion.png" alt="Pantalla de inicio de sesión" style="width: 90%; max-height: 600px; border: 1px solid #ddd; border-radius: 8px;">
         </td>
     </tr>
     <tr>
-        <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Añadir clientes</h3>
-            <img src="images/addcliente.png" alt="Gestión de partidas" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+        <td style="padding: 20px; vertical-align: top;">
+            <h3 style="color: #343a40; margin-bottom: 1em; font-size: 1.2em;">➡️ Pantalla Principal</h3>
+            <img src="img/pantallaprincipal.png" alt="Pantalla principal" style="width: 90%; max-height: 600px; border: 1px solid #ddd; border-radius: 8px;">
         </td>
-        <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Informes</h3>
-            <img src="images/informes.png" alt="Informes generados" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    </tr>
+    <tr>
+        <td style="padding: 20px; vertical-align: top;">
+            <h3 style="color: #343a40; margin-bottom: 1em; font-size: 1.2em;">➡️ Clientes</h3>
+            <img src="img/clientes.png" alt="Pantalla de clientes" style="width: 90%; max-height: 600px; border: 1px solid #ddd; border-radius: 8px;">
         </td>
-        <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Editar Partida</h3>
-            <img src="images/editpartida.png" alt="Pantalla principal de la aplicación" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    </tr>
+    <tr>
+        <td style="padding: 20px; vertical-align: top;">
+            <h3 style="color: #343a40; margin-bottom: 1em; font-size: 1.2em;">➡️ Añadir Clientes</h3>
+            <img src="img/addcliente.png" alt="Añadir clientes" style="width: 90%; max-height: 600px; border: 1px solid #ddd; border-radius: 8px;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px; vertical-align: top;">
+            <h3 style="color: #343a40; margin-bottom: 1em; font-size: 1.2em;">➡️ Informes</h3>
+            <img src="img/informes.png" alt="Informes" style="width: 90%; max-height: 600px; border: 1px solid #ddd; border-radius: 8px;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px; vertical-align: top;">
+            <h3 style="color: #343a40; margin-bottom: 1em; font-size: 1.2em;">➡️ Editar Partida</h3>
+            <img src="img/editpartida.png" alt="Editar partida" style="width: 90%; max-height: 600px; border: 1px solid #ddd; border-radius: 8px;">
         </td>
     </tr>
 </table>
+
