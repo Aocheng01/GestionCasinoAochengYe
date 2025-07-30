@@ -52,29 +52,29 @@
     <tr>
         <td style="padding: 10px; vertical-align: top; width: 33.33%;">
             <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Inicio de Sesión</h3>
-            <img src="images/login.png" alt="Pantalla de inicio de sesión" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+            <img src="images/iniciosesion.png" alt="Pantalla de inicio de sesión" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
         </td>
         <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Gestión de Usuarios</h3>
-            <img src="images/usuarios.png" alt="Gestión de usuarios" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Pantalla Principal</h3>
+            <img src="images/pantallaprincipal.png" alt="Gestión de usuarios" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
         </td>
         <td style="padding: 10px; vertical-align: top; width: 33.33%;">
             <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Clientes</h3>
-            <img src="images/clientes.png" alt="Pantalla de clientes" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+            <img src="img/clientes.png" alt="Pantalla de clientes" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
         </td>
     </tr>
     <tr>
         <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Partidas</h3>
-            <img src="images/partidas.png" alt="Gestión de partidas" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Añadir clientes</h3>
+            <img src="images/addcliente.png" alt="Gestión de partidas" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
         </td>
         <td style="padding: 10px; vertical-align: top; width: 33.33%;">
             <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Informes</h3>
             <img src="images/informes.png" alt="Informes generados" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
         </td>
         <td style="padding: 10px; vertical-align: top; width: 33.33%;">
-            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Interfaz General</h3>
-            <img src="images/interfaz.png" alt="Pantalla principal de la aplicación" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+            <h3 style="color: #343a40; margin-bottom: 0.5em; font-size: 1.1em;">➡️ Editar Partida</h3>
+            <img src="images/editpartida.png" alt="Pantalla principal de la aplicación" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
         </td>
     </tr>
 </table>
